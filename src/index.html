@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    SREcon26 - Interactive Presentation
+    Created by: Andrew Hatch
+    Copyright: 2026
+    
+    An impress.js-based presentation.
+    
+    Please respect the creative process and check before reproducing 
+    all or part of this presentation. A lot of time, effort, research 
+    and love goes into making these presentations.
+-->
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SREcon26 - Interactive Presentation</title>
+    <meta name="description" content="An interactive presentation for SREcon26." />
+    <meta name="author" content="Andrew Hatch" />
+    <meta name="keywords" content="SRE, Site Reliability Engineering, DevOps, Technology" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SREcon26" />
+    <meta property="og:description" content="Interactive presentation for SREcon26" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link href="css/presentation.css" rel="stylesheet" />
+    <link href="css/shrug.css" rel="stylesheet" />
+    <link href="css/flash.css" rel="stylesheet" />
+    <link href="css/csshake.min.css" rel="stylesheet" />
+    
+    <!-- JavaScript -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- Main Presentation Container -->
+    <div id="impress" data-width="1024" data-height="768" data-max-scale="10" data-min-scale="0" data-perspective="900">
+
+        <!-- =============================================== -->
+        <!-- SECTION 1: INTRODUCTION -->
+        <!-- =============================================== -->
+        
+        <!-- Title Slide -->
+        <div id="title" class="step" data-scale="25" data-y="8000">
+            <h1>SREcon26</h1>
+            <br />
+            <h1>Andrew Hatch</h1>
+            <br />
+            <p style="position: absolute;font-family: 'Comic Neue';font-size: 60px;left: 400px;bottom: 50px;">
+                @hatchman76
+            </p>
+            <img src="images/Linkedin-Logo.png"
+                style="width: 70px;height: auto;position: absolute;left: 300px;bottom: 140px;" />
+            <img src="images/medium-blog-icon.png"
+                style="width: 75px;height: auto;position: absolute;left: 250px;bottom: 50px;" />
+        </div>
+        
+        <!-- Add your slides here -->
+        <!-- Example slide template:
+        <div id="slide-name" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+            <h1>Slide Title</h1>
+            <p>Content goes here</p>
+        </div>
+        -->
+
+        <!-- =============================================== -->
+        <!-- END: THANK YOU -->
+        <!-- =============================================== -->
+        
+        <div id="thank-you" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+            <h1>Thank You!</h1>
+            <br />
+            <p style="font-family: 'Comic Neue';font-size: 60px;">
+                Questions?
+            </p>
+        </div>
+
+    </div>
+
+    <!-- impress.js initialization -->
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+
+</body>
+</html>

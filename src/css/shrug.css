@@ -1,0 +1,144 @@
+/**
+ * Shrug Emoji Animation Styles
+ * 
+ * Creates an animated ASCII shrug emoji character with moving arms and blinking eyes.
+ * This provides a fun, interactive element for presentations.
+ * 
+ * Structure:
+ * - .shrug: Main container for the shrug character
+ * - .left-arm, .right-arm: Animated arm elements that rotate
+ * - .blink: Overlay element that creates blinking effect
+ * 
+ * @author Andrew Hatch
+ * @version 1.0
+ */
+
+/* ========================================
+   MAIN SHRUG CONTAINER
+   ======================================== */
+
+/**
+ * Main shrug character container
+ * Centers the emoji character and sets base styling
+ */
+.shrug {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+/* ========================================
+   ARM ANIMATION ELEMENTS
+   ======================================== */
+
+/**
+ * Base styles for both arms
+ * Arms will rotate independently to create shrugging motion
+ */
+.left-arm,
+.right-arm {
+    display: inline-block;
+    transform: rotate(0deg);
+}
+
+/**
+ * Left arm with animation
+ * Rotates counter-clockwise during shrug motion
+ */
+.left-arm {
+    animation: 5s infinite left-arm;
+}
+
+/**
+ * Right arm with animation
+ * Rotates clockwise during shrug motion
+ */
+.right-arm {
+    animation: 5s infinite right-arm;
+}
+
+/* ========================================
+   BLINKING EYES EFFECT
+   ======================================== */
+
+/**
+ * Blinking overlay element
+ * Creates the illusion of blinking by temporarily covering the eyes
+ */
+.blink {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 16px;
+    left: 86px;
+    animation: 3s infinite blink;
+    opacity: 0;
+}
+
+/* ========================================
+   KEYFRAME ANIMATIONS
+   ======================================== */
+
+/**
+ * Blinking animation keyframes
+ * Creates periodic eye blinks with realistic timing
+ */
+@keyframes blink {
+    0% { 
+        opacity: 0; 
+    }
+    50% { 
+        opacity: 0; 
+    }
+    51% { 
+        opacity: 1; 
+    }
+    55% { 
+        opacity: 1; 
+    }
+    56% { 
+        opacity: 0; 
+    }
+}
+
+/**
+ * Left arm shrugging motion
+ * Rotates arm up and down to simulate shrugging
+ */
+@keyframes left-arm {
+    10% {
+        transform: rotate(-20deg);
+    }
+    
+    30% {
+        transform: rotate(-20deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+/**
+ * Right arm shrugging motion
+ * Mirrors the left arm movement in opposite direction
+ */
+@keyframes right-arm {	
+    10% {
+        transform: rotate(20deg);
+    }
+    
+    30% {
+        transform: rotate(20deg);
+    }
+    
+    50% {
+        transform: rotate(0deg);
+    }
+}
