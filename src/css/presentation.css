@@ -57,7 +57,7 @@
 body {
     font-family: "PT Sans", sans-serif;
     min-height: 740px;
-    background: rgb(173, 232, 255);
+    background: rgb(255, 255, 234);
     color: #000000;
 }
 
@@ -151,8 +151,8 @@ body {
  */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
-    transition: opacity 1s;
+    opacity: 1;
+    transition: none;
 }
 
 .impress-enabled .step.active {
@@ -187,8 +187,8 @@ body {
  * Heading styles with consistent spacing and alignment
  */
 h1, h2, h3 {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-bottom: 8px;
+    margin-top: 8px;
     text-align: center;
 }
 
@@ -196,7 +196,7 @@ h1, h2, h3 {
  * Main heading style - Maven Pro font for impact
  */
 h1 {
-    font-family: "Maven Pro";
+    font-family: "Archivo Black";
     font-size: 70px;
     font-weight: 300;
 }
@@ -217,11 +217,20 @@ h1 {
  */
 p {
     text-align: center;
-    margin: 0.7em;
+    margin: 11px;
+    font-family: "Comic Neue";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+table, td, th {
+    font-family: "Comic Neue";
+    font-size: 36px;
+    font-weight: bold;
 }
 
 li {
-    margin: 0.2em;
+    margin: 3px;
 }
 
 /**
@@ -299,10 +308,10 @@ code {
 a {
     color: inherit;
     text-decoration: none;
-    padding: 0 0.1em;
+    padding: 0 2px;
     background: rgba(200, 200, 200, 0.3);
     text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.9);
-    border-radius: 0.2em;
+    border-radius: 3px;
     border-bottom: 1px solid rgba(100, 100, 100, 0.4);
     border-left: 1px solid rgba(100, 100, 100, 0.4);
     transition: 0.5s;
@@ -347,7 +356,7 @@ strike {
 }
 
 small {
-    font-size: 0.4em;
+    font-size: 14px;
 }
 
 /* ========================================
@@ -528,32 +537,38 @@ body.impress-mouse-timeout {
 .impress-enabled #impress-help {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     color: #eeeeee;
-    font-size: 80%;
+    font-size: 13px;
     position: fixed;
-    left: 2em;
-    bottom: 2em;
-    width: 24em;
-    border-radius: 1em;
-    padding: 1em;
+    left: 32px;
+    bottom: 32px;
+    width: 384px;
+    border-radius: 16px;
+    padding: 16px;
     text-align: center;
     z-index: 100;
     font-family: Verdana, Arial, Sans;
 }
 
 .impress-enabled #impress-help td {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /**
  * Substep Plugin Styles
  * Controls visibility of sub-elements within slides
  */
+/**
+ * Substep zoom-in entrance (PowerPoint-style)
+ * Substeps start slightly smaller and fade in, then scale to full size when revealed.
+ */
 #impress .step .substep {
     opacity: 0;
+    transform: scale(0.92);
 }
 
 #impress .step .substep.substep-visible {
     opacity: 1;
-    transition: opacity 1s;
+    transform: scale(1);
+    transition: opacity 0.3s ease-out, transform 0.4s ease-out;
 }

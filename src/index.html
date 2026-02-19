@@ -31,6 +31,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     
     <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
@@ -54,20 +55,385 @@
         <!-- =============================================== -->
         
         <!-- Title Slide -->
-        <div id="title" class="step" data-scale="25" data-y="8000">
-            <h1>SREcon26</h1>
-            <br />
+        <div id="introduction" class="step" data-scale="25" data-y="8000">
+            <h1>Ghosts in the Interview Loop & Avoiding AI Taylorism</h1>
+            <div class="substep" style="text-align: center; margin: 20px 0;">
+                <img src="images/image-old-man-yells-at-ai.png" style="height: auto; max-width: 400px;" />
+            </div>
             <h1>Andrew Hatch</h1>
             <br />
-            <p style="position: absolute;font-family: 'Comic Neue';font-size: 60px;left: 400px;bottom: 50px;">
-                @hatchman76
-            </p>
-            <img src="images/Linkedin-Logo.png"
-                style="width: 70px;height: auto;position: absolute;left: 300px;bottom: 140px;" />
-            <img src="images/medium-blog-icon.png"
-                style="width: 75px;height: auto;position: absolute;left: 250px;bottom: 50px;" />
+
         </div>
         
+        <!-- WHOAMI Slide -->
+        <div id="whoami" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
+            <h1>WHOAMI</h1>
+            
+            <!-- Top row: Australia, ThousandEyes, USA -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0;">
+                <!-- Australia with pin -->
+                <div style="position: relative; width: 300px;">
+                    <img src="images/Australia.png" style="width: 280px; height: auto;" />
+                    <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; bottom: 50px; right: 83px;" />
+                </div>
+                
+                <!-- ThousandEyes logo -->
+                <div style="text-align: center; margin-left: 240px; margin-right: 10px; margin-top: -50px;">
+                    <img src="images/thousand-eyes.png" style="width: 150px; height: auto;" />
+                    <p style="font-weight: bold; font-size: 30px; margin-top: 10px;">we're hiring!</p>
+                </div>
+                
+                <!-- USA with pin -->
+                <div style="position: relative; width: 300px;">
+                    <img src="images/usa.png" style="width: 280px; height: auto;" />
+                    <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; top: 40px; left: -10px;" />
+                </div>
+            </div>
+            
+            <!-- Middle text -->
+            <div style="margin-top: -30px;">
+                <p style="text-align: center; font-size: 30px; font-weight: bold; margin: 30px 0;">
+                    SWE/SRE Engineering Manager 15 years
+                </p>
+            </div>
+            
+            <!-- Bottom row: Logos -->
+            <div style="display: flex; justify-content: flex-start; align-items: center; gap: 40px; margin-top: 60px;">
+                <img src="images/aws.png" style="width: 170px; height: auto;" />
+                <div style="position: relative;">
+                    <img src="images/new-data-centre.png" style="width: 150px; height: auto;" />
+                    <img src="images/Linkedin-Logo.png" style="width: 80px; height: auto; position: absolute; top: -10px; right: -90px;" />
+                </div>
+            </div>
+            <div style="position: absolute; bottom: 80px; right: 20px; display: flex; align-items: flex-start; gap: 20px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <img src="images/medium-blog-icon.png" style="width: 90px; height: auto;" />
+                    <img src="images/logo-bluesky.png" style="width: 90px; height: auto;" />
+                </div>
+                <p style="font-size: 40px; font-weight: bold;">@hatchman76</p>
+            </div>
+        </div>
+        
+        <!-- Takeaways Slide -->
+        <div id="takeaways" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+            <h1>Takeaways</h1>
+            <table style="width: 900px; border-collapse: collapse; margin-top: 40px;">
+                <tr>
+                    <td style="width: 120px; padding: 20px 0; vertical-align: middle;">
+                        <img src="images/sign-right-turn.png" style="width: 80px; height: auto;" />
+                    </td>
+                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
+                        You cannot hire like we used to. We have to change
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0; vertical-align: middle;">
+                        <img src="images/emoji-money-bag.png" style="width: 70px; height: auto;" />
+                    </td>
+                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
+                        LLMs and AI-enabled tooling have significant productivity value.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0; vertical-align: middle;">
+                        <img src="images/emoji-brain.png" style="width: 60px; height: auto;" />
+                    </td>
+                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
+                        Hollowing out of SRE Expertise is a material risk to any business
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0; vertical-align: middle;">
+                        <img src="images/emoji-poo.png" style="width: 60px; height: auto;" />
+                    </td>
+                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
+                        Enshittifying Complex Systems is going to hurt us all
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Before We Continue Slide -->
+        <div id="before-we-continue" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+            <h1>one more thing...</h1>
+            <!-- AI definition row -->
+            <div style="display: flex; align-items: center; justify-content: center; gap: 30px; margin-bottom: 20px;">
+                <img src="images/logo-ai-mashup.png" style="width: 216px; height: auto;" />
+                <img src="images/symbol-equals.png" style="width: 50px; height: auto;" />
+                <div style="font-size: 40px;">
+                    <p style="margin: 0;">Anything AI!</p>
+                    <p style="margin: 0;">LLM, Agent etc...</p>
+                </div>
+            </div>
+            
+            <!-- Complex systems image -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
+                <img src="images/complex_sign_transparent.png" style="width: 350px; height: auto;" />
+                <img src="images/symbol-equals.png" style="width: 50px; height: auto;" />
+                <p style="font-size: 40px; margin: 0;">any complex distributed software system</p>
+            </div>
+        </div>
+        
+        <!-- Hiring Back in the Day Slide -->
+        <div id="hiring-back-in-the-day" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
+            <h1 style="text-align: center;">Back in the day...</h1>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <img src="images/image-macbook-terminal.png" style="width: 190px; height: auto;" />
+                </div>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <img src="images/emoji-database.png" style="width: 80px; height: auto;" />
+                    <img src="images/emoji-network-switch.png" style="width: 100px; height: auto;" />
+                </div>
+                <div>
+                    <img src="images/image-system-design-whiteboard.png" style="width: 220px; height: auto;" />
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <div style="display: inline-block; vertical-align: middle;">
+                    <img src="images/emoji-red-heart.png" style="width: 100px; height: auto;" />
+                </div>
+                <div style="display: inline-block; vertical-align: middle; margin-left: 60px;">
+                    <img src="images/this-is-fine.gif" style="width: 220px; height: auto;" />
+                </div>
+                <div style="display: inline-block; vertical-align: middle; margin-left: 20px;">
+                    <img src="images/pager-modern.png" style="width: 80px; height: auto;" />
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px;">
+                <div style="margin-left: 150px;">
+                    <img src="images/old-man-yells-at-blind-glassdoor.png" style="width: 300px; height: auto;" />
+                </div>
+                <div style="text-align: right; margin-top: 50px;">
+                    <p style="font-size: 32px; margin: 0;">Almost always in person</p>
+                    <p style="font-size: 80px; margin: 0;">~100</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hiring Today Slide -->
+        <div id="hiring-today" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
+            <h1 style="margin: 0 0 8px 0; font-size: 56px;">2019...</h1>
+            
+            <!-- Left column: Zoom + text and Australia + plane -->
+            <div style="position: absolute; left: 40px; top: 250px; display: flex; flex-direction: column; align-items: flex-start; gap: 22px;">
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                    <img src="images/logo-zoom.png" style="width: 70px; height: auto;" />
+                    <div>
+                        <p style="text-align: left; margin: 3px 0; font-size: 26px;">Recruiter Screen</p>
+                        <p style="text-align: left; margin: 3px 0; font-size: 26px;">SRE Mindset</p>
+                        <p style="text-align: left; margin: 3px 0; font-size: 26px;">Management & Leadership</p>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <img src="images/Australia.png" style="width: 260px; height: auto;" />
+                    <img src="images/map-pin-red-hi.png" style="width: 22px; height: auto; position: absolute; bottom: 44px; right: 64px;" />
+                    <img src="images/emoji-plane-departing.png" style="width: 130px; height: auto; position: absolute; bottom: 8px; left: 218px;" />
+                </div>
+            </div>
+            
+            <!-- Top section: LinkedIn + text list on right -->
+            <div style="display: flex; justify-content: flex-end; align-items: flex-start; gap: 16px; margin-top: 54px;">
+                <!-- LinkedIn logo -->
+                <div>
+                    <img src="images/Linkedin-Logo.png" style="width: 100px; height: auto;" />
+                </div>
+                
+                <!-- Right: Text list -->
+                <div>
+                    <p style="text-align: left; margin: 2px 0; font-size: 26px;">Apache Web Server Diagnosis</p>
+                    <p style="text-align: left; margin: 2px 0; font-size: 26px;">Code challenge</p>
+                    <p style="text-align: left; margin: 2px 0; font-size: 26px;">Code refactor</p>
+                    <p style="text-align: left; margin: 2px 0; font-size: 26px;">System Design</p>
+                    <p style="text-align: left; margin: 2px 0; font-size: 26px;">Management and Leadership</p>
+                    <p style="text-align: left; margin: 2px 0; font-size: 26px;">Lunch!</p>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 140px;">
+                <p style="font-size: 44px; margin: 0;">15 hours</p>
+            </div>
+            
+            <div style="position: absolute; bottom: 130px; right: 0;">
+                <img src="images/emoji-plane-arriving.png" style="width: 150px; height: auto; position: absolute; top: 20px; left: -130px;" />
+                <img src="images/usa.png" style="width: 300px; height: auto;" />
+                <img src="images/map-pin-red-hi.png" style="width: 25px; height: auto; position: absolute; top: 50px; right: 280px;" />
+            </div>
+        </div>
+        
+        <!-- COVID-19 Slide -->
+        <div id="covid-19" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+            <h1>And then...</h1>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 80px;">
+                <img src="images/emoji-covid-19.png" style="width: 280px; height: auto;" />
+            </div>
+        </div>
+        
+        <!-- Fast-forward 2025 Slide -->
+        <div id="fast-forward-2025" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
+            <!-- Top center: 2025 heading -->
+            <h1 style="margin: 0; position: absolute; left: 340px; top: 15px; font-size: 80px;">2025</h1>
+            <!-- Top right: ThousandEyes logo -->
+            <div style="position: absolute; right: 100px; top: 10px;">
+                <img src="images/thousand-eyes.png" style="width: 250px; height: auto;" />
+            </div>
+            <!-- Left: SRE hiring sign -->
+            <div style="position: absolute; left: -20px; top: 130px;">
+                <img src="images/job-posting-sre-hiring.png" style="width: 280px; height: auto;" />
+            </div>
+            <!-- Center-left: Diversity hands -->
+            <div style="position: absolute; left: 270px; top: 230px;">
+                <img src="images/people-hands-diversity.png" style="width: 230px; height: auto;" />
+            </div>
+            <!-- Left bottom: Webex logo -->
+            <div style="position: absolute; left: 50px; top: 400px;">
+                <img src="images/logo-cisco-webex.png" style="width: 200px; height: auto;" />
+            </div>
+            <!-- Left bottom: Cisco logo -->
+            <div style="position: absolute; left: 30px; top: 550px;">
+                <img src="images/logo-cisco-blue.png" style="width: 250px; height: auto;" />
+            </div>
+            <!-- Center: Fire -->
+            <div style="position: absolute; left: 600px; top: 250px;">
+                <img src="images/emoji-fire.png" style="width: 100px; height: auto;" />
+            </div>
+            <!-- Center: Pager -->
+            <div style="position: absolute; left: 700px; top: 280px;">
+                <img src="images/pager-modern.png" style="width: 100px; height: auto;" />
+            </div>
+            <!-- Right: Brain -->
+            <div style="position: absolute; right: 40px; top: 230px;">
+                <img src="images/emoji-brain-graduation-cap-expertise.png" style="width: 140px; height: auto;" />
+            </div>
+            <!-- Center-right: Leetcode -->
+            <div style="position: absolute; left: 600px; top: 420px;">
+                <img src="images/logo-leetcode.png" style="width: 120px; height: auto;" />
+            </div>
+            <!-- Right: Whiteboard -->
+            <div style="position: absolute; right: 10px; top: 400px;">
+                <img src="images/image-system-design-whiteboard.png" style="width: 210px; height: auto;" />
+            </div>
+            <!-- Bottom right: Food -->
+            <div style="position: absolute; right: 100px; bottom: 70px;">
+                <img src="images/emoji-food-collection.png" style="width: 200px; height: auto;" />
+            </div>
+        </div>
+        
+        <!-- WTF Slide -->
+        <div id="wtf" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
+            <!-- Top-left: Python logo -->
+            <div style="position: absolute; left: 30px; top: 130px;">
+                <img src="images/python.png" style="width: 120px; height: auto;" />
+            </div>
+            <!-- Top: Futurama Fry -->
+            <div style="position: absolute; left: 200px; top: 120px;">
+                <img src="images/futurama-fry-not-sure.png" style="width: 180px; height: auto;" />
+            </div>
+            <!-- Bottom-left: Clock -->
+            <div style="position: absolute; left: 200px; top: 350px;">
+                <img src="images/emoji-clock.png" style="width: 120px; height: auto;" />
+            </div>
+            <!-- Below clock: Homer Simpson -->
+            <div style="position: absolute; left: 150px; top: 490px;">
+                <img src="images/homer-simpson-side-eye.gif" style="width: 220px; height: auto;" />
+            </div>
+            <!-- Top-right: AI mashup logo -->
+            <div style="position: absolute; right: 80px; top: 120px;">
+                <img src="images/logo-ai-mashup.png" style="width: 100px; height: auto;" />
+            </div>
+            <!-- Center: Python code reveal GIFs -->
+            <div style="position: absolute; right: 300px; top: 230px;">
+                <img src="images/python-code-reveal.gif" style="width: 260px; height: auto;" />
+            </div>
+            <div style="position: absolute; right: 20px; top: 230px;">
+                <img src="images/python-code-reveal.gif" style="width: 260px; height: auto;" />
+            </div>
+            <!-- Bottom-right: Shocked WTF -->
+            <div style="position: absolute; right: 60px; bottom: 50px;">
+                <img src="images/emoji-shocked-wtf.png" style="width: 140px; height: auto;" />
+            </div>
+        </div>
+        
+        <!-- Made Some Changes Slide -->
+        <div id="made-some-changes" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
+            <h1>we made some changes</h1>
+            <!-- Top-left: Leetcode logo -->
+            <div style="position: absolute; left: 30px; top: 160px;">
+                <img src="images/logo-leetcode.png" style="width: 140px; height: auto;" />
+            </div>
+            <!-- Top-left: Magnifying glass -->
+            <div style="position: absolute; left: 150px; top: 170px;">
+                <img src="images/emoji-magnifying-glass-right.png" style="width: 110px; height: auto;" />
+            </div>
+            <!-- Top-center: Terraform logo -->
+            <div style="position: absolute; left: 370px; top: 140px;">
+                <img src="images/logo-terraform.png" style="width: 100px; height: auto;" />
+            </div>
+            <!-- Top-center: House + "2 - 3 days" -->
+            <div style="position: absolute; left: 380px; top: 250px;">
+                <img src="images/emoji-home-house.png" style="width: 100px; height: auto;" />
+            </div>
+            <p style="position: absolute; left: 490px; top: 270px; font-size: 44px; margin: 0;">2 - 3 days</p>
+            <!-- Top-right: Speech bubbles -->
+            <div style="position: absolute; right: 40px; top: 160px;">
+                <img src="images/image-speech-bubbles.png" style="width: 200px; height: auto;" />
+            </div>
+            <!-- Bottom-left: Whiteboard with question mark -->
+            <div style="position: absolute; left: 20px; top: 470px;">
+                <img src="images/image-whiteboard-question-mark.png" style="width: 280px; height: auto;" />
+            </div>
+            <!-- Bottom-center: Glassdoor + Blind with red X overlay -->
+            <div style="position: absolute; left: 370px; top: 520px;">
+                <img src="images/logo-glassdoor.png" style="width: 120px; height: auto;" />
+                <img src="images/logo-blind.png" style="width: 80px; height: auto; margin-left: 10px;" />
+                <img src="images/red-cross-x-wrong.png" style="width: 220px; height: auto; position: absolute; left: 20px; top: -70px;" />
+            </div>
+            <!-- Bottom-right: ByteDance tweet -->
+            <div style="position: absolute; right: 20px; top: 450px;">
+                <img src="images/twitter-byte-dance-interview-funny.png" style="width: 350px; height: auto;" />
+            </div>
+        </div>
+        
+        <!-- Needs More Thought Slide -->
+        <div id="needs-more-thought" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
+            <h1>it needs more thought</h1>
+            <!-- Top-left: Calendar with circled date -->
+            <div style="position: absolute; left: 20px; top: 180px;">
+                <img src="images/emoji-calendar-two-weeks.png" style="width: 180px; height: auto;" />
+            </div>
+            <!-- Upper-center-left: AI mashup logo -->
+            <div style="position: absolute; left: 240px; top: 80px;">
+                <img src="images/logo-ai-mashup.png" style="width: 130px; height: auto;" />
+            </div>
+            <!-- Center: Stopwatch -->
+            <div style="position: absolute; left: 360px; top: 250px;">
+                <img src="images/emoji-stopwatch-15-minutes.png" style="width: 140px; height: auto;" />
+            </div>
+            <!-- Upper-right: Speech bubbles -->
+            <div style="position: absolute; right: 180px; top: 50px;">
+                <img src="images/image-speech-bubbles.png" style="width: 180px; height: auto;" />
+            </div>
+            <!-- Right: Office building -->
+            <div style="position: absolute; right: 80px; top: 130px;">
+                <img src="images/emoji-office-building.png" style="width: 130px; height: auto;" />
+            </div>
+            <!-- Far-right: Laptop with terminal -->
+            <div style="position: absolute; right: 0px; top: 150px;">
+                <img src="images/image-macbook-terminal.png" style="width: 220px; height: auto;" />
+            </div>
+            <!-- Center: System design whiteboard -->
+            <div style="position: absolute; left: 420px; top: 320px;">
+                <img src="images/image-system-design-whiteboard.png" style="width: 260px; height: auto;" />
+            </div>
+            <!-- Bottom-left: Slack CTA text -->
+            <p style="position: absolute; left: 20px; bottom: 40px; font-size: 48px; margin: 0; font-weight: bold;">Please share your<br/>thoughts in Slack!</p>
+            <!-- Bottom-center: Slack thread image -->
+            <div style="position: absolute; left: 470px; bottom: 30px;">
+                <img src="images/emoji-slack-thread.png" style="width: 160px; height: auto;" />
+            </div>
+        </div>
+
         <!-- Add your slides here -->
         <!-- Example slide template:
         <div id="slide-name" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
@@ -83,7 +449,7 @@
         <div id="thank-you" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
             <h1>Thank You!</h1>
             <br />
-            <p style="font-family: 'Comic Neue';font-size: 60px;">
+            <p style="font-size: 60px;">
                 Questions?
             </p>
         </div>
