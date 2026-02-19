@@ -572,3 +572,74 @@ body.impress-mouse-timeout {
     transform: scale(1);
     transition: opacity 0.3s ease-out, transform 0.4s ease-out;
 }
+
+@keyframes slide-down-fade {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.substep.substep-visible .slide-down-fade {
+    animation: slide-down-fade 1.5s ease-in infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes slide-right-fade {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+.substep.substep-visible .slide-right-fade {
+    animation: slide-right-fade 1.5s ease-in infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes slide-left-fade {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.substep.substep-visible .slide-left-fade {
+    animation: slide-left-fade 1.5s ease-in infinite;
+    animation-delay: 0.2s;
+}
+
+.substep.substep-visible .slide-down-fade-staggered {
+    animation: slide-down-fade 1.5s ease-in infinite;
+    animation-delay: 1s;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.12); opacity: 0.85; }
+}
+
+.substep.substep-visible .pulse-glow {
+    animation: pulse-glow 1.2s ease-in-out infinite;
+}

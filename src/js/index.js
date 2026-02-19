@@ -1,66 +1,109 @@
 /**
- * Presentation Background Control Script
+ * Presentation Control Script
  * 
- * This script manages dynamic background color changes for the impress.js presentation
- * based on the active slide step. Each slide can have a specific background color class
- * that will be applied to the document body when that slide becomes active.
+ * Manages dynamic background color changes and substep effects
+ * for the impress.js presentation.
  * 
  * Supported background colors:
  * - white-bg, gray-bg, red-bg, orange-bg, green-bg, purple-bg, blue-bg
  * 
  * @author Andrew Hatch
- * @version 1.0
+ * @version 1.1
  */
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-    /**
-     * Handle slide activation events from impress.js
-     * When a step becomes active, check for background color classes and apply them
-     */
-    $(document).on('impress:stepactivate', function (event) {
-        const activeSlide = $(event.target);
-        const documentBody = $(document.body);
-        
-        // List of all available background color classes
-        const backgroundColorClasses = [
-            'white-bg', 
-            'gray-bg', 
-            'red-bg', 
-            'orange-bg', 
-            'green-bg', 
-            'purple-bg', 
-            'blue-bg'
-        ];
-        
-        // Remove all existing background color classes
-        documentBody.removeClass(backgroundColorClasses.join(' '));
-        
-        // Check which background color class the active slide has and apply it
-        backgroundColorClasses.forEach(function(colorClass) {
-            const slideColorClass = colorClass.replace('-bg', ''); // Remove '-bg' suffix
-            if (activeSlide.hasClass(slideColorClass)) {
-                documentBody.addClass(colorClass);
+    var backgroundColorClasses = [
+        'white-bg', 'gray-bg', 'red-bg', 'orange-bg',
+        'green-bg', 'purple-bg', 'blue-bg'
+    ];
+
+    document.addEventListener('impress:stepactivate', function (event) {
+        var activeSlide = event.target;
+        var body = document.body;
+
+        backgroundColorClasses.forEach(function (colorClass) {
+            body.classList.remove(colorClass);
+        });
+
+        backgroundColorClasses.forEach(function (colorClass) {
+            var slideColorClass = colorClass.replace('-bg', '');
+            if (activeSlide.classList.contains(slideColorClass)) {
+                body.classList.add(colorClass);
             }
         });
     });
 
-    /**
-     * Initialize any additional step configurations
-     * This could be extended in the future for more complex slide behaviors
-     */
     if (typeof steps !== 'undefined' && Array.isArray(steps)) {
-        for (let stepIndex = 0; stepIndex < steps.length; stepIndex++) {
-            if (typeof steps[stepIndex] === 'function') {
-                steps[stepIndex]();
+        for (var i = 0; i < steps.length; i++) {
+            if (typeof steps[i] === 'function') {
+                steps[i]();
             }
         }
     }
 
     /**
-     * Initialize the impress.js presentation
-     * This should be called after all DOM elements are ready
+     * Fade out #sts-small when substep 4 (medium image) is revealed;
+     * restore it when leaving the step or going back.
      */
-    impress().init();
+    var stsSmall = document.getElementById('sts-small');
+    var stsMediumSubstep = document.getElementById('sts-medium-substep');
+
+    if (stsSmall && stsMediumSubstep) {
+        var observer = new MutationObserver(function () {
+            if (stsMediumSubstep.classList.contains('substep-visible')) {
+                stsSmall.style.opacity = '0';
+            } else {
+                stsSmall.style.opacity = '1';
+            }
+        });
+        observer.observe(stsMediumSubstep, { attributes: true, attributeFilter: ['class'] });
+
+        document.addEventListener('impress:stepleave', function (event) {
+            if (event.target.id === 'complex-sociotechnical-systems') {
+                stsSmall.style.opacity = '1';
+            }
+        });
+    }
+
+    var stsMedium = document.getElementById('sts-medium');
+    var stsLargeSubstep = document.getElementById('sts-large-substep');
+
+    if (stsMedium && stsLargeSubstep) {
+        var observerLarge = new MutationObserver(function () {
+            if (stsLargeSubstep.classList.contains('substep-visible')) {
+                stsMedium.style.opacity = '0';
+            } else {
+                stsMedium.style.opacity = '1';
+            }
+        });
+        observerLarge.observe(stsLargeSubstep, { attributes: true, attributeFilter: ['class'] });
+
+        document.addEventListener('impress:stepleave', function (event) {
+            if (event.target.id === 'complex-sociotechnical-systems') {
+                stsMedium.style.opacity = '1';
+            }
+        });
+    }
+
+    var stsLarge = document.getElementById('sts-large');
+    var stsXlargeSubstep = document.getElementById('sts-xlarge-substep');
+
+    if (stsLarge && stsXlargeSubstep) {
+        var observerXlarge = new MutationObserver(function () {
+            if (stsXlargeSubstep.classList.contains('substep-visible')) {
+                stsLarge.style.opacity = '0';
+            } else {
+                stsLarge.style.opacity = '1';
+            }
+        });
+        observerXlarge.observe(stsXlargeSubstep, { attributes: true, attributeFilter: ['class'] });
+
+        document.addEventListener('impress:stepleave', function (event) {
+            if (event.target.id === 'complex-sociotechnical-systems') {
+                stsLarge.style.opacity = '1';
+            }
+        });
+    }
 
 });
