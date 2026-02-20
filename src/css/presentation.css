@@ -643,3 +643,23 @@ body.impress-mouse-timeout {
 .substep.substep-visible .pulse-glow {
     animation: pulse-glow 1.2s ease-in-out infinite;
 }
+
+.book-fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+
+.impress-on-separate-thinking .book-fade-in.book-1 {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.impress-on-separate-thinking .book-fade-in.book-2 {
+    opacity: 1;
+    transition-delay: 1.2s;
+}
+
+.impress-on-separate-thinking .book-fade-in.book-3 {
+    opacity: 1;
+    transition-delay: 1.9s;
+}
