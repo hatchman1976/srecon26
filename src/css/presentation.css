@@ -697,3 +697,22 @@ body.impress-mouse-timeout {
 .delayed-fade.substep-visible {
     opacity: 1;
 }
+
+/* Slow clockwise spin */
+@keyframes spin-clockwise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.impress-on-the-ai-operator-nightmare .spin-clockwise {
+    animation: spin-clockwise 20s linear infinite;
+}
+
+@keyframes spin-anticlockwise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+.impress-on-the-ai-operator-nightmare .spin-anticlockwise {
+    animation: spin-anticlockwise 25s linear infinite;
+}
