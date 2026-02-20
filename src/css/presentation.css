@@ -663,3 +663,37 @@ body.impress-mouse-timeout {
     opacity: 1;
     transition-delay: 1.9s;
 }
+
+/* Fly-down animation for repo-slop-bucket */
+@keyframes fly-down {
+    0% {
+        transform: translateY(-600px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fly-down {
+    opacity: 0;
+}
+
+.fly-down.substep-visible {
+    animation: fly-down 0.8s ease-out forwards;
+}
+
+/* Delayed fade-in */
+.delayed-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 3s;
+}
+
+.delayed-fade.substep-visible {
+    opacity: 1;
+}
