@@ -57,7 +57,7 @@
         <!-- Title Slide -->
         <div id="introduction" class="step" data-scale="25" data-y="8000">
             <h1>Ghosts in the Interview Loop & Avoiding AI Taylorism</h1>
-            <div class="substep" style="text-align: center; margin: 20px 0;">
+            <div style="text-align: center; margin: 20px 0;">
                 <img src="images/image-old-man-yells-at-ai.png" style="height: auto; max-width: 400px;" />
             </div>
             <h1>Andrew Hatch</h1>
@@ -296,7 +296,7 @@
             </div>
             <!-- Center: Fire -->
             <div style="position: absolute; left: 600px; top: 250px;">
-                <img src="images/emoji-fire.png" style="width: 100px; height: auto;" />
+                <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 100px; height: auto;" />
             </div>
             <!-- Center: Pager -->
             <div style="position: absolute; left: 700px; top: 280px;">
@@ -686,19 +686,19 @@
             <!-- Substep 16: Fire emoji -->
             <div class="substep" data-substep-order="16" style="position: absolute; left: 580px; top: 380px;">
                 <div class="pulse-glow">
-                    <img src="images/emoji-fire.png" style="width: 80px; height: auto;" />
+                    <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto;" />
                 </div>
             </div>
             <!-- Substep 17: Fire emoji (above female construction worker) -->
             <div class="substep" data-substep-order="17" style="position: absolute; right: 530px; top: 500px;">
                 <div class="pulse-glow">
-                    <img src="images/emoji-fire.png" style="width: 80px; height: auto;" />
+                    <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto;" />
                 </div>
             </div>
             <!-- Substep 18: Fire emoji (above male welder) -->
             <div class="substep" data-substep-order="18" style="position: absolute; left: 600px; top: 510px;">
                 <div class="pulse-glow">
-                    <img src="images/emoji-fire.png" style="width: 80px; height: auto;" />
+                    <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto;" />
                 </div>
             </div>
             <!-- Substep 19: Fire extinguishers -->
@@ -1156,24 +1156,121 @@
         <!-- WHO IS ACCOUNTABLE -->
         <!-- =============================================== -->
 
-        <div id="who-is-accountable" class="step" data-rel-x="10000" data-rel-y="-5000" data-scale="48">
+        <div id="who-is-accountable" class="step" data-rel-x="10000" data-rel-y="-3000" data-scale="48">
             <h1>Who is accountable?</h1>
-            <img src="images/emoji-fire.png" class="pulse-glow-fire" style="position: absolute; left: 245px; top: 390px; width: 150px;" />
-            <img src="images/ai-slop-bucket-repo.png" style="position: absolute; left: 520px; top: 200px; width: 200px;" />
-            <img src="images/ai-slop-bucket-repo.png" style="position: absolute; left: 700px; top: 200px; width: 200px;" />
-            <img src="images/emoji-male-construction-worker.png" style="position: absolute; left: 600px; top: 420px; width: 100px;" />
-            <img src="images/emoji-female-welder.png" style="position: absolute; left: 720px; top: 420px; width: 100px;" />
-            <p style="position: absolute; left: 830px; top: 440px; font-family: 'Archivo Black'; font-size: 40px; font-weight: 300; text-align: left;">SREs?</p>
-            <p style="position: absolute; left: 620px; top: 630px; font-family: 'Archivo Black'; font-size: 40px; font-weight: 300; text-align: left;">or....</p>
-            <img src="images/ai-operator-welder.png" style="position: absolute; left: 720px; top: 610px; width: 100px;" />
-            <img src="images/ai-operator-construction.png" style="position: absolute; left: 840px; top: 610px; width: 100px;" />
+            <div class="substep" data-substep-order="1">
+                <img src="images/emoji-fire.png" class="pulse-glow-fire" style="position: absolute; left: 245px; top: 390px; width: 110px;" />
+            </div>
+            <div class="substep" data-substep-order="2">
+                <img src="images/emoji-male-construction-worker.png" style="position: absolute; left: 600px; top: 20px; width: 100px;" />
+                <img src="images/emoji-female-welder.png" style="position: absolute; left: 720px; top: 25px; width: 110px;" />
+                <p style="position: absolute; left: 830px; top: 60px; font-size: 40px; font-weight: bold; text-align: left;">SREs?</p>
+            </div>
+            <div class="substep" data-substep-order="1">
+                <img src="images/ai-slop-bucket-repo.png" style="position: absolute; left: 700px; top: 200px; width: 180px;" />
+            </div>
+            <div class="substep" data-substep-order="3">
+                <p style="position: absolute; left: 620px; top: 430px; font-size: 40px; font-weight: bold; text-align: left;">or....</p>
+                <img src="images/ai-operator-welder.png" style="position: absolute; left: 720px; top: 410px; width: 105px;" />
+                <img src="images/ai-operator-construction.png" style="position: absolute; left: 840px; top: 410px; width: 100px;" />
+            </div>
+            <p class="substep" data-substep-order="4" style="position: absolute; left: 0px; top: 680px; width: 1024px; font-family: 'Archivo Black'; font-size: 36px; font-weight: 300; text-align: center;">And who has the expertise to fix it now?</p>
         </div>
 
-        <!-- =============================================== -->
-        <!-- END: THANK YOU -->
-        <!-- =============================================== -->
+        <!-- More Automation is a Problem -->
+        <div id="more-automation-is-a-problem" class="step" data-rel-x="0" data-rel-y="31000" data-scale="48">
+            <img src="images/quote-accelertaed-expertise-more-automation.png" style="position: absolute; left: 212px; top: 200px; width: 600px;" />
+        </div>
 
+        <!-- Final Thoughts -->
+        <div id="final-thoughts" class="step" data-rel-x="80000" data-rel-y="0" data-scale="48">
+            <h1>Final thoughts</h1>
+            <img src="images/grandpa-simpson-point-idea.png" style="position: absolute; left: 312px; top: 184px; width: 400px;" />
+        </div>
 
+        <!-- Core SRE Skills -->
+        <div id="core-sre-skills" class="step" data-rel-x="80000" data-rel-y="0" data-scale="48">
+            <h1>Complex System SRE skills</h1>
+            <div class="substep" data-substep-order="1">
+                <img src="images/emoji-light-bulb.png" style="position: absolute; left: 80px; top: 50px; width: 80px;" />
+                <p style="position: absolute; left: 200px; top: 50px; width: 700px; font-size: 32px; font-weight: bold; text-align: left;">Understand interactions between components, build awareness of unintended consequences</p>
+            </div>
+            <div class="substep" data-substep-order="2">
+                <img src="images/sign-right-turn.png" style="position: absolute; left: 80px; top: 220px; width: 80px;" />
+                <p style="position: absolute; left: 200px; top: 220px; width: 700px; font-size: 32px; font-weight: bold; text-align: left;">Adapt to dynamic conditions, rebuild mental models</p>
+            </div>
+            <div class="substep" data-substep-order="3">
+                <img src="images/emoji-thinking-face.png" style="position: absolute; left: 80px; top: 360px; width: 80px;" />
+                <p style="position: absolute; left: 200px; top: 360px; width: 700px; font-size: 32px; font-weight: bold; text-align: left;">Think critically, make trade-offs under pressure</p>
+            </div>
+        </div>
+
+        <!-- Tool vs Operator -->
+        <div id="tool-vs-operator" class="step" data-rel-x="80000" data-rel-y="0" data-scale="48">
+            
+                <img src="images/ai-toolbox.png" style="position: absolute; left: -10px; top: 180px; width: 150px;" />
+                <p style="position: absolute; left: 170px; top: 200px; width: 500px; font-size: 32px; font-weight: bold; text-align: left;">As a tool it vastly improves productivity and reduces mundane, repetitive tasks</p>
+            <div class="substep" data-substep-order="2">
+                <img src="images/old-man-yells-at-github-grandpa.png" style="position: absolute; left: 700px; top: 140px; width: 230px;" />
+            </div>
+            <div class="substep" data-substep-order="3">
+                <img src="images/ai-operator-welder.png" style="position: absolute; left: -10px; top: 440px; width: 120px;" />
+                <img src="images/ai-operator-construction.png" style="position: absolute; left: 110px; top: 440px; width: 115px;" />
+                <p style="position: absolute; left: 250px; top: 460px; width: 400px; font-size: 32px; font-weight: bold; text-align: left;">But as an Operator it threatens to enshittify your systems</p>
+                <img src="images/complex_sign_transparent.png" style="position: absolute; left: 700px; top: 360px; width: 250px;" />
+                <img src="images/emoji-poo.png"  style="position: absolute; left: 720px; top: 410px; width: 170px;" />
+            </div>
+            
+        </div>
+
+        <!-- Takeaways Summary -->
+        <div id="takeaways-summary" class="step" data-rel-x="80000" data-rel-y="0" data-scale="48">
+            <h1>We have to adapt</h1>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 100px;">
+                <tr class="substep" data-substep-order="1">
+                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center;">
+                        <img src="images/emoji-handshake.png" style="width: 70px;" />
+                    </td>
+                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">Understand the impacts on hiring and recruiting - the old signals are changing</td>
+                </tr>
+                <tr class="substep" data-substep-order="2">
+                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center; position: relative;">
+                        <img src="images/emoji-stick.png" style="width: 70px; position: absolute; left: 30px; top: 15px; transform: rotate(-45deg);" />
+                        <img src="images/emoji-carrot.png" style="width: 70px; position: absolute; left: 30px; top: 20px;" />
+                    </td>
+                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">Be clear on what we are cultivating and incentivizing with AI - and the impacts</td>
+                </tr>
+                <tr class="substep" data-substep-order="3">
+                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center;">
+                        <img src="images/emoji-rocket.png" style="width: 70px;" />
+                    </td>
+                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">Know distinctly on what the value of AI is, to your role, to your teams, to your business</td>
+                </tr>
+                <tr class="substep" data-substep-order="4">
+                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center;">
+                        <img src="images/emoji-spring-coil.png" style="width: 50px;" />
+                    </td>
+                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">What really matters is how we adapt to it, not how we fight it</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Humans Are Adaptable -->
+        <div id="humans-are-adaptable" class="step" data-rel-x="80000" data-rel-y="0" data-scale="48">
+            <p style="position: absolute; left: 40px; top: 150px; width: 600px; font-size: 36px; font-weight: bold; text-align: left;">Humans are, and always have been, the most adaptable components of any complex socio-technical system</p>
+            <img src="images/the-hill-i-die-on.png" style="position: absolute; left: 600px; top: 20px; width: 500px;" />
+            <div class="substep" data-substep-order="1">
+                <p style="position: absolute; left: 80px; top: 350px; width: 700px; font-size: 36px; font-weight: bold; text-align: left;">The ability to learn and build expertise in these system is critical to their success and safety</p>
+            </div>
+            <div class="substep" data-substep-order="2">
+                <p style="position: absolute; left: 120px; top: 510px; width: 800px; font-family: 'Archivo Black'; font-size: 40px; font-weight: 300; text-align: center;">AI must be our partner, not a replacement</p>
+            </div>
+        </div>
+
+        <!-- Thank You -->
+        <div id="thank-you" class="step" data-x="885000" data-y="8000" data-scale="2000" data-rotate-y="10">
+            <h1 style="text-align: center;">Thank You</h1>
+        </div>
 
     </div>
 

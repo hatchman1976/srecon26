@@ -698,13 +698,22 @@ body.impress-mouse-timeout {
     opacity: 1;
 }
 
+.delayed-fade-2s {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 2s;
+}
+
+.delayed-fade-2s.substep-visible {
+    opacity: 1;
+}
+
 /* Slow clockwise spin */
 @keyframes spin-clockwise {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
-.impress-on-the-ai-operator-nightmare .spin-clockwise,
 .impress-on-who-is-accountable .spin-clockwise {
     animation: spin-clockwise 20s linear infinite;
 }
@@ -714,7 +723,6 @@ body.impress-mouse-timeout {
     to { transform: rotate(-360deg); }
 }
 
-.impress-on-the-ai-operator-nightmare .spin-anticlockwise,
 .impress-on-who-is-accountable .spin-anticlockwise {
     animation: spin-anticlockwise 25s linear infinite;
 }
@@ -731,6 +739,46 @@ body.impress-mouse-timeout {
     }
 }
 
-.impress-on-who-is-accountable .pulse-glow-fire {
+.impress-on-who-is-accountable .pulse-glow-fire,
+.impress-on-fast-forward-2025 .pulse-glow-fire,
+.impress-on-complex-sociotechnical-systems .pulse-glow-fire {
     animation: pulse-glow-fire 1.5s ease-in-out infinite;
+}
+
+/* Poo splat drop animation */
+@keyframes poo-splat {
+    0% {
+        top: -200px;
+        transform: scale(1);
+        opacity: 1;
+    }
+    60% {
+        top: 410px;
+        transform: scale(1);
+    }
+    70% {
+        top: 410px;
+        transform: scale(1.6, 0.5);
+    }
+    80% {
+        top: 410px;
+        transform: scale(0.9, 1.1);
+    }
+    90% {
+        top: 410px;
+        transform: scale(1.05, 0.95);
+    }
+    100% {
+        top: 410px;
+        transform: scale(1);
+    }
+}
+
+.poo-splat {
+    opacity: 0;
+}
+
+.poo-splat.substep-visible {
+    opacity: 1;
+    animation: poo-splat 2s ease-in forwards;
 }
