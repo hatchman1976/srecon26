@@ -788,7 +788,8 @@ body.impress-mouse-timeout {
     opacity: 0;
 }
 
-.active .seq-fade {
+.active .seq-fade,
+.substep-visible .seq-fade {
     animation: seq-fade-in 0.7s ease-out forwards;
 }
 
