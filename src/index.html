@@ -574,7 +574,7 @@
         </div>
 
         <!-- The War on Expertise Slide -->
-        <div id="the-war-on-expertise" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="the-war-on-expertise" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <h1 style="text-align: center; margin: 0; font-size: 56px;">The War on Expertise</h1>
             <!-- Left: SRE Fort -->
             <div style="position: absolute; left: 20px; top: 120px;">
@@ -587,47 +587,57 @@
         </div>
 
         <!-- Tool Commoditization Slide -->
-        <div id="tool-commoditization" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="tool-commoditization" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <h1 style="text-align: center; margin: 0; font-size: 52px;">We've commoditized it for centuries</h1>
             <!-- Top-left: Printing press -->
-            <div style="position: absolute; left: 20px; top: 140px;">
-                <img src="images/printing-press.png" style="width: 250px; height: auto;" />
+            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <div style="position: absolute; left: 20px; top: 140px;">
+                    <img src="images/printing-press.png" style="width: 250px; height: auto;" />
+                </div>
             </div>
             <!-- Top-center: Mitre saw -->
-            <div style="position: absolute; left: 400px; top: 180px;">
-                <img src="images/mitre-saw.png" style="width: 220px; height: auto;" />
+            <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <div style="position: absolute; left: 400px; top: 180px;">
+                    <img src="images/mitre-saw.png" style="width: 220px; height: auto;" />
+                </div>
             </div>
             <!-- Right: GPS map -->
-            <div style="position: absolute; right: 20px; top: 280px;">
-                <img src="images/apple-maps-gps.png" style="width: 200px; height: auto;" />
+            <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <div style="position: absolute; right: 20px; top: 280px;">
+                    <img src="images/apple-maps-gps.png" style="width: 200px; height: auto;" />
+                </div>
             </div>
             <!-- Bottom-left: Early arc welder -->
-            <div style="position: absolute; left: 200px; top: 380px;">
-                <img src="images/early-arc-welder.png" style="width: 240px; height: auto;" />
+            <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <div style="position: absolute; left: 200px; top: 380px;">
+                    <img src="images/early-arc-welder.png" style="width: 240px; height: auto;" />
+                </div>
             </div>
             <!-- Bottom-center: Laser leveller -->
-            <div style="position: absolute; left: 580px; top: 510px;">
-                <img src="images/laser-leveller.png" style="width: 220px; height: auto;" />
+            <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <div style="position: absolute; left: 580px; top: 510px;">
+                    <img src="images/laser-leveller.png" style="width: 220px; height: auto;" />
+                </div>
             </div>
         </div>
 
         <!-- Distributed Complex Characteristics Slide -->
-        <div id="distributed-complex-characteristics" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="distributed-complex-characteristics" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <h1 style="text-align: center; margin: 0; font-size: 52px;">Distributed Complex System Expertise is different</h1>
-            <!-- Scattered characteristic words -->
-            <p style="position: absolute; left: 60px; top: 300px; font-size: 56px; margin: 0; font-weight: bold;">stochastic</p>
-            <p style="position: absolute; left: 350px; top: 240px; font-size: 56px; margin: 0; font-weight: bold;">dynamic</p>
-            <p style="position: absolute; right: 130px; top: 320px; font-size: 56px; margin: 0; font-weight: bold;">emergent</p>
-            <p style="position: absolute; left: 320px; top: 400px; font-size: 56px; margin: 0; font-weight: bold;">unstable</p>
-            <p style="position: absolute; right: 180px; top: 460px; font-size: 56px; margin: 0; font-weight: bold;">non-linear</p>
-            <p style="position: absolute; left: 10px; top: 510px; font-size: 56px; margin: 0; font-weight: bold;">heterogeneous</p>
-            <p style="position: absolute; left: 300px; top: 610px; font-size: 56px; margin: 0; font-weight: bold;">evolving</p>
-            <p style="position: absolute; right: 110px; top: 580px; font-size: 56px; margin: 0; font-weight: bold;">context-sensitive</p>
-            <p style="position: absolute; right: 30px; bottom: 30px; font-size: 44px; margin: 0; font-style: italic;">and many more..</p>
+            <!-- Scattered characteristic words — staggered fade-in on step entry -->
+            <p class="seq-fade" style="position: absolute; left: 60px; top: 300px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 0.6s;">stochastic</p>
+            <p class="seq-fade" style="position: absolute; left: 350px; top: 240px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 1.2s;">dynamic</p>
+            <p class="seq-fade" style="position: absolute; right: 130px; top: 320px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 1.8s;">emergent</p>
+            <p class="seq-fade" style="position: absolute; left: 320px; top: 400px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 2.4s;">unstable</p>
+            <p class="seq-fade" style="position: absolute; right: 180px; top: 460px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 3.0s;">non-linear</p>
+            <p class="seq-fade" style="position: absolute; left: 10px; top: 510px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 3.6s;">heterogeneous</p>
+            <p class="seq-fade" style="position: absolute; left: 300px; top: 610px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 4.2s;">evolving</p>
+            <p class="seq-fade" style="position: absolute; right: 110px; top: 580px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 4.8s;">context-sensitive</p>
+            <p class="seq-fade" style="position: absolute; right: 30px; bottom: 30px; font-size: 44px; margin: 0; font-style: italic; animation-delay: 5.4s;">and many more..</p>
         </div>
 
         <!-- Complex Sociotechnical Systems Slide -->
-        <div id="complex-sociotechnical-systems" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="complex-sociotechnical-systems" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <h1 style="text-align: center; margin: 0; font-size: 52px;">Socio Technical Systems</h1>
             <!-- Substep 1: Small system image -->
             <div class="substep" data-substep-order="1" style="position: absolute; left: 460px; top: 450px;">
@@ -776,16 +786,14 @@
             </div>
             <!-- Substep 21: Complex sign -->
             <div class="substep" data-substep-order="21" style="position: absolute; left: 400px; top: 100px;">
-                <div class="pulse-glow">
-                    <img src="images/complex-sign-only.png" style="width: 500px; height: auto;" />
-                </div>
+                <img src="images/complex-sign-only.png" style="width: 500px; height: auto;" />
             </div>
         </div>
 
         <!-- =============================================== -->
         <!-- SLIDE: WE LOVE TO SIMPLIFY -->
         <!-- =============================================== -->
-        <div id="we-love-to-simplify" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="we-love-to-simplify" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <!-- Substep 7: "We love to simplify them" text -->
             <div class="substep" data-substep-order="7" style="position: absolute; right: 0px; top: 30px;">
                 <h1 style="font-size: 44px; margin: 0;">We love to simplify complexity</h1>
@@ -827,7 +835,7 @@
         <!-- BUT WE LOVE SIMPLIFICATION -->
         <!-- =============================================== -->
 
-        <div id="but-we-love-simplification" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="but-we-love-simplification" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <h1 style="position: absolute; left: 40px; top: 170px; font-size: 44px; margin: 0;">And it does help right?</h1>
 
             <!-- Left: Dan Davies quote + flowchart -->
@@ -847,7 +855,7 @@
         <!-- TOLERATE BECAUSE -->
         <!-- =============================================== -->
 
-        <div id="tolerate-because" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="tolerate-because" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <h1 style="position: absolute; left: 40px; top: 30px; font-size: 44px; margin: 0;">We just need humans with complex system expertise</h1>
 
             <!-- Substep 1: Money bag -->
@@ -888,7 +896,7 @@
         <!-- THE EXPERTISE SILVER BULLET -->
         <!-- =============================================== -->
 
-        <div id="the-expertise-silver-bullet" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="the-expertise-silver-bullet" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <!-- Substep 1: AI silver bullet -->
             <div class="substep" data-substep-order="1" style="position: absolute; left: 70px; top: 160px;">
                 <img src="images/image-ai-silver-bullet.png" style="width: 120px; height: auto; transform: rotate(90deg);" />
@@ -914,7 +922,7 @@
         <!-- THE TAYLOR PROPHECY -->
         <!-- =============================================== -->
 
-        <div id="the-taylor-prophecy" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="the-taylor-prophecy" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <h1 style="position: absolute; left: 60px; top: 30px; font-size: 40px; margin: 0;">In the past man has been first</h1>
             <h1 style="position: absolute; left: 200px; top: 90px; font-size: 40px; margin: 0;">In the future, the system must be first</h1>
 
@@ -943,7 +951,7 @@
         <!-- SEPARATE THINKING -->
         <!-- =============================================== -->
 
-        <div id="separate-thinking" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90" style="position: relative;">
+        <div id="separate-thinking" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
             <!-- Substep 1: Title -->
             <div class="substep" data-substep-order="1" style="position: absolute; left: 380px; top: 130px;">
                 <h1 style="font-size: 40px; margin: 0;">Separate Thinking, From Doing</h1>
@@ -1007,17 +1015,19 @@
         <!-- LINEAR PROCESSES -->
         <!-- =============================================== -->
 
-        <div id="linear-processes" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="linear-processes" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <p style="position: absolute; left: 40px; top: 30px; width: 920px; font-family: 'Archivo Black'; font-size: 50px; font-weight: 300;">This works when processes are repeatable and linear...</p>
             <img src="images/engine-assembly-line.png" style="position: absolute; left: 250px; top: 280px; width: 500px;" />
-            <p style="position: absolute; left: 40px; bottom: 40px; width: 920px; font-family: 'Archivo Black'; font-size: 36px; font-weight: 300;">...but only if you don't care about worker engagement, happiness and innovation!</p>
+            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <p style="position: absolute; left: 40px; bottom: 40px; width: 920px; font-family: 'Archivo Black'; font-size: 36px; font-weight: 300;">...but only if you don't care about worker engagement, happiness and innovation!</p>
+            </div>
         </div>
 
         <!-- =============================================== -->
         <!-- MODERN SOFTWARE SYSTEMS -->
         <!-- =============================================== -->
 
-        <div id="modern-software-systems" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="modern-software-systems" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <h1 style="position: absolute; left: 40px; top: 30px; width: 800px; text-align: left;">Modern software systems aren't like this</h1>
             <img src="images/complex-socio-technical-system.png" style="position: absolute; right: 40px; top: 30px; width: 200px;" />
             <div class="substep" data-substep-order="1" style="position: absolute; left: 40px; top: 300px;">
@@ -1033,7 +1043,7 @@
         <!-- JIT KNOWLEDGE -->
         <!-- =============================================== -->
 
-        <div id="jit-knowledge" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="jit-knowledge" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <h1 style="text-align: left; font-size: 70px;">Just-in-time knowledge</h1>
             <img src="images/logo-ai-mashup.png" style="position: absolute; left: 40px; top: 220px; width: 180px;" />
 
@@ -1048,7 +1058,7 @@
         <!-- REPO SLOP BUCKET -->
         <!-- =============================================== -->
 
-        <div id="repo-slop-bucket" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="repo-slop-bucket" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <img src="images/slack-ai-terraform-slop.png" style="position: absolute; left: 40px; top: 30px; width: 500px;" />
             <img src="images/ai-illusion-expertise-business-insider.png" style="position: absolute; left: 40px; top: 340px; width: 250px;" />
             <div class="substep" data-substep-order="1" style="position: absolute; right: 100px; top: 320px;">
@@ -1066,7 +1076,7 @@
         <!-- NEEDLESS WORK -->
         <!-- =============================================== -->
 
-        <div id="needless-work" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="needless-work" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <img src="images/quote-phoenix-project-take-needless-work-out.png" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 800px;" />
             
         </div>
@@ -1075,7 +1085,7 @@
         <!-- NEXT-GEN ARMCHAIR EXPERTS -->
         <!-- =============================================== -->
 
-        <div id="next-gen-armchair-experts" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="next-gen-armchair-experts" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <h1 style="text-align: center;">The new expertise?</h1>
             <img src="images/ai-armchair-expert.png" style="position: absolute; left: 20px; top: 220px; width: 380px;" />
             <div class="substep" data-substep-order="1" style="position: absolute; left: 380px; top: 260px;">
@@ -1093,7 +1103,7 @@
         <!-- GENERATIVE AI STUDENT LEARNING -->
         <!-- =============================================== -->
 
-        <div id="generative-AI-student-learning" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="generative-AI-student-learning" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <!-- Top-left: Guardrails article -->
             <img src="images/guardrails-generative-ai-harm.png" style="position: absolute; left: 40px; top: 80px; width: 220px;" />
 
@@ -1135,7 +1145,7 @@
         <!-- ACKOFF WISDOM -->
         <!-- =============================================== -->
 
-        <div id="ackoff-wisdom" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="ackoff-wisdom" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <img src="images/russell-l-ackoff.png" style="position: absolute; left: 40px; top: 80px; width: 150px;" />
             <p style="position: absolute; left: 210px; top: 80px; width: 750px; font-size: 28px; text-align: left; font-style: italic;">"Adults learn most of what they use at work or at leisure, while at work or leisure. Most of what is taught in classroom settings is forgotten, and much of what is remembered is irrelevant."<br> - Russell Ackoff</p>
             <div class="substep" data-substep-order="1" style="position: absolute; left: 120px; top: 370px;">
@@ -1153,7 +1163,7 @@
         <!-- AI TOOL OR OPERATOR -->
         <!-- =============================================== -->
 
-        <div id="ai-tool-or-operator" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="40000" data-scale="25" data-rotate-y="-90">
+        <div id="ai-tool-or-operator" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <p style="position: absolute; left: 40px; top: 30px; font-family: 'Archivo Black'; font-size: 50px; font-weight: 300; text-align: left; width: 1000px;">When does AI stop being a tool?</p>
             <img src="images/emoji-female-welder.png" style="position: absolute; left: 80px; top: 160px; width: 130px;" />
             <img src="images/ai-toolbox.png" style="position: absolute; left: 220px; top: 280px; width: 150px;" />
@@ -1167,7 +1177,7 @@
         <!-- THE AI OPERATOR NIGHTMARE -->
         <!-- =============================================== -->
 
-        <div id="the-ai-operator-nightmare" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="80000" data-scale="25" data-rotate-y="-90">
+        <div id="the-ai-operator-nightmare" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <img src="images/complex_sign_transparent.png" style="position: absolute; left: 412px; top: 284px; width: 200px; z-index: 50;" />
             
             <!-- Rings (lower z-index, sent to back) -->
@@ -1205,7 +1215,7 @@
         <!-- WHO IS ACCOUNTABLE -->
         <!-- =============================================== -->
 
-        <div id="who-is-accountable" class="step" data-rel-x="0" data-rel-y="-3000" data-rel-z="10000" data-scale="48" data-rotate-y="-90">
+        <div id="who-is-accountable" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <h1>Who is accountable?</h1>
             <div class="substep" data-substep-order="1">
                 <img src="images/emoji-fire.png" class="pulse-glow-fire" style="position: absolute; left: 245px; top: 390px; width: 110px;" />
@@ -1227,18 +1237,18 @@
         </div>
 
         <!-- More Automation is a Problem -->
-        <div id="more-automation-is-a-problem" class="step" data-rel-x="0" data-rel-y="31000" data-rel-z="0" data-scale="48" data-rotate-y="-90">
+        <div id="more-automation-is-a-problem" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <img src="images/quote-accelertaed-expertise-more-automation.png" style="position: absolute; left: 212px; top: 200px; width: 600px;" />
         </div>
 
         <!-- Final Thoughts -->
-        <div id="final-thoughts" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="80000" data-scale="48" data-rotate-y="-90">
+        <div id="final-thoughts" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <h1>Final thoughts</h1>
             <img src="images/grandpa-simpson-point-idea.png" style="position: absolute; left: 312px; top: 184px; width: 400px;" />
         </div>
 
         <!-- Core SRE Skills -->
-        <div id="core-sre-skills" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="80000" data-scale="48" data-rotate-y="-90">
+        <div id="core-sre-skills" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <h1>Complex System SRE skills</h1>
             <div class="substep" data-substep-order="1">
                 <img src="images/emoji-light-bulb.png" style="position: absolute; left: 80px; top: 50px; width: 80px;" />
@@ -1255,7 +1265,7 @@
         </div>
 
         <!-- Tool vs Operator -->
-        <div id="tool-vs-operator" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="80000" data-scale="48" data-rotate-y="-90">
+        <div id="tool-vs-operator" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             
                 <img src="images/ai-toolbox.png" style="position: absolute; left: -10px; top: 180px; width: 150px;" />
                 <p style="position: absolute; left: 170px; top: 200px; width: 500px; font-size: 32px; font-weight: bold; text-align: left;">As a tool it vastly improves productivity and reduces mundane, repetitive tasks</p>
@@ -1273,7 +1283,7 @@
         </div>
 
         <!-- Takeaways Summary -->
-        <div id="takeaways-summary" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="80000" data-scale="48" data-rotate-y="-90">
+        <div id="takeaways-summary" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <h1>We have to adapt</h1>
             <table style="width: 100%; border-collapse: collapse; margin-top: 100px;">
                 <tr class="substep" data-substep-order="1">
@@ -1305,7 +1315,7 @@
         </div>
 
         <!-- Humans Are Adaptable -->
-        <div id="humans-are-adaptable" class="step" data-rel-x="0" data-rel-y="0" data-rel-z="80000" data-scale="48" data-rotate-y="-90">
+        <div id="humans-are-adaptable" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
             <p style="position: absolute; left: 40px; top: 150px; width: 600px; font-size: 36px; font-weight: bold; text-align: left;">Humans are, and always have been, the most adaptable components of any complex socio-technical system</p>
             <img src="images/the-hill-i-die-on.png" style="position: absolute; left: 600px; top: 20px; width: 500px;" />
             <div class="substep" data-substep-order="1">
