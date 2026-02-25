@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
     SREcon26 - Interactive Presentation
     Created by: Andrew Hatch
@@ -11,1334 +11,1382 @@
     and love goes into making these presentations.
 -->
 <html lang="en">
+    <head>
+        <!-- Meta Information -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SREcon26 - Interactive Presentation</title>
+        <meta name="description" content="An interactive presentation for SREcon26." />
+        <meta name="author" content="Andrew Hatch" />
+        <meta name="keywords" content="SRE, Site Reliability Engineering, DevOps, Technology" />
 
-<head>
-    <!-- Meta Information -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SREcon26 - Interactive Presentation</title>
-    <meta name="description" content="An interactive presentation for SREcon26." />
-    <meta name="author" content="Andrew Hatch" />
-    <meta name="keywords" content="SRE, Site Reliability Engineering, DevOps, Technology" />
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="SREcon26" />
-    <meta property="og:description" content="Interactive presentation for SREcon26" />
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    
-    <!-- External Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheets -->
-    <link href="css/presentation.css" rel="stylesheet" />
-    <link href="css/shrug.css" rel="stylesheet" />
-    <link href="css/flash.css" rel="stylesheet" />
-    <link href="css/csshake.min.css" rel="stylesheet" />
-    
-    <!-- JavaScript -->
-    <script src="js/index.js"></script>
-</head>
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="SREcon26" />
+        <meta property="og:description" content="Interactive presentation for SREcon26" />
 
-<body>
-    <!-- Main Presentation Container -->
-    <div id="impress" data-width="1024" data-height="768" data-max-scale="10" data-min-scale="0" data-perspective="900">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        <!-- =============================================== -->
-        <!-- SECTION 1: INTRODUCTION -->
-        <!-- =============================================== -->
-        
-        <!-- Title Slide -->
-        <div id="introduction" class="step" data-scale="25" data-y="8000">
-            <h1>Ghosts in the Interview Loop & Avoiding AI Taylorism</h1>
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="images/image-old-man-yells-at-ai.png" style="height: auto; max-width: 400px;" />
+        <!-- External Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet" />
+
+        <!-- Stylesheets -->
+        <link href="css/presentation.css" rel="stylesheet" />
+        <link href="css/shrug.css" rel="stylesheet" />
+        <link href="css/flash.css" rel="stylesheet" />
+        <link href="css/csshake.min.css" rel="stylesheet" />
+
+        <!-- JavaScript -->
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <!-- Main Presentation Container -->
+        <div id="impress" data-width="1024" data-height="768" data-max-scale="10" data-min-scale="0" data-perspective="900">
+            <!-- =============================================== -->
+            <!-- SECTION 1: INTRODUCTION -->
+            <!-- =============================================== -->
+
+            <!-- Title Slide -->
+            <div id="introduction" class="step" data-scale="25" data-y="8000">
+                <h1>Ghosts in the Interview Loop & Avoiding AI Taylorism</h1>
+                <div style="text-align: center; margin: 20px 0">
+                    <img src="images/image-old-man-yells-at-ai.png" style="height: auto; max-width: 400px" />
+                </div>
+                <h1>Andrew Hatch</h1>
+                <br />
             </div>
-            <h1>Andrew Hatch</h1>
-            <br />
 
-        </div>
-        
-        <!-- WHOAMI Slide -->
-        <div id="whoami" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
-            <h1>WHOAMI</h1>
-            
-            <!-- Top row: Australia, ThousandEyes, USA -->
-            <div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0;">
-                <!-- Australia with pin -->
-                <div class="substep" data-substep-order="1" style="position: relative; width: 300px;">
-                    <img src="images/Australia.png" style="width: 280px; height: auto;" />
-                    <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; bottom: 50px; left: 185px;" />
+            <!-- WHOAMI Slide -->
+            <div id="whoami" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
+                <h1>WHOAMI</h1>
+
+                <!-- Top row: Australia, ThousandEyes, USA -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0">
+                    <!-- Australia with pin -->
+                    <div class="substep" data-substep-order="1" style="position: relative; width: 300px">
+                        <img src="images/Australia.png" style="width: 280px; height: auto" />
+                        <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; bottom: 50px; left: 185px" />
+                    </div>
+
+                    <!-- ThousandEyes logo -->
+                    <div class="substep" data-substep-order="3" style="text-align: center; margin-left: 240px; margin-right: 10px; margin-top: -50px">
+                        <img src="images/thousand-eyes.png" style="width: 150px; height: auto" />
+                        <p style="font-weight: bold; font-size: 30px; margin-top: 10px">we're hiring!</p>
+                    </div>
+
+                    <!-- USA with pin -->
+                    <div class="substep" data-substep-order="2" style="position: relative; width: 300px">
+                        <img src="images/usa.png" style="width: 280px; height: auto" />
+                        <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; top: 40px; left: -10px" />
+                    </div>
                 </div>
-                
-                <!-- ThousandEyes logo -->
-                <div class="substep" data-substep-order="3" style="text-align: center; margin-left: 240px; margin-right: 10px; margin-top: -50px;">
-                    <img src="images/thousand-eyes.png" style="width: 150px; height: auto;" />
-                    <p style="font-weight: bold; font-size: 30px; margin-top: 10px;">we're hiring!</p>
+
+                <!-- Middle text -->
+                <div class="substep" data-substep-order="4" style="margin-top: -30px">
+                    <p style="text-align: center; font-size: 30px; font-weight: bold; margin: 30px 0">SWE/SRE Engineering Manager 15 years</p>
                 </div>
-                
-                <!-- USA with pin -->
-                <div class="substep" data-substep-order="2" style="position: relative; width: 300px;">
-                    <img src="images/usa.png" style="width: 280px; height: auto;" />
-                    <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; top: 40px; left: -10px;" />
+
+                <!-- Bottom row: Logos -->
+                <div style="display: flex; justify-content: flex-start; align-items: center; gap: 40px; margin-top: 60px">
+                    <div class="substep" data-substep-order="5">
+                        <img src="images/aws.png" style="width: 170px; height: auto" />
+                    </div>
+                    <div class="substep" data-substep-order="6" style="position: relative">
+                        <img src="images/new-data-centre.png" style="width: 150px; height: auto" />
+                    </div>
+                    <div class="substep" data-substep-order="7" style="position: relative; margin-top: -30px; margin-left: -30px">
+                        <img src="images/Linkedin-Logo.png" style="width: 80px; height: auto" />
+                    </div>
+                </div>
+                <div class="substep" data-substep-order="8" style="position: absolute; bottom: 80px; right: 20px; display: flex; align-items: flex-start; gap: 20px">
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+                        <img src="images/medium-blog-icon.png" style="width: 90px; height: auto" />
+                        <img src="images/logo-bluesky.png" style="width: 90px; height: auto" />
+                    </div>
+                    <p style="font-size: 40px; font-weight: bold; margin-top: 50px">@hatchman76</p>
                 </div>
             </div>
-            
-            <!-- Middle text -->
-            <div class="substep" data-substep-order="4" style="margin-top: -30px;">
-                <p style="text-align: center; font-size: 30px; font-weight: bold; margin: 30px 0;">
-                    SWE/SRE Engineering Manager 15 years
+
+            <!-- Takeaways Slide -->
+            <div id="takeaways" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+                <h1>Takeaways</h1>
+                <table style="width: 900px; border-collapse: collapse; margin-top: 40px">
+                    <tr class="substep" data-substep-order="1">
+                        <td style="width: 120px; padding: 20px 0; vertical-align: middle">
+                            <img src="images/sign-right-turn.png" style="width: 80px; height: auto" />
+                        </td>
+                        <td style="padding: 20px 0; vertical-align: middle; font-size: 30px">You cannot hire like we used to. We have to change</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="2">
+                        <td style="padding: 20px 0; vertical-align: middle">
+                            <img src="images/emoji-money-bag.png" style="width: 70px; height: auto" />
+                        </td>
+                        <td style="padding: 20px 0; vertical-align: middle; font-size: 30px">LLMs and AI-enabled tooling have significant productivity value.</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="3">
+                        <td style="padding: 20px 0; vertical-align: middle">
+                            <img src="images/emoji-brain.png" style="width: 60px; height: auto" />
+                        </td>
+                        <td style="padding: 20px 0; vertical-align: middle; font-size: 30px">Hollowing out of SRE Expertise is a material risk to any business</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="4">
+                        <td style="padding: 20px 0; vertical-align: middle">
+                            <img src="images/emoji-poo.png" style="width: 60px; height: auto" />
+                        </td>
+                        <td style="padding: 20px 0; vertical-align: middle; font-size: 30px">Enshittifying Complex Systems is going to hurt us all</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Before We Continue Slide -->
+            <div id="before-we-continue" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+                <h1>one more thing...</h1>
+                <!-- AI definition row -->
+                <table style="position: absolute; left: 112px; top: 160px; border-collapse: collapse">
+                    <tr class="substep" data-substep-order="1">
+                        <td style="padding: 20px 20px; vertical-align: middle">
+                            <img src="images/logo-ai-mashup.png" style="width: 216px" />
+                        </td>
+                        <td style="padding: 20px 20px; vertical-align: middle">
+                            <img src="images/symbol-equals.png" style="width: 50px" />
+                        </td>
+                        <td style="padding: 20px 20px; vertical-align: middle; font-size: 40px">Anything AI!<br />LLM, Agent etc...</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="2">
+                        <td style="padding: 20px 20px; vertical-align: middle">
+                            <img src="images/complex_sign_transparent.png" style="width: 250px" />
+                        </td>
+                        <td style="padding: 20px 20px; vertical-align: middle">
+                            <img src="images/symbol-equals.png" style="width: 50px" />
+                        </td>
+                        <td style="padding: 20px 20px; vertical-align: middle; font-size: 40px">any complex distributed<br />software system</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Hiring Back in the Day Slide -->
+            <div id="hiring-back-in-the-day" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+                <h1 style="text-align: center">Interviews in the past</h1>
+
+                <div class="substep" data-substep-order="1">
+                    <img src="images/image-macbook-terminal.png" style="position: absolute; left: 40px; top: 60px; width: 190px" />
+                </div>
+                <div class="substep" data-substep-order="2">
+                    <img src="images/emoji-database.png" style="position: absolute; left: 380px; top: 80px; width: 80px" />
+                    <img src="images/emoji-network-switch.png" style="position: absolute; left: 480px; top: 70px; width: 100px" />
+                </div>
+                <div class="substep" data-substep-order="3">
+                    <img src="images/image-system-design-whiteboard.png" style="position: absolute; left: 740px; top: 60px; width: 220px" />
+                </div>
+                <div class="substep" data-substep-order="4">
+                    <img src="images/emoji-red-heart.png" style="position: absolute; left: 300px; top: 260px; width: 100px" />
+                </div>
+                <div class="substep" data-substep-order="5">
+                    <img src="images/this-is-fine.gif" style="position: absolute; left: 440px; top: 240px; width: 220px" />
+                    <img src="images/pager-modern.png" style="position: absolute; left: 680px; top: 260px; width: 80px" />
+                </div>
+                <div class="substep" data-substep-order="6">
+                    <img src="images/old-man-yells-at-blind-glassdoor.png" style="position: absolute; left: 150px; top: 390px; width: 250px" />
+                </div>
+                <div class="substep" data-substep-order="7">
+                    <p style="position: absolute; right: 40px; top: 410px; font-size: 40px; text-align: right">Almost always in person</p>
+                    <p style="position: absolute; right: 40px; top: 480px; font-size: 80px; text-align: right">~100</p>
+                </div>
+            </div>
+
+            <!-- Hiring Today Slide -->
+            <div id="hiring-today" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+                <h1 style="font-size: 56px">2019...</h1>
+
+                <!-- LinkedIn logo centered -->
+                <div class="substep" data-substep-order="1" style="position: absolute; width: 100%; height: 100%">
+                    <img src="images/Linkedin-Logo.png" style="position: absolute; left: 400px; top: 80px; width: 100px" />
+                </div>
+
+                <!-- Australia -->
+                <div class="substep" data-substep-order="2" style="position: absolute; width: 100%; height: 100%">
+                    <img src="images/Australia.png" style="position: absolute; left: 20px; top: 280px; width: 260px" />
+                    <img src="images/map-pin-red-hi.png" style="position: absolute; left: 195px; top: 420px; width: 22px" />
+                </div>
+
+                <!-- Zoom + text -->
+                <div class="substep" data-substep-order="3" style="position: absolute; width: 100%; height: 100%">
+                    <img src="images/logo-zoom.png" style="position: absolute; left: 20px; top: 150px; width: 70px" />
+                    <p style="position: absolute; left: 110px; top: 145px; font-size: 26px; text-align: left">Recruiter Screen</p>
+                    <p style="position: absolute; left: 110px; top: 175px; font-size: 26px; text-align: left">SRE Mindset</p>
+                    <p style="position: absolute; left: 110px; top: 205px; font-size: 26px; text-align: left">Management & Leadership</p>
+                </div>
+
+                <!-- Departing plane -->
+                <div class="substep" data-substep-order="4" style="position: absolute; width: 100%; height: 100%">
+                    <img src="images/emoji-plane-departing.png" style="position: absolute; left: 230px; top: 400px; width: 130px" />
+                </div>
+
+                <!-- USA + plane arriving -->
+                <div class="substep" data-substep-order="5" style="position: absolute; width: 100%; height: 100%">
+                    <img src="images/emoji-plane-arriving.png" style="position: absolute; left: 520px; top: 260px; width: 150px" />
+                    <img src="images/usa.png" style="position: absolute; left: 650px; top: 230px; width: 300px" />
+                    <img src="images/map-pin-red-hi.png" style="position: absolute; left: 645px; top: 280px; width: 25px" />
+                    <p style="position: absolute; left: 350px; top: 330px; font-size: 44px">15 hours</p>
+                </div>
+
+                <!-- Interview list -->
+                <div class="substep" data-substep-order="6" style="position: absolute; width: 100%; height: 100%">
+                    <p style="position: absolute; left: 610px; top: 10px; font-size: 26px; text-align: left">Apache Web Server Diagnosis</p>
+                    <p style="position: absolute; left: 610px; top: 40px; font-size: 26px; text-align: left">Code challenge</p>
+                    <p style="position: absolute; left: 610px; top: 70px; font-size: 26px; text-align: left">Code refactor</p>
+                    <p style="position: absolute; left: 610px; top: 100px; font-size: 26px; text-align: left">System Design</p>
+                    <p style="position: absolute; left: 610px; top: 130px; font-size: 26px; text-align: left">Management and Leadership</p>
+                    <p style="position: absolute; left: 610px; top: 160px; font-size: 26px; text-align: left">Lunch!</p>
+                </div>
+            </div>
+
+            <!-- COVID-19 Slide -->
+            <div id="covid-19" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
+                <h1>And then...</h1>
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 80px">
+                    <img src="images/emoji-covid-19.png" style="width: 280px; height: auto" />
+                </div>
+            </div>
+
+            <!-- Fast-forward 2025 Slide -->
+            <div id="fast-forward-2025" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
+                <!-- Top center: 2025 heading -->
+                <h1 style="margin: 0; position: absolute; left: 340px; top: 15px; font-size: 80px">2025</h1>
+                <!-- Top right: ThousandEyes logo -->
+                <div style="position: absolute; right: 100px; top: 10px">
+                    <img src="images/thousand-eyes.png" style="width: 250px; height: auto" />
+                </div>
+                <!-- Center-left: Diversity hands -->
+                <div class="substep" data-substep-order="8">
+                    <div style="position: absolute; left: 30px; top: 400px">
+                        <img src="images/people-hands-diversity.png" style="width: 400px; height: auto" />
+                    </div>
+                </div>
+                <!-- Left: SRE hiring sign -->
+                <div class="substep" data-substep-order="1">
+                    <div style="position: absolute; left: -70px; top: 130px">
+                        <img src="images/job-posting-sre-hiring.png" style="width: 280px; height: auto" />
+                    </div>
+                </div>
+                <!-- Webex + Cisco -->
+                <div class="substep" data-substep-order="2">
+                    <div style="position: absolute; left: 230px; top: 130px">
+                        <img src="images/logo-cisco-webex.png" style="width: 200px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 230px; top: 260px">
+                        <img src="images/logo-cisco-blue.png" style="width: 250px; height: auto" />
+                    </div>
+                </div>
+                <!-- Fire + Pager -->
+                <div class="substep" data-substep-order="3">
+                    <div style="position: absolute; left: 550px; top: 250px">
+                        <img src="images/emoji-fire.png" style="width: 100px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 650px; top: 260px">
+                        <img src="images/pager-modern.png" style="width: 100px; height: auto" />
+                    </div>
+                </div>
+                <!-- Brain -->
+                <div class="substep" data-substep-order="4">
+                    <div style="position: absolute; right: 10px; top: 230px">
+                        <img src="images/emoji-brain-graduation-cap-expertise.png" style="width: 140px; height: auto" />
+                    </div>
+                </div>
+                <!-- Leetcode -->
+                <div class="substep" data-substep-order="5">
+                    <div style="position: absolute; left: 550px; top: 420px">
+                        <img src="images/logo-leetcode.png" style="width: 120px; height: auto" />
+                    </div>
+                </div>
+                <!-- Whiteboard -->
+                <div class="substep" data-substep-order="6">
+                    <div style="position: absolute; right: -10px; top: 400px">
+                        <img src="images/image-system-design-whiteboard.png" style="width: 210px; height: auto" />
+                    </div>
+                </div>
+                <!-- Food -->
+                <div class="substep" data-substep-order="7">
+                    <div style="position: absolute; right: 150px; top: 550px">
+                        <img src="images/emoji-food-collection.png" style="width: 200px; height: auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- WTF Slide -->
+            <div id="wtf" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
+                <!-- Top-left: Python logo -->
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 30px; top: 90px">
+                        <img src="images/python.png" style="width: 200px; height: auto" />
+                    </div>
+                </div>
+                <!-- Top: Futurama Fry -->
+                <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 300px; top: 60px">
+                        <img src="images/futurama-fry-not-sure.png" style="width: 180px; height: auto" />
+                    </div>
+                </div>
+                <!-- Bottom-left: Clock -->
+                <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 110px; top: 330px">
+                        <img src="images/emoji-clock.png" style="width: 180px; height: auto" />
+                    </div>
+                </div>
+                <!-- Below clock: Homer Simpson -->
+                <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 100px; top: 530px">
+                        <img src="images/homer-simpson-side-eye.gif" style="width: 220px; height: auto" />
+                    </div>
+                </div>
+                <!-- Center: Python code reveal GIF left -->
+                <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 250px; top: 250px">
+                        <img src="images/python-code-reveal.gif" style="width: 380px; height: auto" />
+                    </div>
+                </div>
+                <!-- Center: Python code reveal GIF right + AI mashup logo -->
+                <div class="substep" data-substep-order="6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: -30px; top: 250px">
+                        <img src="images/python-code-reveal.gif" style="width: 380px; height: auto" />
+                    </div>
+                    <div style="position: absolute; right: 30px; top: 150px">
+                        <img src="images/logo-ai-mashup.png" style="width: 100px; height: auto" />
+                    </div>
+                </div>
+                <!-- Bottom-right: Shocked WTF -->
+                <div class="substep" data-substep-order="7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 160px; top: 40px">
+                        <img src="images/emoji-shocked-wtf.png" style="width: 280px; height: auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Made Some Changes Slide -->
+            <div id="made-some-changes" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
+                <h1>we made some changes</h1>
+                <!-- Top-left: Leetcode logo + Magnifying glass -->
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 30px; top: 160px">
+                        <img src="images/logo-leetcode.png" style="width: 140px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 150px; top: 170px">
+                        <img src="images/emoji-magnifying-glass-right.png" style="width: 110px; height: auto" />
+                    </div>
+                </div>
+                <!-- Top-center: Terraform + House + 2-3 days -->
+                <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 370px; top: 140px">
+                        <img src="images/logo-terraform.png" style="width: 100px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 380px; top: 250px">
+                        <img src="images/emoji-home-house.png" style="width: 100px; height: auto" />
+                    </div>
+                    <p style="position: absolute; left: 490px; top: 270px; font-size: 44px; margin: 0">2 - 3 days</p>
+                </div>
+                <!-- Top-right: Speech bubbles -->
+                <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 40px; top: 160px">
+                        <img src="images/image-speech-bubbles.png" style="width: 200px; height: auto" />
+                    </div>
+                </div>
+                <!-- Bottom-left: Whiteboard with question mark -->
+                <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 20px; top: 470px">
+                        <img src="images/image-whiteboard-question-mark.png" style="width: 280px; height: auto" />
+                    </div>
+                </div>
+                <!-- Bottom-center: Glassdoor + Blind with red X overlay -->
+                <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 370px; top: 520px">
+                        <img src="images/logo-glassdoor.png" style="width: 120px; height: auto" />
+                        <img src="images/logo-blind.png" style="width: 80px; height: auto; margin-left: 10px" />
+                    </div>
+                </div>
+                <!-- Red cross X overlay -->
+                <div class="substep" data-substep-order="6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 370px; top: 520px">
+                        <img src="images/red-cross-x-wrong.png" style="width: 220px; height: auto; position: absolute; left: 20px; top: -70px" />
+                    </div>
+                </div>
+                <!-- Bottom-right: ByteDance tweet -->
+                <div class="substep" data-substep-order="7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 20px; top: 450px">
+                        <img src="images/twitter-byte-dance-interview-funny.png" style="width: 350px; height: auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Needs More Thought Slide -->
+            <div id="needs-more-thought" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
+                <h1>it needs more thought</h1>
+                <!-- Calendar + AI mashup + Stopwatch -->
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 20px; top: 330px">
+                        <img src="images/emoji-calendar-two-weeks.png" style="width: 180px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 135px; top: 220px">
+                        <img src="images/logo-ai-mashup.png" style="width: 130px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 220px; top: 330px">
+                        <img src="images/emoji-stopwatch-15-minutes.png" style="width: 140px; height: auto" />
+                    </div>
+                </div>
+                <!-- Speech bubbles + Office building -->
+                <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 200px; top: 150px">
+                        <img src="images/image-speech-bubbles.png" style="width: 180px; height: auto" />
+                    </div>
+                    <div style="position: absolute; right: 80px; top: 200px">
+                        <img src="images/emoji-office-building.png" style="width: 130px; height: auto" />
+                    </div>
+                </div>
+                <!-- Laptop + System design whiteboard -->
+                <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 0px; top: 350px">
+                        <img src="images/image-macbook-terminal.png" style="width: 176px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 600px; top: 350px">
+                        <img src="images/image-system-design-whiteboard.png" style="width: 208px; height: auto" />
+                    </div>
+                </div>
+                <!-- CoderPad + HackerRank -->
+                <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 130px; bottom: 100px">
+                        <img src="images/logo-coderpad.png" style="width: 300px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 500px; bottom: 100px">
+                        <img src="images/logo-hacker-rank.png" style="width: 300px; height: auto" />
+                    </div>
+                </div>
+                <!-- Slack CTA + Slack thread -->
+                <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <p style="position: absolute; left: 110px; right: 200px; bottom: 70px; font-size: 40px; margin: 0; font-weight: bold; white-space: nowrap">Please share your ideas in Slack!</p>
+                    <div style="position: absolute; right: 100px; bottom: 30px">
+                        <img src="images/emoji-slack-thread.png" style="width: 120px; height: auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Irony Slide -->
+            <div id="the-irony" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">The irony though</h1>
+                <!-- Left: Clamp + text -->
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 20px; top: 230px; display: flex; align-items: center; gap: 16px">
+                        <img src="images/emoji-clamp.png" style="width: 100px; height: auto" />
+                        <p style="font-size: 36px; margin: 0">Top down pressure to use AI</p>
+                    </div>
+                </div>
+                <!-- Center: Snail + text -->
+                <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 200px; top: 380px; display: flex; align-items: center; gap: 16px">
+                        <img src="images/emoji-snail.png" style="width: 100px; height: auto" />
+                        <p style="font-size: 36px; margin: 0">No-one wants to be left behind</p>
+                    </div>
+                </div>
+                <!-- Bottom-right: Confused face + text -->
+                <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 420px; top: 530px; display: flex; align-items: center; gap: 16px">
+                        <img src="images/emoji-confused.png" style="width: 120px; height: auto" />
+                        <div style="text-align: left">
+                            <p style="font-size: 36px; margin: 0; text-align: left">Tell candidates not to use it. Then demand they do on Day 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LLM Prompt Jockey Apocalypse Slide -->
+            <div id="llm-prompt-jockey-apocalypse" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">Maybe we just want</h1>
+                <!-- Bottom-left: Complex sign with network -->
+                <div style="position: absolute; left: 100px; top: 250px">
+                    <img src="images/complex_sign_transparent.png" style="width: 350px; height: auto" />
+                </div>
+                <!-- Upper-center: Jockey 1 -->
+                <div style="position: absolute; left: 470px; top: 150px">
+                    <img src="images/emoji-llm-prompt-jockey.png" style="width: 250px; height: auto" />
+                </div>
+                <!-- Center-bottom: Jockey 2 -->
+                <div style="position: absolute; left: 550px; top: 370px">
+                    <img src="images/emoji-llm-prompt-jockey.png" style="width: 260px; height: auto" />
+                </div>
+                <!-- Upper-right: Jockey 3 -->
+                <div style="position: absolute; right: 130px; top: 250px">
+                    <img src="images/emoji-llm-prompt-jockey.png" style="width: 220px; height: auto" />
+                </div>
+            </div>
+
+            <!-- What About Expertise Slide -->
+            <div id="what-about-expertise" class="step" data-rel-x="50000" data-rel-y="0" data-scale="30" style="position: relative">
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">But then...</h1>
+                <!-- Left: Emoji + text table -->
+                <table style="position: absolute; left: 20px; top: 120px; border-collapse: collapse">
+                    <tr>
+                        <td style="padding: 10px 16px 10px 0; vertical-align: middle"><img src="images/emoji-brain-graduation-cap-expertise.png" style="width: 100px; height: auto" /></td>
+                        <td style="padding: 10px 0; vertical-align: middle; font-size: 44px">What happens to Expertise?</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="1">
+                        <td style="padding: 10px 16px 10px 0; vertical-align: middle"><img src="images/emoji-artist-palette.png" style="width: 60px; height: auto" /></td>
+                        <td style="padding: 10px 0; vertical-align: middle; font-size: 40px">Creativity?</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="2">
+                        <td style="padding: 10px 16px 10px 0; vertical-align: middle"><img src="images/emoji-light-bulb.png" style="width: 60px; height: auto" /></td>
+                        <td style="padding: 10px 0; vertical-align: middle; font-size: 40px">Innovation?</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="3">
+                        <td style="padding: 10px 16px 10px 0; vertical-align: middle"><img src="images/emoji-books.png" style="width: 60px; height: auto" /></td>
+                        <td style="padding: 10px 0; vertical-align: middle; font-size: 40px">Learning?</td>
+                    </tr>
+                </table>
+                <!-- Right: Five Minds quote + text -->
+                <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 40px; bottom: 180px">
+                        <img src="images/quote-five-minds-for-the-future-the-creating-mind.png" style="width: 450px; height: auto" />
+                    </div>
+                    <p style="position: absolute; right: 20px; bottom: 130px; font-size: 36px; margin: 0">We don't just hire for raw tech skills</p>
+                </div>
+            </div>
+
+            <!-- The War on Expertise Slide -->
+            <div id="the-war-on-expertise" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <h1 style="text-align: center; margin: 0; font-size: 56px">The War on Expertise</h1>
+                <!-- Left: SRE Fort -->
+                <div style="position: absolute; left: 20px; top: 120px">
+                    <img src="images/fort-sre.png" style="width: 420px; height: auto" />
+                </div>
+                <!-- Right: AI Tank -->
+                <div style="position: absolute; right: 40px; top: 250px">
+                    <img src="images/ai-tank-assault.png" style="width: 400px; height: auto" />
+                </div>
+            </div>
+
+            <!-- Tool Commoditization Slide -->
+            <div id="tool-commoditization" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <h1 style="text-align: center; margin: 0; font-size: 52px">We've commoditized it for centuries</h1>
+                <!-- Top-left: Printing press -->
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 20px; top: 140px">
+                        <img src="images/printing-press.png" style="width: 250px; height: auto" />
+                    </div>
+                </div>
+                <!-- Top-center: Mitre saw -->
+                <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 400px; top: 180px">
+                        <img src="images/mitre-saw.png" style="width: 220px; height: auto" />
+                    </div>
+                </div>
+                <!-- Right: GPS map -->
+                <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; right: 20px; top: 280px">
+                        <img src="images/apple-maps-gps.png" style="width: 200px; height: auto" />
+                    </div>
+                </div>
+                <!-- Bottom-left: Early arc welder -->
+                <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 200px; top: 380px">
+                        <img src="images/early-arc-welder.png" style="width: 240px; height: auto" />
+                    </div>
+                </div>
+                <!-- Bottom-center: Laser leveller -->
+                <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <div style="position: absolute; left: 580px; top: 510px">
+                        <img src="images/laser-leveller.png" style="width: 220px; height: auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Distributed Complex Characteristics Slide -->
+            <div id="distributed-complex-characteristics" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <h1 style="text-align: center; margin: 0; font-size: 52px">Distributed Complex System Expertise is different</h1>
+                <!-- Scattered characteristic words — staggered fade-in on step entry -->
+                <p class="seq-fade" style="position: absolute; left: 60px; top: 300px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 0.6s">stochastic</p>
+                <p class="seq-fade" style="position: absolute; left: 350px; top: 240px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 1.2s">dynamic</p>
+                <p class="seq-fade" style="position: absolute; right: 130px; top: 320px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 1.8s">emergent</p>
+                <p class="seq-fade" style="position: absolute; left: 320px; top: 400px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 2.4s">unstable</p>
+                <p class="seq-fade" style="position: absolute; right: 180px; top: 460px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 3s">non-linear</p>
+                <p class="seq-fade" style="position: absolute; left: 10px; top: 510px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 3.6s">heterogeneous</p>
+                <p class="seq-fade" style="position: absolute; left: 300px; top: 610px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 4.2s">evolving</p>
+                <p class="seq-fade" style="position: absolute; right: 110px; top: 580px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 4.8s">context-sensitive</p>
+                <p class="seq-fade" style="position: absolute; right: 30px; bottom: 30px; font-size: 44px; margin: 0; font-style: italic; animation-delay: 5.4s">and many more..</p>
+            </div>
+
+            <!-- Complex Sociotechnical Systems Slide -->
+            <div id="complex-sociotechnical-systems" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <h1 style="text-align: center; margin: 0; font-size: 52px">Socio Technical Systems</h1>
+                <!-- Substep 1: Small system image -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 460px; top: 450px">
+                    <div id="sts-small" style="transition: opacity 0.5s ease-out">
+                        <img src="images/socio-technical-system-small.png" style="width: 120px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 2: First car + vertical pipe -->
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 490px; top: 130px">
+                    <div class="slide-down-fade">
+                        <img src="images/emoji-car-oncoming.png" style="width: 80px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 20px; top: 120px">
+                        <img src="images/pipe-vertical-down.png" style="width: 50px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 3: Female welder -->
+                <div class="substep" data-substep-order="3" style="position: absolute; left: 340px; top: 400px">
+                    <img src="images/emoji-female-welder.png" style="width: 70px; height: auto" />
+                </div>
+                <!-- Substep 4: Branching pipe right + JavaScript logo -->
+                <div class="substep" data-substep-order="4">
+                    <div style="position: absolute; left: 490px; top: 200px">
+                        <img src="images/pipe-right-angle-down-left.png" style="width: 210px; height: auto; left: 30px" />
+                    </div>
+                    <div style="position: absolute; right: 50px; top: 200px">
+                        <div class="slide-left-fade">
+                            <img src="images/javascript-logo.png" style="width: 140px; height: auto" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Substep 5: Medium system image (crossfade) -->
+                <div class="substep" data-substep-order="5" id="sts-medium-substep" style="position: absolute; left: 440px; top: 450px">
+                    <div id="sts-medium" style="transition: opacity 0.5s ease-out">
+                        <img src="images/socio-technical-system-medium.png" style="width: 180px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 6: Male construction worker -->
+                <div class="substep" data-substep-order="6" style="position: absolute; left: 670px; top: 370px">
+                    <img src="images/emoji-male-construction-worker.png" style="width: 60px; height: auto" />
+                </div>
+                <!-- Substep 7: Second car -->
+                <div class="substep" data-substep-order="7" style="position: absolute; left: 490px; top: 130px">
+                    <div class="slide-down-fade-staggered">
+                        <img src="images/emoji-car-oncoming.png" style="width: 80px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 8: Branching pipe left + Python logo -->
+                <div class="substep" data-substep-order="8">
+                    <div style="position: absolute; left: 300px; top: 180px">
+                        <img src="images/pipe-right-angle-down.png" style="width: 170px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 170px; top: 180px">
+                        <div class="slide-right-fade">
+                            <img src="images/python.png" style="width: 80px; height: auto" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Substep 9: Second car (duplicate) -->
+                <div class="substep" data-substep-order="9" style="position: absolute; left: 490px; top: 130px">
+                    <div class="slide-down-fade-staggered">
+                        <img src="images/emoji-car-oncoming.png" style="width: 80px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 10: Left horizontal pipe + Terraform logo -->
+                <div class="substep" data-substep-order="10">
+                    <div style="position: absolute; left: 140px; top: 390px">
+                        <img src="images/pipe-horizontal-right.png" style="width: 200px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 10px; top: 380px">
+                        <div class="slide-right-fade">
+                            <img src="images/logo-terraform.png" style="width: 80px; height: auto" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Substep 11: Female construction worker -->
+                <div class="substep" data-substep-order="11" style="position: absolute; right: 540px; top: 600px">
+                    <img src="images/emoji-female-construction-worker.png" style="width: 60px; height: auto" />
+                </div>
+                <!-- Substep 12: Large system image (crossfade) -->
+                <div class="substep" data-substep-order="12" id="sts-large-substep" style="position: absolute; left: 440px; top: 430px">
+                    <div id="sts-large" style="transition: opacity 0.5s ease-out">
+                        <img src="images/socio-technical-system-large.png" style="width: 200px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 13: Right horizontal pipe + Database -->
+                <div class="substep" data-substep-order="13">
+                    <div style="position: absolute; left: 630px; top: 380px">
+                        <img src="images/pipe-horizontal-right.png" style="width: 200px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 820px; top: 370px">
+                        <div class="slide-right-fade">
+                            <img src="images/emoji-database.png" style="width: 70px; height: auto" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Substep 14: XLarge system image (crossfade) -->
+                <div class="substep" data-substep-order="14" id="sts-xlarge-substep" style="position: absolute; left: 360px; top: 420px">
+                    <img src="images/socio-technical-system-xlarge.png" style="width: 380px; height: auto" />
+                </div>
+                <!-- Substep 15: Male welder -->
+                <div class="substep" data-substep-order="15" style="position: absolute; left: 610px; top: 600px">
+                    <img src="images/emoji-male-welder.png" style="width: 60px; height: auto" />
+                </div>
+                <!-- Substep 16: Fire emoji -->
+                <div class="substep" data-substep-order="16" style="position: absolute; left: 580px; top: 380px">
+                    <div class="pulse-glow">
+                        <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 17: Fire emoji (above female construction worker) -->
+                <div class="substep" data-substep-order="17" style="position: absolute; right: 530px; top: 500px">
+                    <div class="pulse-glow">
+                        <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 18: Fire emoji (above male welder) -->
+                <div class="substep" data-substep-order="18" style="position: absolute; left: 600px; top: 510px">
+                    <div class="pulse-glow">
+                        <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 19: Fire extinguishers -->
+                <div class="substep" data-substep-order="19">
+                    <div style="position: absolute; left: 690px; top: 290px">
+                        <img src="images/emoji-fire-extinguisher.png" style="width: 80px; height: auto" />
+                    </div>
+                    <div style="position: absolute; right: 560px; top: 520px">
+                        <img src="images/emoji-fire-extinguisher.png" style="width: 80px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 20: GitHub, PagerDuty, Prometheus, Splunk logos -->
+                <div class="substep" data-substep-order="20">
+                    <div style="position: absolute; left: 70px; top: 80px">
+                        <img src="images/github.png" style="width: 120px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 620px; top: 480px">
+                        <img src="images/logo-pagerduty.png" style="width: 200px; height: auto" />
+                    </div>
+                    <div style="position: absolute; right: 640px; top: 500px">
+                        <img src="images/logo-prometheus.png" style="width: 90px; height: auto" />
+                    </div>
+                    <div style="position: absolute; right: 780px; top: 500px">
+                        <img src="images/logo-splunk.png" style="width: 180px; height: auto" />
+                    </div>
+                </div>
+                <!-- Substep 21: Complex sign -->
+                <div class="substep" data-substep-order="21" style="position: absolute; left: 400px; top: 100px">
+                    <img src="images/complex-sign-only.png" style="width: 500px; height: auto" />
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- SLIDE: WE LOVE TO SIMPLIFY -->
+            <!-- =============================================== -->
+            <div id="we-love-to-simplify" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <!-- Substep 7: "We love to simplify them" text -->
+                <div class="substep" data-substep-order="7" style="position: absolute; right: 0px; top: 30px">
+                    <h1 style="font-size: 44px; margin: 0">We love to simplify complexity</h1>
+                </div>
+                <!-- Complex sign - always visible -->
+                <div style="position: absolute; left: 240px; top: 400px">
+                    <img src="images/complex_sign_transparent.png" style="width: 250px; height: auto" />
+                </div>
+                <!-- Substep 1: Magnifying glass -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 220px; top: 500px">
+                    <img src="images/emoji-magnifying-glass-right.png" style="width: 140px; height: auto" />
+                </div>
+                <!-- Substep 2: Exploding head -->
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 30px; top: 400px">
+                    <img src="images/emoji-exploding-head.png" style="width: 200px; height: auto" />
+                </div>
+                <!-- Substep 3: MTTR + 5 Whys -->
+                <div class="substep" data-substep-order="3">
+                    <div style="position: absolute; left: 190px; top: 130px">
+                        <img src="images/mttr-dashboard.png" style="width: 160px; height: auto" />
+                    </div>
+                    <p style="position: absolute; left: 370px; top: 170px; font-size: 48px; font-weight: bold; margin: 0">5 Whys</p>
+                </div>
+                <!-- Substep 4: Heart eyes -->
+                <div class="substep" data-substep-order="4" style="position: absolute; left: 30px; top: 120px">
+                    <img src="images/emoji-heart-eyes.png" style="width: 190px; height: auto" />
+                </div>
+                <!-- Substep 5: Iceberg -->
+                <div class="substep" data-substep-order="5" style="position: absolute; right: 40px; top: 150px">
+                    <img src="images/iceberg.png" style="width: 500px; height: auto" />
+                </div>
+                <!-- Substep 8: Grossly generalize text -->
+                <div class="substep" data-substep-order="8" style="position: absolute; left: 0px; bottom: 50px; width: 1000px; text-align: center">
+                    <p style="font-size: 40px; font-weight: bold; margin: 0">Even though we know we can grossly generalize</p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- BUT WE LOVE SIMPLIFICATION -->
+            <!-- =============================================== -->
+
+            <div id="but-we-love-simplification" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <h1 style="position: absolute; left: 40px; top: 170px; font-size: 44px; margin: 0">And it does help right?</h1>
+
+                <!-- Left: Dan Davies quote + flowchart -->
+                <div style="position: absolute; left: 40px; top: 270px">
+                    <img src="images/dan-davies-unaccountability-simplifie-reality.png" style="width: 580px; height: auto" />
+                </div>
+
+                <!-- Right: William of Ockham portrait -->
+                <div style="position: absolute; right: 60px; top: 270px; text-align: center">
+                    <img src="images/william-of-ockham.png" style="width: 220px; height: auto" />
+                    <p style="font-size: 22px; font-weight: bold; margin: 15px 0 0 0">William of Ockham</p>
+                    <p style="font-size: 20px; margin: 4px 0 0 0">1287 – 1347</p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- TOLERATE BECAUSE -->
+            <!-- =============================================== -->
+
+            <div id="tolerate-because" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <h1 style="position: absolute; left: 40px; top: 30px; font-size: 44px; margin: 0">We just need humans with complex system expertise</h1>
+
+                <!-- Substep 1: Money bag -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 60px; top: 190px">
+                    <img src="images/emoji-money-bag.png" style="width: 100px; height: auto" />
+                </div>
+                <!-- Substep 2: Handshake -->
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 200px; top: 190px">
+                    <img src="images/emoji-handshake.png" style="width: 120px; height: auto" />
+                </div>
+                <!-- Substep 3: Carrot -->
+                <div class="substep" data-substep-order="3" style="position: absolute; left: 360px; top: 190px">
+                    <img src="images/emoji-carrot.png" style="width: 100px; height: auto" />
+                </div>
+
+                <!-- Substep 4: Shrug + money out window -->
+                <div class="substep" data-substep-order="4">
+                    <div style="position: absolute; left: 20px; top: 370px">
+                        <img src="images/emoji-man-woman-shrug.png" style="width: 150px; height: auto" />
+                    </div>
+                    <div style="position: absolute; left: 200px; top: 370px">
+                        <img src="images/money-window.gif" style="width: 250px; height: auto" />
+                    </div>
+                </div>
+
+                <!-- Substep 5: "But what if something reduced this need...?" -->
+                <div class="substep" data-substep-order="5" style="position: absolute; right: 40px; top: 330px">
+                    <p style="font-size: 40px; font-weight: bold; margin: 0; text-align: left; max-width: 400px">But what if something could reduce this reliance?</p>
+                </div>
+
+                <!-- Substep 6: Agent Smith AI lollipop -->
+                <div class="substep" data-substep-order="6" style="position: absolute; right: 40px; top: 200px">
+                    <img src="images/agent-smith-ai-lollipop.png" style="width: 450px; height: auto" />
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- THE EXPERTISE SILVER BULLET -->
+            <!-- =============================================== -->
+
+            <div id="the-expertise-silver-bullet" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <!-- Substep 1: AI silver bullet -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 70px; top: 160px">
+                    <img src="images/image-ai-silver-bullet.png" style="width: 120px; height: auto; transform: rotate(90deg)" />
+                </div>
+
+                <!-- Complex sign - always visible -->
+                <div style="position: absolute; left: 340px; top: 160px">
+                    <img src="images/complex_sign_transparent.png" style="width: 250px; height: auto" />
+                </div>
+
+                <!-- Substep 2: Clipboard + Timer -->
+                <div class="substep" data-substep-order="2" style="position: absolute; right: 20px; top: 140px">
+                    <img src="images/clipboard-checklist-and-timer.png" style="width: 400px; height: auto" />
+                </div>
+
+                <!-- Substep 3: Money mouth -->
+                <div class="substep" data-substep-order="3" style="position: absolute; right: 120px; top: 400px">
+                    <img src="images/emoji-moeny-mouth.png" style="width: 150px; height: auto" />
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- THE TAYLOR PROPHECY -->
+            <!-- =============================================== -->
+
+            <div id="the-taylor-prophecy" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <h1 style="position: absolute; left: 60px; top: 30px; font-size: 40px; margin: 0">In the past man has been first</h1>
+                <h1 style="position: absolute; left: 200px; top: 90px; font-size: 40px; margin: 0">In the future, the system must be first</h1>
+
+                <!-- Substep 1: Taylor portrait + Remember me? -->
+                <div class="substep" data-substep-order="1">
+                    <div style="position: absolute; left: 100px; top: 180px">
+                        <img src="images/frederick-winslow-taylor.png" style="width: 198px; height: auto" />
+                    </div>
+                    <p style="position: absolute; left: 80px; top: 610px; font-size: 36px; font-weight: bold; margin: 0">Remember me?</p>
+                </div>
+
+                <!-- Substep 2: Book cover + I wrote a book once -->
+                <div class="substep" data-substep-order="2">
+                    <div style="position: absolute; right: 100px; top: 180px">
+                        <img src="images/book-principles-of-scientific-management.png" style="width: 270px; height: auto" />
+                    </div>
+                    <p style="position: absolute; right: 60px; top: 610px; font-size: 36px; font-weight: bold; margin: 0">I wrote a book once in 1911</p>
+                </div>
+                <!-- Substep 3: Goodreads text -->
+                <div class="substep" data-substep-order="3" style="position: absolute; right: 60px; top: 700px">
+                    <p style="font-size: 36px; font-weight: bold; margin: 0">It has 82% likes on Goodreads!</p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- SEPARATE THINKING -->
+            <!-- =============================================== -->
+
+            <div id="separate-thinking" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative">
+                <!-- Substep 1: Title -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 380px; top: 130px">
+                    <h1 style="font-size: 40px; margin: 0">Separate Thinking, From Doing</h1>
+                </div>
+
+                <!-- Books - fade in on step entry via CSS -->
+                <div class="book-fade-in book-1" style="position: absolute; left: 200px; top: 60px">
+                    <img src="images/book-the-tyranny-of-metrics.png" style="width: 144px; height: auto" />
+                </div>
+                <div class="book-fade-in book-2" style="position: absolute; left: 20px; top: 160px">
+                    <img src="images/book-manufacturing-advantage.png" style="width: 160px; height: auto" />
+                </div>
+                <div class="book-fade-in book-3" style="position: absolute; left: 200px; top: 340px">
+                    <img src="images/book-talking-about-machines.jpg" style="width: 160px; height: auto" />
+                </div>
+
+                <!-- Substep 2: Taylor + AI mashup images -->
+                <div class="substep" data-substep-order="2">
+                    <table style="position: absolute; left: 380px; top: 240px; border-collapse: collapse; width: 580px">
+                        <tr>
+                            <td style="text-align: center; padding: 10px 25px; vertical-align: middle">
+                                <img src="images/frederick-taylor-cropped-head.png" style="width: 160px; height: auto" />
+                            </td>
+                            <td style="text-align: center; padding: 10px 25px; vertical-align: middle">
+                                <img src="images/logo-ai-mashup.png" style="width: 180px; height: auto" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Substep 3: Centralize text row -->
+                <div class="substep" data-substep-order="3">
+                    <table style="position: absolute; left: 380px; top: 440px; border-collapse: collapse; width: 580px">
+                        <tr>
+                            <td style="text-align: left; padding: 10px 25px; vertical-align: top; font-size: 24px">Centralize tacit worker knowledge into prescriptive procedures</td>
+                            <td style="text-align: left; padding: 10px 25px; vertical-align: top; font-size: 24px">Centralize tacit engineering knowledge into prescriptive LLM prompts</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Substep 4: Hire cheaper text row -->
+                <div class="substep" data-substep-order="4">
+                    <table style="position: absolute; left: 380px; top: 560px; border-collapse: collapse; width: 580px">
+                        <tr>
+                            <td style="text-align: left; padding: 20px 25px; vertical-align: top; font-size: 24px">Hire cheaper workers to "follow the script".</td>
+                            <td style="text-align: left; padding: 20px 25px; vertical-align: top; font-size: 24px">Hire cheaper "prompt jockeys" to follow them</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- LINEAR PROCESSES -->
+            <!-- =============================================== -->
+
+            <div id="linear-processes" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <p style="position: absolute; left: 40px; top: 30px; width: 920px; font-family: &quot;Archivo Black&quot;; font-size: 50px; font-weight: 300">
+                    This works when processes are repeatable and linear...
+                </p>
+                <img src="images/engine-assembly-line.png" style="position: absolute; left: 250px; top: 280px; width: 500px" />
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <p style="position: absolute; left: 40px; bottom: 40px; width: 920px; font-family: &quot;Archivo Black&quot;; font-size: 36px; font-weight: 300">
+                        ...but only if you don't care about worker engagement, happiness and innovation!
+                    </p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- MODERN SOFTWARE SYSTEMS -->
+            <!-- =============================================== -->
+
+            <div id="modern-software-systems" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <h1 style="position: absolute; left: 40px; top: 30px; width: 800px; text-align: left">Modern software systems aren't like this</h1>
+                <img src="images/complex-socio-technical-system.png" style="position: absolute; right: 40px; top: 30px; width: 200px" />
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 40px; top: 300px">
+                    <p style="width: 900px; font-size: 70px; font-weight: bold">And haven't been for decades</p>
+                </div>
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 350px; top: 440px">
+                    <img src="images/ai-hold-my-beer.png" style="width: 350px" />
+                    <p style="position: absolute; left: 370px; top: 40px; font-size: 40px; font-weight: bold; width: 200px">"relax humans, I got this!"</p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- JIT KNOWLEDGE -->
+            <!-- =============================================== -->
+
+            <div id="jit-knowledge" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <h1 style="text-align: left; font-size: 70px">Just-in-time knowledge</h1>
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <img src="images/logo-ai-mashup.png" style="position: absolute; left: 40px; top: 220px; width: 180px" />
+                </div>
+
+                <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <p class="seq-fade" style="position: absolute; left: 230px; top: 210px; font-size: 32px; text-align: left; width: 750px; animation-delay: 0.5s">
+                        the speed at which we generate beliefs,
+                    </p>
+                    <p class="seq-fade" style="position: absolute; left: 230px; top: 260px; font-size: 32px; text-align: left; width: 750px; animation-delay: 2.5s">
+                        the plausibility of those beliefs, and
+                    </p>
+                    <p class="seq-fade" style="position: absolute; left: 230px; top: 310px; font-size: 32px; text-align: left; width: 750px; animation-delay: 3.5s">
+                        the distance between apparent certainty and actual understanding
+                    </p>
+                </div>
+
+                <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <img src="images/quote-simon-winchester-karl-popper.png" style="position: absolute; left: 260px; top: 460px; width: 500px" />
+                    <img src="images/emoji-heart-eyes.png" style="position: absolute; right: 40px; top: 500px; width: 200px" />
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- REPO SLOP BUCKET -->
+            <!-- =============================================== -->
+
+            <div id="repo-slop-bucket" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <img src="images/slack-ai-terraform-slop.png" style="position: absolute; left: 40px; top: 30px; width: 700px" />
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <img src="images/ai-illusion-expertise-business-insider.png" style="position: absolute; left: 40px; top: 340px; width: 250px" />
+                </div>
+                <div class="substep" data-substep-order="2" style="position: absolute; right: 100px; top: 320px">
+                    <img src="images/complex_sign_transparent.png" style="width: 350px" />
+                </div>
+                <div class="substep fly-down" data-substep-order="3" style="position: absolute; left: 500px; top: 200px">
+                    <img src="images/ai-slop-bucket-repo.png" style="width: 500px" />
+                </div>
+                <div class="substep delayed-fade" data-substep-order="3" style="position: absolute; right: 100px; top: 80px">
+                    <img src="images/emoji-fearful-face.png" style="width: 150px" />
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- NEXT-GEN ARMCHAIR EXPERTS -->
+            <!-- =============================================== -->
+
+            <div id="next-gen-armchair-experts" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <h1 style="text-align: center">The new expertise?</h1>
+                <img src="images/ai-armchair-expert.png" style="position: absolute; left: 20px; top: 220px; width: 380px" />
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 380px; top: 260px">
+                    <p style="width: 580px; font-size: 32px; text-align: left">It <b>removes difficulty</b> right at the point where struggle would deepen understanding.</p>
+                </div>
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 380px; top: 410px">
+                    <p style="width: 580px; font-size: 32px; text-align: left">It takes the "happy path", avoids <b>rich corrective feedback,</b> just fabricates fluent answers.</p>
+                </div>
+                <div class="substep" data-substep-order="3" style="position: absolute; left: 380px; top: 560px">
+                    <p style="width: 580px; font-size: 32px; text-align: left">It lets novices <b>skip building mental models</b> and jump straight to polished artifacts.</p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- GENERATIVE AI STUDENT LEARNING -->
+            <!-- =============================================== -->
+
+            <div id="generative-AI-student-learning" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">We've seen this coming</h1>
+                <!-- Top-left: Guardrails article -->
+                <img src="images/guardrails-generative-ai-harm.png" style="position: absolute; left: 40px; top: 130px; width: 220px" />
+
+                <!-- Top-right: Quote + URL -->
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <p style="position: absolute; left: 300px; top: 130px; width: 680px; font-size: 22px; text-align: left; font-style: italic">
+                        "...GPT Base helped students solve about 48% more practice problems correctly, but when the exam came without AI, those same students scored 17% worse than the kids who never
+                        used AI at all..."
+                    </p>
+                    <p style="position: absolute; left: 300px; top: 250px; width: 680px; font-size: 16px; text-align: left">
+                        <a
+                            href="https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education"
+                            style="color: #0066cc; text-decoration: none; background: none; text-shadow: none; border: none"
+                            >https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education</a
+                        >
+                    </p>
+                </div>
+
+                <!-- Book cover + citation -->
+                <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <img src="images/book-accelerated-expertise.png" style="position: absolute; left: 100px; top: 340px; width: 200px" />
+                    <p style="position: absolute; left: 50px; top: 630px; font-size: 20px; text-align: left">Hoffman et al. (2014). Accelerated Expertise.</p>
+                </div>
+
+                <!-- Right side text blocks -->
+                <div class="substep" data-substep-order="3" style="position: absolute; left: 440px; top: 300px">
+                    <p style="width: 540px; font-size: 24px; text-align: left">
+                        <b><u>Novices vs experts need different conditions:</u></b>
+                    </p>
+                    <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px">
+                        What helps experts posessing learned causal models, will <i>hurt</i> novices who still need to build mental models.
+                    </p>
+                </div>
+
+                <div class="substep" data-substep-order="4" style="position: absolute; left: 440px; top: 400px">
+                    <p style="width: 540px; font-size: 24px; text-align: left">
+                        <b><u>Desirable difficulty:</u></b>
+                    </p>
+                    <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px">Training that's too easy &rarr; feels good, looks productive, but produces shallow learning.</p>
+                </div>
+
+                <div class="substep" data-substep-order="5" style="position: absolute; left: 440px; top: 500px">
+                    <p style="width: 540px; font-size: 24px; text-align: left">
+                        <b><u>Scenario-based practice in messy, real contexts:</u></b>
+                    </p>
+                    <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px">
+                        You need exposure to realistic, varied situations and feedback, not just perfectly guided walkthroughs.
+                    </p>
+                </div>
+
+                <div class="substep" data-substep-order="6" style="position: absolute; left: 440px; top: 600px">
+                    <p style="width: 540px; font-size: 24px; text-align: left">
+                        <b><u>Experts seek out corrective feedback:</u></b>
+                    </p>
+                    <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px">
+                        They <i>want</i> to be told where they're wrong; they don't want a tool that just makes them look right.
+                    </p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- ACKOFF WISDOM -->
+            <!-- =============================================== -->
+
+            <div id="ackoff-wisdom" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <img src="images/russell-l-ackoff.png" style="position: absolute; left: 40px; top: 80px; width: 150px" />
+                <p style="position: absolute; left: 210px; top: 80px; width: 750px; font-size: 28px; text-align: left; font-style: italic">
+                    "Adults learn most of what they use at work or at leisure, while at work or leisure. Most of what is taught in classroom settings is forgotten, and much of what is remembered is
+                    irrelevant."<br />
+                    - Russell Ackoff
+                </p>
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 120px; top: 370px">
+                    <p style="width: 800px; font-family: &quot;Archivo Black&quot;; font-size: 32px; font-weight: 300; text-align: center">
+                        Understanding comes through trial and error, adaptation at the edge, testing
+                    </p>
+                </div>
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 120px; top: 490px">
+                    <p style="width: 800px; font-family: &quot;Archivo Black&quot;; font-size: 32px; font-weight: 300; text-align: center">This is the fundamental mindset of good SREs</p>
+                </div>
+                <div class="substep" data-substep-order="3" style="position: absolute; left: 120px; top: 590px">
+                    <p style="width: 800px; font-family: &quot;Archivo Black&quot;; font-size: 32px; font-weight: 300; text-align: center">
+                        This is the capability we hire for and must cultivate on the job
+                    </p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- AI TOOL OR OPERATOR -->
+            <!-- =============================================== -->
+
+            <div id="ai-tool-or-operator" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <p style="position: absolute; left: 40px; top: 30px; font-family: &quot;Archivo Black&quot;; font-size: 50px; font-weight: 300; text-align: left; width: 1000px">
+                    When does AI stop being a tool?
+                </p>
+                <img class="seq-fade" src="images/emoji-female-welder.png" style="position: absolute; left: 80px; top: 160px; width: 130px; animation-delay: 0.3s" />
+                <img class="seq-fade" src="images/emoji-male-construction-worker.png" style="position: absolute; left: 80px; top: 340px; width: 130px; animation-delay: 0.8s" />
+                <img class="seq-fade" src="images/ai-toolbox.png" style="position: absolute; left: 220px; top: 280px; width: 150px; animation-delay: 1.3s" />
+                <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <img src="images/ai-operator-welder.png" style="position: absolute; left: 430px; top: 430px; width: 195px" />
+                    <img src="images/ai-operator-construction.png" style="position: absolute; left: 650px; top: 420px; width: 195px" />
+                    <p style="position: absolute; right: 40px; bottom: 40px; font-family: &quot;Archivo Black&quot;; font-size: 50px; font-weight: 300; text-align: right; width: 800px">
+                        And becomes the Operator?
+                    </p>
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- THE AI OPERATOR NIGHTMARE -->
+            <!-- =============================================== -->
+
+            <div id="the-ai-operator-nightmare" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
+                <img src="images/complex_sign_transparent.png" style="position: absolute; left: 412px; top: 284px; width: 200px; z-index: 50" />
+
+                <!-- Rings (lower z-index, sent to back) -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 0px; top: 0px; z-index: 10">
+                    <img src="images/image-ai-ring.png" class="spin-clockwise" style="position: absolute; left: 262px; top: 134px; width: 500px" />
+                </div>
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 0px; top: 0px; z-index: 8">
+                    <img src="images/image-ai-ring.png" class="spin-anticlockwise" style="position: absolute; left: 162px; top: 34px; width: 700px" />
+                </div>
+                <div class="substep" data-substep-order="3" style="position: absolute; left: 0px; top: 0px; z-index: 6">
+                    <img src="images/image-ai-ring.png" class="spin-clockwise" style="position: absolute; left: 62px; top: -66px; width: 900px" />
+                </div>
+                <div class="substep" data-substep-order="4" style="position: absolute; left: 0px; top: 0px; z-index: 4">
+                    <img src="images/image-ai-ring.png" class="spin-anticlockwise" style="position: absolute; left: -38px; top: -166px; width: 1100px" />
+                </div>
+
+                <!-- Operators (higher z-index, always on top) -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 0px; top: 0px; z-index: 50">
+                    <img src="images/ai-operator-welder.png" style="position: absolute; left: 300px; top: 300px; width: 100px" />
+                </div>
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 0px; top: 0px; z-index: 50">
+                    <img src="images/ai-operator-construction.png" style="position: absolute; left: 724px; top: 300px; width: 100px" />
+                </div>
+                <div class="substep" data-substep-order="3" style="position: absolute; left: 0px; top: 0px; z-index: 50">
+                    <img src="images/ai-operator-welder.png" style="position: absolute; left: 462px; top: 40px; width: 100px" />
+                    <img src="images/ai-operator-construction.png" style="position: absolute; left: 462px; top: 620px; width: 100px" />
+                </div>
+                <div class="substep" data-substep-order="4" style="position: absolute; left: 0px; top: 0px; z-index: 50">
+                    <img src="images/ai-operator-welder.png" style="position: absolute; left: 884px; top: 334px; width: 100px" />
+                    <img src="images/ai-operator-construction.png" style="position: absolute; left: 40px; top: 334px; width: 100px" />
+                </div>
+            </div>
+
+            <!-- =============================================== -->
+            <!-- WHO IS ACCOUNTABLE -->
+            <!-- =============================================== -->
+
+            <div id="who-is-accountable" class="step" data-rel-x="0" data-rel-y="-4000" data-rel-z="8000" data-scale="60" data-rotate-y="-90">
+                <h1>Who is accountable?</h1>
+                <div class="seq-fade" style="position: absolute; left: 330px; top: 390px; animation-delay: 0.5s">
+                    <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 90px" />
+                </div>
+                <div class="substep" data-substep-order="2">
+                    <img src="images/emoji-male-construction-worker.png" style="position: absolute; left: 600px; top: 20px; width: 100px" />
+                    <img src="images/emoji-female-welder.png" style="position: absolute; left: 720px; top: 25px; width: 110px" />
+                    <p style="position: absolute; left: 830px; top: 60px; font-size: 40px; font-weight: bold; text-align: left">SREs?</p>
+                </div>
+                <div class="substep" data-substep-order="3">
+                    <img src="images/ai-slop-bucket-repo.png" style="position: absolute; left: 700px; top: 200px; width: 180px" />
+                </div>
+                <div class="substep" data-substep-order="4">
+                    <p style="position: absolute; left: 620px; top: 430px; font-size: 40px; font-weight: bold; text-align: left">or....</p>
+                    <img src="images/ai-operator-welder.png" style="position: absolute; left: 720px; top: 410px; width: 105px" />
+                    <img src="images/ai-operator-construction.png" style="position: absolute; left: 840px; top: 410px; width: 100px" />
+                </div>
+                <p
+                    class="substep"
+                    data-substep-order="4"
+                    style="position: absolute; left: 0px; top: 680px; width: 1024px; font-family: &quot;Archivo Black&quot;; font-size: 36px; font-weight: 300; text-align: center"
+                >
+                    And who has the expertise to fix it now?
                 </p>
             </div>
-            
-            <!-- Bottom row: Logos -->
-            <div style="display: flex; justify-content: flex-start; align-items: center; gap: 40px; margin-top: 60px;">
-                <div class="substep" data-substep-order="5">
-                    <img src="images/aws.png" style="width: 170px; height: auto;" />
-                </div>
-                <div class="substep" data-substep-order="6" style="position: relative;">
-                    <img src="images/new-data-centre.png" style="width: 150px; height: auto;" />
-                </div>
-                <div class="substep" data-substep-order="7" style="position: relative; margin-top: -30px; margin-left: -30px;">
-                    <img src="images/Linkedin-Logo.png" style="width: 80px; height: auto;" />
-                </div>
-            </div>
-            <div class="substep" data-substep-order="8" style="position: absolute; bottom: 80px; right: 20px; display: flex; align-items: flex-start; gap: 20px;">
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-                    <img src="images/medium-blog-icon.png" style="width: 90px; height: auto;" />
-                    <img src="images/logo-bluesky.png" style="width: 90px; height: auto;" />
-                </div>
-                <p style="font-size: 40px; font-weight: bold; margin-top: 50px;">@hatchman76</p>
-            </div>
-        </div>
-        
-        <!-- Takeaways Slide -->
-        <div id="takeaways" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
-            <h1>Takeaways</h1>
-            <table style="width: 900px; border-collapse: collapse; margin-top: 40px;">
-                <tr class="substep" data-substep-order="1">
-                    <td style="width: 120px; padding: 20px 0; vertical-align: middle;">
-                        <img src="images/sign-right-turn.png" style="width: 80px; height: auto;" />
-                    </td>
-                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
-                        You cannot hire like we used to. We have to change
-                    </td>
-                </tr>
-                <tr class="substep" data-substep-order="2">
-                    <td style="padding: 20px 0; vertical-align: middle;">
-                        <img src="images/emoji-money-bag.png" style="width: 70px; height: auto;" />
-                    </td>
-                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
-                        LLMs and AI-enabled tooling have significant productivity value.
-                    </td>
-                </tr>
-                <tr class="substep" data-substep-order="3">
-                    <td style="padding: 20px 0; vertical-align: middle;">
-                        <img src="images/emoji-brain.png" style="width: 60px; height: auto;" />
-                    </td>
-                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
-                        Hollowing out of SRE Expertise is a material risk to any business
-                    </td>
-                </tr>
-                <tr class="substep" data-substep-order="4">
-                    <td style="padding: 20px 0; vertical-align: middle;">
-                        <img src="images/emoji-poo.png" style="width: 60px; height: auto;" />
-                    </td>
-                    <td style="padding: 20px 0; vertical-align: middle; font-size: 30px;">
-                        Enshittifying Complex Systems is going to hurt us all
-                    </td>
-                </tr>
-            </table>
-        </div>
-        
-        <!-- Before We Continue Slide -->
-        <div id="before-we-continue" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
-            <h1>one more thing...</h1>
-            <!-- AI definition row -->
-            <table style="position: absolute; left: 112px; top: 160px; border-collapse: collapse;">
-                <tr class="substep" data-substep-order="1">
-                    <td style="padding: 20px 20px; vertical-align: middle;">
-                        <img src="images/logo-ai-mashup.png" style="width: 216px;" />
-                    </td>
-                    <td style="padding: 20px 20px; vertical-align: middle;">
-                        <img src="images/symbol-equals.png" style="width: 50px;" />
-                    </td>
-                    <td style="padding: 20px 20px; vertical-align: middle; font-size: 40px;">
-                        Anything AI!<br/>LLM, Agent etc...
-                    </td>
-                </tr>
-                <tr class="substep" data-substep-order="2">
-                    <td style="padding: 20px 20px; vertical-align: middle;">
-                        <img src="images/complex_sign_transparent.png" style="width: 250px;" />
-                    </td>
-                    <td style="padding: 20px 20px; vertical-align: middle;">
-                        <img src="images/symbol-equals.png" style="width: 50px;" />
-                    </td>
-                    <td style="padding: 20px 20px; vertical-align: middle; font-size: 40px;">
-                        any complex distributed<br/>software system
-                    </td>
-                </tr>
-            </table>
-        </div>
-        
-        <!-- Hiring Back in the Day Slide -->
-        <div id="hiring-back-in-the-day" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
-            <h1 style="text-align: center;">Interviews in the past</h1>
-            
-            <div class="substep" data-substep-order="1">
-                <img src="images/image-macbook-terminal.png" style="position: absolute; left: 40px; top: 60px; width: 190px;" />
-            </div>
-            <div class="substep" data-substep-order="2">
-                <img src="images/emoji-database.png" style="position: absolute; left: 380px; top: 80px; width: 80px;" />
-                <img src="images/emoji-network-switch.png" style="position: absolute; left: 480px; top: 70px; width: 100px;" />
-            </div>
-            <div class="substep" data-substep-order="3">
-                <img src="images/image-system-design-whiteboard.png" style="position: absolute; left: 740px; top: 60px; width: 220px;" />
-            </div>
-            <div class="substep" data-substep-order="4">
-                <img src="images/emoji-red-heart.png" style="position: absolute; left: 300px; top: 260px; width: 100px;" />
-            </div>
-            <div class="substep" data-substep-order="5">
-                <img src="images/this-is-fine.gif" style="position: absolute; left: 440px; top: 240px; width: 220px;" />
-                <img src="images/pager-modern.png" style="position: absolute; left: 680px; top: 260px; width: 80px;" />
-            </div>
-            <div class="substep" data-substep-order="6">
-                <img src="images/old-man-yells-at-blind-glassdoor.png" style="position: absolute; left: 150px; top: 390px; width: 250px;" />
-            </div>
-            <div class="substep" data-substep-order="7">
-                <p style="position: absolute; right: 40px; top: 410px; font-size: 40px; text-align: right;">Almost always in person</p>
-                <p style="position: absolute; right: 40px; top: 480px; font-size: 80px; text-align: right;">~100</p>
-            </div>
-        </div>
-        
-        <!-- Hiring Today Slide -->
-        <div id="hiring-today" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
-            <h1 style="font-size: 56px;">2019...</h1>
 
-            <!-- LinkedIn logo centered -->
-            <div class="substep" data-substep-order="1" style="position: absolute; width: 100%; height: 100%;">
-                <img src="images/Linkedin-Logo.png" style="position: absolute; left: 400px; top: 80px; width: 100px;" />
+            <!-- More Automation is a Problem -->
+            <div id="more-automation-is-a-problem" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="80000" data-scale="60" data-rotate-y="-90">
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">Complex System Theory 101</h1>
+                <img src="images/quote-accelertaed-expertise-more-automation.png" style="position: absolute; left: 212px; top: 200px; width: 600px" />
+                <p style="position: absolute; left: 40px; bottom: 40px; width: 920px; font-size: 32px; text-align: center">
+                    TL;DR Complex System control planes will become as complex as the system they are representing
+                </p>
             </div>
 
-            <!-- Australia -->
-            <div class="substep" data-substep-order="2" style="position: absolute; width: 100%; height: 100%;">
-                <img src="images/Australia.png" style="position: absolute; left: 20px; top: 280px; width: 260px;" />
-                <img src="images/map-pin-red-hi.png" style="position: absolute; left: 195px; top: 420px; width: 22px;" />
+            <!-- Final Thoughts -->
+            <div id="final-thoughts" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="80000" data-scale="60" data-rotate-y="-90">
+                <h1>Final thoughts</h1>
+                <img src="images/grandpa-simpson-point-idea.png" style="position: absolute; left: 312px; top: 184px; width: 400px" />
             </div>
 
-            <!-- Zoom + text -->
-            <div class="substep" data-substep-order="3" style="position: absolute; width: 100%; height: 100%;">
-                <img src="images/logo-zoom.png" style="position: absolute; left: 20px; top: 150px; width: 70px;" />
-                <p style="position: absolute; left: 110px; top: 145px; font-size: 26px; text-align: left;">Recruiter Screen</p>
-                <p style="position: absolute; left: 110px; top: 175px; font-size: 26px; text-align: left;">SRE Mindset</p>
-                <p style="position: absolute; left: 110px; top: 205px; font-size: 26px; text-align: left;">Management & Leadership</p>
-            </div>
-
-
-            <!-- Departing plane -->
-            <div class="substep" data-substep-order="4" style="position: absolute; width: 100%; height: 100%;">
-                <img src="images/emoji-plane-departing.png" style="position: absolute; left: 230px; top: 400px; width: 130px;" />
-            </div>
-
-               <!-- USA + plane arriving -->
-            <div class="substep" data-substep-order="5" style="position: absolute; width: 100%; height: 100%;">
-                <img src="images/emoji-plane-arriving.png" style="position: absolute; left: 520px; top: 260px; width: 150px;" />
-                <img src="images/usa.png" style="position: absolute; left: 650px; top: 230px; width: 300px;" />
-                <img src="images/map-pin-red-hi.png" style="position: absolute; left: 645px; top: 280px; width: 25px;" />
-                <p style="position: absolute; left: 350px; top: 330px; font-size: 44px;">15 hours</p>
-            </div>
-
-            <!-- Interview list -->
-            <div class="substep" data-substep-order="6" style="position: absolute; width: 100%; height: 100%;">
-                <p style="position: absolute; left: 610px; top: 10px; font-size: 26px; text-align: left;">Apache Web Server Diagnosis</p>
-                <p style="position: absolute; left: 610px; top: 40px; font-size: 26px; text-align: left;">Code challenge</p>
-                <p style="position: absolute; left: 610px; top: 70px; font-size: 26px; text-align: left;">Code refactor</p>
-                <p style="position: absolute; left: 610px; top: 100px; font-size: 26px; text-align: left;">System Design</p>
-                <p style="position: absolute; left: 610px; top: 130px; font-size: 26px; text-align: left;">Management and Leadership</p>
-                <p style="position: absolute; left: 610px; top: 160px; font-size: 26px; text-align: left;">Lunch!</p>
-            </div>
-        </div>
-        
-        <!-- COVID-19 Slide -->
-        <div id="covid-19" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25">
-            <h1>And then...</h1>
-            <div style="display: flex; justify-content: center; align-items: center; margin-top: 80px;">
-                <img src="images/emoji-covid-19.png" style="width: 280px; height: auto;" />
-            </div>
-        </div>
-        
-        <!-- Fast-forward 2025 Slide -->
-        <div id="fast-forward-2025" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
-            <!-- Top center: 2025 heading -->
-            <h1 style="margin: 0; position: absolute; left: 340px; top: 15px; font-size: 80px;">2025</h1>
-            <!-- Top right: ThousandEyes logo -->
-            <div style="position: absolute; right: 100px; top: 10px;">
-                <img src="images/thousand-eyes.png" style="width: 250px; height: auto;" />
-            </div>
-            <!-- Center-left: Diversity hands -->
-            <div class="substep" data-substep-order="8">
-                <div style="position: absolute; left: 30px; top: 400px;">
-                    <img src="images/people-hands-diversity.png" style="width: 400px; height: auto;" />
-                </div>
-            </div>
-            <!-- Left: SRE hiring sign -->
-            <div class="substep" data-substep-order="1">
-                <div style="position: absolute; left: -70px; top: 130px;">
-                    <img src="images/job-posting-sre-hiring.png" style="width: 280px; height: auto;" />
-                </div>
-            </div>
-            <!-- Webex + Cisco -->
-            <div class="substep" data-substep-order="2">
-                <div style="position: absolute; left: 230px; top: 130px;">
-                    <img src="images/logo-cisco-webex.png" style="width: 200px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 230px; top: 260px;">
-                    <img src="images/logo-cisco-blue.png" style="width: 250px; height: auto;" />
-                </div>
-            </div>
-            <!-- Fire + Pager -->
-            <div class="substep" data-substep-order="3">
-                <div style="position: absolute; left: 550px; top: 250px;">
-                    <img src="images/emoji-fire.png" style="width: 100px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 650px; top: 260px;">
-                    <img src="images/pager-modern.png" style="width: 100px; height: auto;" />
-                </div>
-            </div>
-            <!-- Brain -->
-            <div class="substep" data-substep-order="4">
-                <div style="position: absolute; right: 10px; top: 230px;">
-                    <img src="images/emoji-brain-graduation-cap-expertise.png" style="width: 140px; height: auto;" />
-                </div>
-            </div>
-            <!-- Leetcode -->
-            <div class="substep" data-substep-order="5">
-                <div style="position: absolute; left: 550px; top: 420px;">
-                    <img src="images/logo-leetcode.png" style="width: 120px; height: auto;" />
-                </div>
-            </div>
-            <!-- Whiteboard -->
-            <div class="substep" data-substep-order="6">
-                <div style="position: absolute; right: -10px; top: 400px;">
-                    <img src="images/image-system-design-whiteboard.png" style="width: 210px; height: auto;" />
-                </div>
-            </div>
-            <!-- Food -->
-            <div class="substep" data-substep-order="7">
-                <div style="position: absolute; right: 150px; top: 550px;">
-                    <img src="images/emoji-food-collection.png" style="width: 200px; height: auto;" />
-                </div>
-            </div>
-        </div>
-        
-        <!-- WTF Slide -->
-        <div id="wtf" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
-            <!-- Top-left: Python logo -->
-            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 30px; top: 90px;">
-                    <img src="images/python.png" style="width: 200px; height: auto;" />
-                </div>
-            </div>
-            <!-- Top: Futurama Fry -->
-            <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 300px; top: 60px;">
-                    <img src="images/futurama-fry-not-sure.png" style="width: 180px; height: auto;" />
-                </div>
-            </div>
-            <!-- Bottom-left: Clock -->
-            <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 110px; top: 330px;">
-                    <img src="images/emoji-clock.png" style="width: 180px; height: auto;" />
-                </div>
-            </div>
-            <!-- Below clock: Homer Simpson -->
-            <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 100px; top: 530px;">
-                    <img src="images/homer-simpson-side-eye.gif" style="width: 220px; height: auto;" />
-                </div>
-            </div>
-            <!-- Center: Python code reveal GIF left -->
-            <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 250px; top: 250px;">
-                    <img src="images/python-code-reveal.gif" style="width: 380px; height: auto;" />
-                </div>
-            </div>
-            <!-- Center: Python code reveal GIF right + AI mashup logo -->
-            <div class="substep" data-substep-order="6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: -30px; top: 250px;">
-                    <img src="images/python-code-reveal.gif" style="width: 380px; height: auto;" />
-                </div>
-                <div style="position: absolute; right: 30px; top: 150px;">
-                    <img src="images/logo-ai-mashup.png" style="width: 100px; height: auto;" />
-                </div>
-            </div>
-            <!-- Bottom-right: Shocked WTF -->
-            <div class="substep" data-substep-order="7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 160px; top: 40px;">
-                    <img src="images/emoji-shocked-wtf.png" style="width: 280px; height: auto;" />
-                </div>
-            </div>
-        </div>
-        
-        <!-- Made Some Changes Slide -->
-        <div id="made-some-changes" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
-            <h1>we made some changes</h1>
-            <!-- Top-left: Leetcode logo + Magnifying glass -->
-            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 30px; top: 160px;">
-                    <img src="images/logo-leetcode.png" style="width: 140px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 150px; top: 170px;">
-                    <img src="images/emoji-magnifying-glass-right.png" style="width: 110px; height: auto;" />
-                </div>
-            </div>
-            <!-- Top-center: Terraform + House + 2-3 days -->
-            <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 370px; top: 140px;">
-                    <img src="images/logo-terraform.png" style="width: 100px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 380px; top: 250px;">
-                    <img src="images/emoji-home-house.png" style="width: 100px; height: auto;" />
-                </div>
-                <p style="position: absolute; left: 490px; top: 270px; font-size: 44px; margin: 0;">2 - 3 days</p>
-            </div>
-            <!-- Top-right: Speech bubbles -->
-            <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 40px; top: 160px;">
-                    <img src="images/image-speech-bubbles.png" style="width: 200px; height: auto;" />
-                </div>
-            </div>
-            <!-- Bottom-left: Whiteboard with question mark -->
-            <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 20px; top: 470px;">
-                    <img src="images/image-whiteboard-question-mark.png" style="width: 280px; height: auto;" />
-                </div>
-            </div>
-            <!-- Bottom-center: Glassdoor + Blind with red X overlay -->
-            <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 370px; top: 520px;">
-                    <img src="images/logo-glassdoor.png" style="width: 120px; height: auto;" />
-                    <img src="images/logo-blind.png" style="width: 80px; height: auto; margin-left: 10px;" />
-                </div>
-            </div>
-            <!-- Red cross X overlay -->
-            <div class="substep" data-substep-order="6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 370px; top: 520px;">
-                    <img src="images/red-cross-x-wrong.png" style="width: 220px; height: auto; position: absolute; left: 20px; top: -70px;" />
-                </div>
-            </div>
-            <!-- Bottom-right: ByteDance tweet -->
-            <div class="substep" data-substep-order="7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 20px; top: 450px;">
-                    <img src="images/twitter-byte-dance-interview-funny.png" style="width: 350px; height: auto;" />
-                </div>
-            </div>
-        </div>
-        
-        <!-- Needs More Thought Slide -->
-        <div id="needs-more-thought" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
-            <h1>it needs more thought</h1>
-            <!-- Calendar + AI mashup + Stopwatch -->
-            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 20px; top: 330px;">
-                    <img src="images/emoji-calendar-two-weeks.png" style="width: 180px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 135px; top: 220px;">
-                    <img src="images/logo-ai-mashup.png" style="width: 130px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 220px; top: 330px;">
-                    <img src="images/emoji-stopwatch-15-minutes.png" style="width: 140px; height: auto;" />
-                </div>
-            </div>
-            <!-- Speech bubbles + Office building -->
-            <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 200px; top: 150px;">
-                    <img src="images/image-speech-bubbles.png" style="width: 180px; height: auto;" />
-                </div>
-                <div style="position: absolute; right: 80px; top: 200px;">
-                    <img src="images/emoji-office-building.png" style="width: 130px; height: auto;" />
-                </div>
-            </div>
-            <!-- Laptop + System design whiteboard -->
-            <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 0px; top: 350px;">
-                    <img src="images/image-macbook-terminal.png" style="width: 176px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 600px; top: 350px;">
-                    <img src="images/image-system-design-whiteboard.png" style="width: 208px; height: auto;" />
-                </div>
-            </div>
-            <!-- CoderPad + HackerRank -->
-            <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 130px; bottom: 100px;">
-                    <img src="images/logo-coderpad.png" style="width: 300px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 500px; bottom: 100px;">
-                    <img src="images/logo-hacker-rank.png" style="width: 300px; height: auto;" />
-                </div>
-            </div>
-            <!-- Slack CTA + Slack thread -->
-            <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <p style="position: absolute; left: 110px; right: 200px; bottom: 70px; font-size: 40px; margin: 0; font-weight: bold; white-space: nowrap;">Please share your ideas in Slack!</p>
-                <div style="position: absolute; right: 100px; bottom: 30px;">
-                    <img src="images/emoji-slack-thread.png" style="width: 120px; height: auto;" />
-                </div>
-            </div>
-        </div>
-
-        <!-- The Irony Slide -->
-        <div id="the-irony" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
-            <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap;">The irony though</h1>
-            <!-- Left: Clamp + text -->
-            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 20px; top: 230px; display: flex; align-items: center; gap: 16px;">
-                    <img src="images/emoji-clamp.png" style="width: 100px; height: auto;" />
-                    <p style="font-size: 36px; margin: 0;">Top down pressure to use AI</p>
-                </div>
-            </div>
-            <!-- Center: Snail + text -->
-            <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 200px; top: 380px; display: flex; align-items: center; gap: 16px;">
-                    <img src="images/emoji-snail.png" style="width: 100px; height: auto;" />
-                    <p style="font-size: 36px; margin: 0;">No-one wants to be left behind</p>
-                </div>
-            </div>
-            <!-- Bottom-right: Confused face + text -->
-            <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 420px; top: 530px; display: flex; align-items: center; gap: 16px;">
-                    <img src="images/emoji-confused.png" style="width: 120px; height: auto;" />
-                    <div style="text-align: left;">
-                        <p style="font-size: 36px; margin: 0; text-align: left;">Tell candidates not to use it.
-                        Then demand they do on Day 1</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- LLM Prompt Jockey Apocalypse Slide -->
-        <div id="llm-prompt-jockey-apocalypse" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative;">
-            <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap;">Maybe we just want</h1>
-            <!-- Bottom-left: Complex sign with network -->
-            <div style="position: absolute; left: 100px; top: 250px;">
-                <img src="images/complex_sign_transparent.png" style="width: 350px; height: auto;" />
-            </div>
-            <!-- Upper-center: Jockey 1 -->
-            <div style="position: absolute; left: 470px; top: 150px;">
-                <img src="images/emoji-llm-prompt-jockey.png" style="width: 250px; height: auto;" />
-            </div>
-            <!-- Center-bottom: Jockey 2 -->
-            <div style="position: absolute; left: 550px; top: 370px;">
-                <img src="images/emoji-llm-prompt-jockey.png" style="width: 260px; height: auto;" />
-            </div>
-            <!-- Upper-right: Jockey 3 -->
-            <div style="position: absolute; right: 130px; top: 250px;">
-                <img src="images/emoji-llm-prompt-jockey.png" style="width: 220px; height: auto;" />
-            </div>
-        </div>
-
-        <!-- What About Expertise Slide -->
-        <div id="what-about-expertise" class="step" data-rel-x="50000" data-rel-y="0" data-scale="30" style="position: relative;">
-            <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap;">But then...</h1>
-            <!-- Left: Emoji + text table -->
-            <table style="position: absolute; left: 20px; top: 120px; border-collapse: collapse;">
-                <tr>
-                    <td style="padding: 10px 16px 10px 0; vertical-align: middle;"><img src="images/emoji-brain-graduation-cap-expertise.png" style="width: 100px; height: auto;" /></td>
-                    <td style="padding: 10px 0; vertical-align: middle; font-size: 44px;">What happens to Expertise?</td>
-                </tr>
-                <tr class="substep" data-substep-order="1">
-                    <td style="padding: 10px 16px 10px 0; vertical-align: middle;"><img src="images/emoji-artist-palette.png" style="width: 60px; height: auto;" /></td>
-                    <td style="padding: 10px 0; vertical-align: middle; font-size: 40px;">Creativity?</td>
-                </tr>
-                <tr class="substep" data-substep-order="2">
-                    <td style="padding: 10px 16px 10px 0; vertical-align: middle;"><img src="images/emoji-light-bulb.png" style="width: 60px; height: auto;" /></td>
-                    <td style="padding: 10px 0; vertical-align: middle; font-size: 40px;">Innovation?</td>
-                </tr>
-                <tr class="substep" data-substep-order="3">
-                    <td style="padding: 10px 16px 10px 0; vertical-align: middle;"><img src="images/emoji-books.png" style="width: 60px; height: auto;" /></td>
-                    <td style="padding: 10px 0; vertical-align: middle; font-size: 40px;">Learning?</td>
-                </tr>
-            </table>
-            <!-- Right: Five Minds quote + text -->
-            <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 40px; bottom: 180px;">
-                    <img src="images/quote-five-minds-for-the-future-the-creating-mind.png" style="width: 450px; height: auto;" />
-                </div>
-                <p style="position: absolute; right: 20px; bottom: 130px; font-size: 36px; margin: 0;">We don't just hire for raw tech skills</p>
-            </div>
-        </div>
-
-        <!-- The War on Expertise Slide -->
-        <div id="the-war-on-expertise" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <h1 style="text-align: center; margin: 0; font-size: 56px;">The War on Expertise</h1>
-            <!-- Left: SRE Fort -->
-            <div style="position: absolute; left: 20px; top: 120px;">
-                <img src="images/fort-sre.png" style="width: 420px; height: auto;" />
-            </div>
-            <!-- Right: AI Tank -->
-            <div style="position: absolute; right: 40px; top: 250px;">
-                <img src="images/ai-tank-assault.png" style="width: 400px; height: auto;" />
-            </div>
-        </div>
-
-        <!-- Tool Commoditization Slide -->
-        <div id="tool-commoditization" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <h1 style="text-align: center; margin: 0; font-size: 52px;">We've commoditized it for centuries</h1>
-            <!-- Top-left: Printing press -->
-            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 20px; top: 140px;">
-                    <img src="images/printing-press.png" style="width: 250px; height: auto;" />
-                </div>
-            </div>
-            <!-- Top-center: Mitre saw -->
-            <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 400px; top: 180px;">
-                    <img src="images/mitre-saw.png" style="width: 220px; height: auto;" />
-                </div>
-            </div>
-            <!-- Right: GPS map -->
-            <div class="substep" data-substep-order="5" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; right: 20px; top: 280px;">
-                    <img src="images/apple-maps-gps.png" style="width: 200px; height: auto;" />
-                </div>
-            </div>
-            <!-- Bottom-left: Early arc welder -->
-            <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 200px; top: 380px;">
-                    <img src="images/early-arc-welder.png" style="width: 240px; height: auto;" />
-                </div>
-            </div>
-            <!-- Bottom-center: Laser leveller -->
-            <div class="substep" data-substep-order="4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <div style="position: absolute; left: 580px; top: 510px;">
-                    <img src="images/laser-leveller.png" style="width: 220px; height: auto;" />
-                </div>
-            </div>
-        </div>
-
-        <!-- Distributed Complex Characteristics Slide -->
-        <div id="distributed-complex-characteristics" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <h1 style="text-align: center; margin: 0; font-size: 52px;">Distributed Complex System Expertise is different</h1>
-            <!-- Scattered characteristic words — staggered fade-in on step entry -->
-            <p class="seq-fade" style="position: absolute; left: 60px; top: 300px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 0.6s;">stochastic</p>
-            <p class="seq-fade" style="position: absolute; left: 350px; top: 240px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 1.2s;">dynamic</p>
-            <p class="seq-fade" style="position: absolute; right: 130px; top: 320px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 1.8s;">emergent</p>
-            <p class="seq-fade" style="position: absolute; left: 320px; top: 400px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 2.4s;">unstable</p>
-            <p class="seq-fade" style="position: absolute; right: 180px; top: 460px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 3.0s;">non-linear</p>
-            <p class="seq-fade" style="position: absolute; left: 10px; top: 510px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 3.6s;">heterogeneous</p>
-            <p class="seq-fade" style="position: absolute; left: 300px; top: 610px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 4.2s;">evolving</p>
-            <p class="seq-fade" style="position: absolute; right: 110px; top: 580px; font-size: 56px; margin: 0; font-weight: bold; animation-delay: 4.8s;">context-sensitive</p>
-            <p class="seq-fade" style="position: absolute; right: 30px; bottom: 30px; font-size: 44px; margin: 0; font-style: italic; animation-delay: 5.4s;">and many more..</p>
-        </div>
-
-        <!-- Complex Sociotechnical Systems Slide -->
-        <div id="complex-sociotechnical-systems" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <h1 style="text-align: center; margin: 0; font-size: 52px;">Socio Technical Systems</h1>
-            <!-- Substep 1: Small system image -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 460px; top: 450px;">
-                <div id="sts-small" style="transition: opacity 0.5s ease-out;">
-                    <img src="images/socio-technical-system-small.png" style="width: 120px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 2: First car + vertical pipe -->
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 490px; top: 130px;">
-                <div class="slide-down-fade">
-                    <img src="images/emoji-car-oncoming.png" style="width: 80px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 20px; top: 120px;">
-                    <img src="images/pipe-vertical-down.png" style="width: 50px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 3: Female welder -->
-            <div class="substep" data-substep-order="3" style="position: absolute; left: 340px; top: 400px;">
-                <img src="images/emoji-female-welder.png" style="width: 70px; height: auto;" />
-            </div>
-            <!-- Substep 4: Branching pipe right + JavaScript logo -->
-            <div class="substep" data-substep-order="4">
-                <div style="position: absolute; left: 490px; top: 200px;">
-                    <img src="images/pipe-right-angle-down-left.png" style="width: 210px; height: auto; left: 30px;" />
-                </div>
-                <div style="position: absolute; right: 50px; top: 200px;">
-                    <div class="slide-left-fade">
-                        <img src="images/javascript-logo.png" style="width: 140px; height: auto;" />
-                    </div>
-                </div>
-            </div>
-            <!-- Substep 5: Medium system image (crossfade) -->
-            <div class="substep" data-substep-order="5" id="sts-medium-substep" style="position: absolute; left: 440px; top: 450px;">
-                <div id="sts-medium" style="transition: opacity 0.5s ease-out;">
-                    <img src="images/socio-technical-system-medium.png" style="width: 180px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 6: Male construction worker -->
-            <div class="substep" data-substep-order="6" style="position: absolute; left: 670px; top: 370px;">
-                <img src="images/emoji-male-construction-worker.png" style="width: 60px; height: auto;" />
-            </div>
-            <!-- Substep 7: Second car -->
-            <div class="substep" data-substep-order="7" style="position: absolute; left: 490px; top: 130px;">
-                <div class="slide-down-fade-staggered">
-                    <img src="images/emoji-car-oncoming.png" style="width: 80px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 8: Branching pipe left + Python logo -->
-            <div class="substep" data-substep-order="8">
-                <div style="position: absolute; left: 300px; top: 180px;">
-                    <img src="images/pipe-right-angle-down.png" style="width: 170px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 170px; top: 180px;">
-                    <div class="slide-right-fade">
-                        <img src="images/python.png" style="width: 80px; height: auto;" />
-                    </div>
-                </div>
-            </div>
-            <!-- Substep 9: Second car (duplicate) -->
-            <div class="substep" data-substep-order="9" style="position: absolute; left: 490px; top: 130px;">
-                <div class="slide-down-fade-staggered">
-                    <img src="images/emoji-car-oncoming.png" style="width: 80px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 10: Left horizontal pipe + Terraform logo -->
-            <div class="substep" data-substep-order="10">
-                <div style="position: absolute; left: 140px; top: 390px;">
-                    <img src="images/pipe-horizontal-right.png" style="width: 200px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 10px; top: 380px;">
-                    <div class="slide-right-fade">
-                        <img src="images/logo-terraform.png" style="width: 80px; height: auto;" />
-                    </div>
-                </div>
-            </div>
-            <!-- Substep 11: Female construction worker -->
-            <div class="substep" data-substep-order="11" style="position: absolute; right: 540px; top: 600px;">
-                <img src="images/emoji-female-construction-worker.png" style="width: 60px; height: auto;" />
-            </div>
-            <!-- Substep 12: Large system image (crossfade) -->
-            <div class="substep" data-substep-order="12" id="sts-large-substep" style="position: absolute; left: 440px; top: 430px;">
-                <div id="sts-large" style="transition: opacity 0.5s ease-out;">
-                    <img src="images/socio-technical-system-large.png" style="width: 200px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 13: Right horizontal pipe + Database -->
-            <div class="substep" data-substep-order="13">
-                <div style="position: absolute; left: 630px; top: 380px;">
-                    <img src="images/pipe-horizontal-right.png" style="width: 200px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 820px; top: 370px;">
-                    <div class="slide-right-fade">
-                        <img src="images/emoji-database.png" style="width: 70px; height: auto;" />
-                    </div>
-                </div>
-            </div>
-            <!-- Substep 14: XLarge system image (crossfade) -->
-            <div class="substep" data-substep-order="14" id="sts-xlarge-substep" style="position: absolute; left: 360px; top: 420px;">
-                <img src="images/socio-technical-system-xlarge.png" style="width: 380px; height: auto;" />
-            </div>
-            <!-- Substep 15: Male welder -->
-            <div class="substep" data-substep-order="15" style="position: absolute; left: 610px; top: 600px;">
-                <img src="images/emoji-male-welder.png" style="width: 60px; height: auto;" />
-            </div>
-            <!-- Substep 16: Fire emoji -->
-            <div class="substep" data-substep-order="16" style="position: absolute; left: 580px; top: 380px;">
-                <div class="pulse-glow">
-                    <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 17: Fire emoji (above female construction worker) -->
-            <div class="substep" data-substep-order="17" style="position: absolute; right: 530px; top: 500px;">
-                <div class="pulse-glow">
-                    <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 18: Fire emoji (above male welder) -->
-            <div class="substep" data-substep-order="18" style="position: absolute; left: 600px; top: 510px;">
-                <div class="pulse-glow">
-                    <img src="images/emoji-fire.png" class="pulse-glow-fire" style="width: 80px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 19: Fire extinguishers -->
-            <div class="substep" data-substep-order="19">
-                <div style="position: absolute; left: 690px; top: 290px;">
-                    <img src="images/emoji-fire-extinguisher.png" style="width: 80px; height: auto;" />
-                </div>
-                <div style="position: absolute; right: 560px; top: 520px;">
-                    <img src="images/emoji-fire-extinguisher.png" style="width: 80px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 20: GitHub, PagerDuty, Prometheus, Splunk logos -->
-            <div class="substep" data-substep-order="20">
-                <div style="position: absolute; left: 70px; top: 80px;">
-                    <img src="images/github.png" style="width: 120px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 620px; top: 480px;">
-                    <img src="images/logo-pagerduty.png" style="width: 200px; height: auto;" />
-                </div>
-                <div style="position: absolute; right: 640px; top: 500px;">
-                    <img src="images/logo-prometheus.png" style="width: 90px; height: auto;" />
-                </div>
-                <div style="position: absolute; right: 780px; top: 500px;">
-                    <img src="images/logo-splunk.png" style="width: 180px; height: auto;" />
-                </div>
-            </div>
-            <!-- Substep 21: Complex sign -->
-            <div class="substep" data-substep-order="21" style="position: absolute; left: 400px; top: 100px;">
-                <img src="images/complex-sign-only.png" style="width: 500px; height: auto;" />
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- SLIDE: WE LOVE TO SIMPLIFY -->
-        <!-- =============================================== -->
-        <div id="we-love-to-simplify" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <!-- Substep 7: "We love to simplify them" text -->
-            <div class="substep" data-substep-order="7" style="position: absolute; right: 0px; top: 30px;">
-                <h1 style="font-size: 44px; margin: 0;">We love to simplify complexity</h1>
-            </div>
-            <!-- Complex sign - always visible -->
-            <div style="position: absolute; left: 240px; top: 400px;">
-                <img src="images/complex_sign_transparent.png" style="width: 250px; height: auto;" />
-            </div>
-            <!-- Substep 1: Magnifying glass -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 220px; top: 500px;">
-                <img src="images/emoji-magnifying-glass-right.png" style="width: 140px; height: auto;" />
-            </div>
-            <!-- Substep 2: Exploding head -->
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 30px; top: 400px;">
-                <img src="images/emoji-exploding-head.png" style="width: 200px; height: auto;" />
-            </div>
-            <!-- Substep 3: MTTR + 5 Whys -->
-            <div class="substep" data-substep-order="3">
-                <div style="position: absolute; left: 190px; top: 130px;">
-                    <img src="images/mttr-dashboard.png" style="width: 160px; height: auto;" />
-                </div>
-                <p style="position: absolute; left: 370px; top: 170px; font-size: 48px; font-weight: bold; margin: 0;">5 Whys</p>
-            </div>
-            <!-- Substep 4: Heart eyes -->
-            <div class="substep" data-substep-order="4" style="position: absolute; left: 30px; top: 120px;">
-                <img src="images/emoji-heart-eyes.png" style="width: 190px; height: auto;" />
-            </div>
-            <!-- Substep 5: Iceberg -->
-            <div class="substep" data-substep-order="5" style="position: absolute; right: 40px; top: 150px;">
-                <img src="images/iceberg.png" style="width: 500px; height: auto;" />
-            </div>
-            <!-- Substep 8: Grossly generalize text -->
-            <div class="substep" data-substep-order="8" style="position: absolute; left: 0px; bottom: 50px; width: 1000px; text-align: center;">
-                <p style="font-size: 40px; font-weight: bold; margin: 0;">Even though we know we can grossly generalize</p>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- BUT WE LOVE SIMPLIFICATION -->
-        <!-- =============================================== -->
-
-        <div id="but-we-love-simplification" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <h1 style="position: absolute; left: 40px; top: 170px; font-size: 44px; margin: 0;">And it does help right?</h1>
-
-            <!-- Left: Dan Davies quote + flowchart -->
-            <div style="position: absolute; left: 40px; top: 270px;">
-                <img src="images/dan-davies-unaccountability-simplifie-reality.png" style="width: 580px; height: auto;" />
-            </div>
-
-            <!-- Right: William of Ockham portrait -->
-            <div style="position: absolute; right: 60px; top: 270px; text-align: center;">
-                <img src="images/william-of-ockham.png" style="width: 220px; height: auto;" />
-                <p style="font-size: 22px; font-weight: bold; margin: 15px 0 0 0;">William of Ockham</p>
-                <p style="font-size: 20px; margin: 4px 0 0 0;">1287 – 1347</p>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- TOLERATE BECAUSE -->
-        <!-- =============================================== -->
-
-        <div id="tolerate-because" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <h1 style="position: absolute; left: 40px; top: 30px; font-size: 44px; margin: 0;">We just need humans with complex system expertise</h1>
-
-            <!-- Substep 1: Money bag -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 60px; top: 190px;">
-                <img src="images/emoji-money-bag.png" style="width: 100px; height: auto;" />
-            </div>
-            <!-- Substep 2: Handshake -->
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 200px; top: 190px;">
-                <img src="images/emoji-handshake.png" style="width: 120px; height: auto;" />
-            </div>
-            <!-- Substep 3: Carrot -->
-            <div class="substep" data-substep-order="3" style="position: absolute; left: 360px; top: 190px;">
-                <img src="images/emoji-carrot.png" style="width: 100px; height: auto;" />
-            </div>
-
-            <!-- Substep 4: Shrug + money out window -->
-            <div class="substep" data-substep-order="4">
-                <div style="position: absolute; left: 20px; top: 370px;">
-                    <img src="images/emoji-man-woman-shrug.png" style="width: 150px; height: auto;" />
-                </div>
-                <div style="position: absolute; left: 200px; top: 370px;">
-                    <img src="images/money-window.gif" style="width: 250px; height: auto;" />
+            <!-- Core SRE Skills -->
+            <div id="core-sre-skills" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="80000" data-scale="60" data-rotate-y="-90">
+                <h1>Complex System SRE skills</h1>
+                <div class="substep" data-substep-order="1">
+                    <img src="images/emoji-light-bulb.png" style="position: absolute; left: 80px; top: 50px; width: 80px" />
+                    <p style="position: absolute; left: 200px; top: 50px; width: 700px; font-size: 32px; font-weight: bold; text-align: left">
+                        Understand interactions between components, build awareness of unintended consequences
+                    </p>
+                </div>
+                <div class="substep" data-substep-order="2">
+                    <img src="images/sign-right-turn.png" style="position: absolute; left: 80px; top: 220px; width: 80px" />
+                    <p style="position: absolute; left: 200px; top: 220px; width: 700px; font-size: 32px; font-weight: bold; text-align: left">Adapt to dynamic conditions, rebuild mental models</p>
+                </div>
+                <div class="substep" data-substep-order="3">
+                    <img src="images/emoji-thinking-face.png" style="position: absolute; left: 80px; top: 360px; width: 80px" />
+                    <p style="position: absolute; left: 200px; top: 360px; width: 700px; font-size: 32px; font-weight: bold; text-align: left">Think critically, make trade-offs under pressure</p>
                 </div>
             </div>
 
-            <!-- Substep 5: "But what if something reduced this need...?" -->
-            <div class="substep" data-substep-order="5" style="position: absolute; right: 40px; top: 330px;">
-                <p style="font-size: 40px; font-weight: bold; margin: 0; text-align: left; max-width: 400px;">But what if something could reduce this reliance?</p>
-            </div>
-
-            <!-- Substep 6: Agent Smith AI lollipop -->
-            <div class="substep" data-substep-order="6" style="position: absolute; right: 40px; top: 200px;">
-                <img src="images/agent-smith-ai-lollipop.png" style="width: 450px; height: auto;" />
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- THE EXPERTISE SILVER BULLET -->
-        <!-- =============================================== -->
-
-        <div id="the-expertise-silver-bullet" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <!-- Substep 1: AI silver bullet -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 70px; top: 160px;">
-                <img src="images/image-ai-silver-bullet.png" style="width: 120px; height: auto; transform: rotate(90deg);" />
-            </div>
-
-            <!-- Complex sign - always visible -->
-            <div style="position: absolute; left: 340px; top: 160px;">
-                <img src="images/complex_sign_transparent.png" style="width: 250px; height: auto;" />
-            </div>
-
-            <!-- Substep 2: Clipboard + Timer -->
-            <div class="substep" data-substep-order="2" style="position: absolute; right: 20px; top: 140px;">
-                <img src="images/clipboard-checklist-and-timer.png" style="width: 400px; height: auto;" />
-            </div>
-
-            <!-- Substep 3: Money mouth -->
-            <div class="substep" data-substep-order="3" style="position: absolute; right: 120px; top: 400px;">
-                <img src="images/emoji-moeny-mouth.png" style="width: 150px; height: auto;" />
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- THE TAYLOR PROPHECY -->
-        <!-- =============================================== -->
-
-        <div id="the-taylor-prophecy" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <h1 style="position: absolute; left: 60px; top: 30px; font-size: 40px; margin: 0;">In the past man has been first</h1>
-            <h1 style="position: absolute; left: 200px; top: 90px; font-size: 40px; margin: 0;">In the future, the system must be first</h1>
-
-            <!-- Substep 1: Taylor portrait + Remember me? -->
-            <div class="substep" data-substep-order="1">
-                <div style="position: absolute; left: 100px; top: 180px;">
-                    <img src="images/frederick-winslow-taylor.png" style="width: 198px; height: auto;" />
+            <!-- Tool vs Operator -->
+            <div id="tool-vs-operator" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="80000" data-scale="60" data-rotate-y="-90">
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">Tool vs Operator</h1>
+                <img src="images/ai-toolbox.png" style="position: absolute; left: -10px; top: 180px; width: 150px" />
+                <p style="position: absolute; left: 170px; top: 200px; width: 500px; font-size: 32px; font-weight: bold; text-align: left">
+                    As a tool it vastly improves productivity and reduces mundane, repetitive tasks
+                </p>
+                <div class="substep" data-substep-order="2">
+                    <img src="images/old-man-yells-at-github-grandpa.png" style="position: absolute; left: 700px; top: 140px; width: 230px" />
                 </div>
-                <p style="position: absolute; left: 80px; top: 610px; font-size: 36px; font-weight: bold; margin: 0;">Remember me?</p>
-            </div>
-
-            <!-- Substep 2: Book cover + I wrote a book once -->
-            <div class="substep" data-substep-order="2">
-                <div style="position: absolute; right: 100px; top: 180px;">
-                    <img src="images/book-principles-of-scientific-management.png" style="width: 270px; height: auto;" />
+                <div class="substep" data-substep-order="3">
+                    <img src="images/ai-operator-welder.png" style="position: absolute; left: -10px; top: 440px; width: 120px" />
+                    <img src="images/ai-operator-construction.png" style="position: absolute; left: 110px; top: 440px; width: 115px" />
+                    <p style="position: absolute; left: 250px; top: 460px; width: 400px; font-size: 32px; font-weight: bold; text-align: left">
+                        But as an Operator it threatens to enshittify your systems
+                    </p>
+                    <img src="images/complex_sign_transparent.png" style="position: absolute; left: 700px; top: 360px; width: 250px" />
+                    <img src="images/emoji-poo.png" style="position: absolute; left: 720px; top: 410px; width: 170px" />
                 </div>
-                <p style="position: absolute; right: 60px; top: 610px; font-size: 36px; font-weight: bold; margin: 0;">I wrote a book once in 1911</p>
-            </div>
-            <!-- Substep 3: Goodreads text -->
-            <div class="substep" data-substep-order="3" style="position: absolute; right: 60px; top: 700px;">
-                <p style="font-size: 36px; font-weight: bold; margin: 0;">It has 82% likes on Goodreads!</p>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- SEPARATE THINKING -->
-        <!-- =============================================== -->
-
-        <div id="separate-thinking" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90" style="position: relative;">
-            <!-- Substep 1: Title -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 380px; top: 130px;">
-                <h1 style="font-size: 40px; margin: 0;">Separate Thinking, From Doing</h1>
             </div>
 
-            <!-- Books - fade in on step entry via CSS -->
-            <div class="book-fade-in book-1" style="position: absolute; left: 200px; top: 60px;">
-                <img src="images/book-the-tyranny-of-metrics.png" style="width: 144px; height: auto;" />
-            </div>
-            <div class="book-fade-in book-2" style="position: absolute; left: 20px; top: 160px;">
-                <img src="images/book-manufacturing-advantage.png" style="width: 160px; height: auto;" />
-            </div>
-            <div class="book-fade-in book-3" style="position: absolute; left: 200px; top: 340px;">
-                <img src="images/book-talking-about-machines.jpg" style="width: 160px; height: auto;" />
-            </div>
-
-            <!-- Substep 2: Taylor + AI mashup images -->
-            <div class="substep" data-substep-order="2">
-                <table style="position: absolute; left: 380px; top: 240px; border-collapse: collapse; width: 580px;">
-                    <tr>
-                        <td style="text-align: center; padding: 10px 25px; vertical-align: middle;">
-                            <img src="images/frederick-taylor-cropped-head.png" style="width: 160px; height: auto;" />
+            <!-- Takeaways Summary -->
+            <div id="takeaways-summary" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="80000" data-scale="60" data-rotate-y="-90">
+                <h1>We have to adapt</h1>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 100px">
+                    <tr class="substep" data-substep-order="1">
+                        <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center">
+                            <img src="images/emoji-handshake.png" style="width: 70px" />
                         </td>
-                        <td style="text-align: center; padding: 10px 25px; vertical-align: middle;">
-                            <img src="images/logo-ai-mashup.png" style="width: 180px; height: auto;" />
+                        <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left">Understand the impacts on hiring and recruiting - the old signals are changing</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="2">
+                        <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center; position: relative">
+                            <img src="images/emoji-stick.png" style="width: 70px; position: absolute; left: 30px; top: 15px; transform: rotate(-45deg)" />
+                            <img src="images/emoji-carrot.png" style="width: 70px; position: absolute; left: 30px; top: 20px" />
                         </td>
+                        <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left">Be clear on what we are cultivating and incentivizing with AI - and the impacts</td>
+                    </tr>
+                    <tr class="substep" data-substep-order="3">
+                        <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center">
+                            <img src="images/emoji-rocket.png" style="width: 70px" />
+                        </td>
+                        <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left">
+                            Know distinctly on what the value of AI is, to your role, to your teams, to your business
+                        </td>
+                    </tr>
+                    <tr class="substep" data-substep-order="4">
+                        <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center">
+                            <img src="images/emoji-spring-coil.png" style="width: 50px" />
+                        </td>
+                        <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left">What really matters is how we adapt to it, not how we fight it</td>
                     </tr>
                 </table>
             </div>
 
-            <!-- Substep 3: Centralize text row -->
-            <div class="substep" data-substep-order="3">
-                <table style="position: absolute; left: 380px; top: 440px; border-collapse: collapse; width: 580px;">
-                    <tr>
-                        <td style="text-align: left; padding: 10px 25px; vertical-align: top; font-size: 24px;">
-                            Centralize tacit worker knowledge into prescriptive procedures
-                        </td>
-                        <td style="text-align: left; padding: 10px 25px; vertical-align: top; font-size: 24px;">
-                            Centralize tacit engineering knowledge into prescriptive LLM prompts
-                        </td>
-                    </tr>
-                </table>
+            <!-- Humans Are Adaptable -->
+            <div id="humans-are-adaptable" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="80000" data-scale="60" data-rotate-y="-90">
+                <p style="position: absolute; left: 40px; top: 150px; width: 600px; font-size: 36px; font-weight: bold; text-align: left">
+                    Humans are, and always have been, the most adaptable components of any complex socio-technical system
+                </p>
+                <img src="images/the-hill-i-die-on.png" style="position: absolute; left: 600px; top: 20px; width: 500px" />
+                <div class="substep" data-substep-order="1">
+                    <p style="position: absolute; left: 80px; top: 350px; width: 700px; font-size: 36px; font-weight: bold; text-align: left">
+                        The ability to learn and build expertise in these system is critical to their success and safety
+                    </p>
+                </div>
+                <div class="substep" data-substep-order="2">
+                    <p style="position: absolute; left: 120px; top: 510px; width: 800px; font-family: &quot;Archivo Black&quot;; font-size: 40px; font-weight: 300; text-align: center">
+                        AI must be our partner, not a replacement
+                    </p>
+                </div>
             </div>
 
-            <!-- Substep 4: Hire cheaper text row -->
-            <div class="substep" data-substep-order="4">
-                <table style="position: absolute; left: 380px; top: 560px; border-collapse: collapse; width: 580px;">
-                    <tr>
-                        <td style="text-align: left; padding: 20px 25px; vertical-align: top; font-size: 24px;">
-                            Hire cheaper workers to "follow the script".
-                        </td>
-                        <td style="text-align: left; padding: 20px 25px; vertical-align: top; font-size: 24px;">
-                            Hire cheaper "prompt jockeys" to follow them
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- LINEAR PROCESSES -->
-        <!-- =============================================== -->
-
-        <div id="linear-processes" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <p style="position: absolute; left: 40px; top: 30px; width: 920px; font-family: 'Archivo Black'; font-size: 50px; font-weight: 300;">This works when processes are repeatable and linear...</p>
-            <img src="images/engine-assembly-line.png" style="position: absolute; left: 250px; top: 280px; width: 500px;" />
-            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <p style="position: absolute; left: 40px; bottom: 40px; width: 920px; font-family: 'Archivo Black'; font-size: 36px; font-weight: 300;">...but only if you don't care about worker engagement, happiness and innovation!</p>
+            <!-- Thank You -->
+            <div id="thank-you" class="step" data-x="-50000" data-y="-1000" data-z="1000" data-scale="900" data-rotate-y="-90" data-rotate-x="-10">
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 200px; transform: translateX(-50%); white-space: nowrap; font-size: 90px">Thank you!</h1>
+                <p style="position: absolute; left: 50%; top: 380px; transform: translateX(-50%); font-size: 36px; white-space: nowrap">
+                    <a href="https://srecon26.hatchman76.com" style="color: #0066cc; text-decoration: none; background: none; text-shadow: none; border: none">https://srecon26.hatchman76.com</a>
+                </p>
+                <div style="position: absolute; left: 50%; top: 480px; transform: translateX(-50%); text-align: center">
+                    <img src="images/logo-bluesky.png" style="width: 60px; height: auto" />
+                    <p style="font-size: 36px; margin-top: 10px">@hatchman76</p>
+                </div>
             </div>
         </div>
 
-        <!-- =============================================== -->
-        <!-- MODERN SOFTWARE SYSTEMS -->
-        <!-- =============================================== -->
-
-        <div id="modern-software-systems" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <h1 style="position: absolute; left: 40px; top: 30px; width: 800px; text-align: left;">Modern software systems aren't like this</h1>
-            <img src="images/complex-socio-technical-system.png" style="position: absolute; right: 40px; top: 30px; width: 200px;" />
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 40px; top: 300px;">
-                <p style="width: 900px; font-size: 70px; font-weight: bold;">And haven't been for decades</p>
-            </div>
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 350px; top: 440px;">
-                <img src="images/ai-hold-my-beer.png" style="width: 350px;" />
-                <p style="position: absolute; left: 370px; top: 40px; font-size: 40px; font-weight: bold; width: 200px;">"relax humans, I got this!"</p>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- JIT KNOWLEDGE -->
-        <!-- =============================================== -->
-
-        <div id="jit-knowledge" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <h1 style="text-align: left; font-size: 70px;">Just-in-time knowledge</h1>
-            <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <img src="images/logo-ai-mashup.png" style="position: absolute; left: 40px; top: 220px; width: 180px;" />
-            </div>
-
-            <div class="substep" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <p class="seq-fade" style="position: absolute; left: 230px; top: 210px; font-size: 32px; text-align: left; width: 750px; animation-delay: 0s;">the speed at which we generate beliefs,</p>
-                <p class="seq-fade" style="position: absolute; left: 230px; top: 260px; font-size: 32px; text-align: left; width: 750px; animation-delay: 0.6s;">the plausibility of those beliefs, and</p>
-                <p class="seq-fade" style="position: absolute; left: 230px; top: 310px; font-size: 32px; text-align: left; width: 750px; animation-delay: 1.2s;">the distance between apparent certainty and actual understanding</p>
-            </div>
-
-            <div class="substep" data-substep-order="3" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                <img src="images/quote-simon-winchester-karl-popper.png" style="position: absolute; left: 260px; top: 460px; width: 500px;" />
-                <img src="images/emoji-heart-eyes.png" style="position: absolute; right: 40px; top: 500px; width: 200px;" />
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- REPO SLOP BUCKET -->
-        <!-- =============================================== -->
-
-        <div id="repo-slop-bucket" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <img src="images/slack-ai-terraform-slop.png" style="position: absolute; left: 40px; top: 30px; width: 500px;" />
-            <img src="images/ai-illusion-expertise-business-insider.png" style="position: absolute; left: 40px; top: 340px; width: 250px;" />
-            <div class="substep" data-substep-order="1" style="position: absolute; right: 100px; top: 320px;">
-                <img src="images/complex_sign_transparent.png" style="width: 350px;" />
-            </div>
-            <div class="substep fly-down" data-substep-order="2" style="position: absolute; left: 500px; top: 200px;">
-                <img src="images/ai-slop-bucket-repo.png" style="width: 500px;" />
-            </div>
-            <div class="substep delayed-fade" data-substep-order="2" style="position: absolute; right: 100px; top: 80px;">
-                <img src="images/emoji-fearful-face.png" style="width: 150px;" />
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- NEEDLESS WORK -->
-        <!-- =============================================== -->
-
-        <div id="needless-work" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <img src="images/quote-phoenix-project-take-needless-work-out.png" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 800px;" />
-            
-        </div>
-
-        <!-- =============================================== -->
-        <!-- NEXT-GEN ARMCHAIR EXPERTS -->
-        <!-- =============================================== -->
-
-        <div id="next-gen-armchair-experts" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <h1 style="text-align: center;">The new expertise?</h1>
-            <img src="images/ai-armchair-expert.png" style="position: absolute; left: 20px; top: 220px; width: 380px;" />
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 380px; top: 260px;">
-                <p style="width: 580px; font-size: 32px; text-align: left;">It <b>removes difficulty</b> right at the point where struggle would deepen understanding.</p>
-            </div>
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 380px; top: 410px;">
-                <p style="width: 580px; font-size: 32px; text-align: left;">It takes the "happy path", avoids <b>rich corrective feedback,</b> just fabricates fluent answers.</p>
-            </div>
-            <div class="substep" data-substep-order="3" style="position: absolute; left: 380px; top: 560px;">
-                <p style="width: 580px; font-size: 32px; text-align: left;">It lets novices <b>skip building mental models</b> and jump straight to polished artifacts.</p>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- GENERATIVE AI STUDENT LEARNING -->
-        <!-- =============================================== -->
-
-        <div id="generative-AI-student-learning" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <!-- Top-left: Guardrails article -->
-            <img src="images/guardrails-generative-ai-harm.png" style="position: absolute; left: 40px; top: 80px; width: 220px;" />
-
-            <!-- Top-right: Quote -->
-            <p style="position: absolute; left: 300px; top: 80px; width: 680px; font-size: 22px; text-align: left; font-style: italic;">"...GPT Base helped students solve about 48% more practice problems correctly, but when the exam came without AI, those same students scored 17% worse than the kids who never used AI at all..."</p>
-
-            <!-- URL -->
-            <p style="position: absolute; left: 300px; top: 200px; width: 680px; font-size: 16px; text-align: left;"><a href="https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education" style="color: #0066cc; text-decoration: none; background: none; text-shadow: none; border: none;">https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education</a></p>
-
-            <!-- Book cover -->
-            <img src="images/book-accelerated-expertise.png" style="position: absolute; left: 100px; top: 340px; width: 200px;" />
-
-            <!-- Book citation -->
-            <p style="position: absolute; left: 50px; top: 630px; font-size: 20px; text-align: left;">Hoffman et al. (2014). Accelerated Expertise.</p>
-
-            <!-- Right side text blocks -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 440px; top: 270px;">
-                <p style="width: 540px; font-size: 24px; text-align: left;"><b><u>Novices vs experts need different conditions:</u></b></p>
-                <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px;">What helps experts posessing learned causal models, will <i>hurt</i> novices who still need to build mental models.</p>
-            </div>
-
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 440px; top: 390px;">
-                <p style="width: 540px; font-size: 24px; text-align: left;"><b><u>Desirable difficulty:</u></b></p>
-                <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px;">Training that's too easy &rarr; feels good, looks productive, but produces shallow learning.</p>
-            </div>
-
-            <div class="substep" data-substep-order="3" style="position: absolute; left: 440px; top: 510px;">
-                <p style="width: 540px; font-size: 24px; text-align: left;"><b><u>Scenario-based practice in messy, real contexts:</u></b></p>
-                <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px;">You need exposure to realistic, varied situations and feedback, not just perfectly guided walkthroughs.</p>
-            </div>
-
-            <div class="substep" data-substep-order="4" style="position: absolute; left: 440px; top: 630px;">
-                <p style="width: 540px; font-size: 24px; text-align: left;"><b><u>Experts seek out corrective feedback:</u></b></p>
-                <p style="width: 520px; font-size: 22px; text-align: left; margin-left: 20px;">They <i>want</i> to be told where they're wrong; they don't want a tool that just makes them look right.</p>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- ACKOFF WISDOM -->
-        <!-- =============================================== -->
-
-        <div id="ackoff-wisdom" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <img src="images/russell-l-ackoff.png" style="position: absolute; left: 40px; top: 80px; width: 150px;" />
-            <p style="position: absolute; left: 210px; top: 80px; width: 750px; font-size: 28px; text-align: left; font-style: italic;">"Adults learn most of what they use at work or at leisure, while at work or leisure. Most of what is taught in classroom settings is forgotten, and much of what is remembered is irrelevant."<br> - Russell Ackoff</p>
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 120px; top: 370px;">
-                <p style="width: 800px; font-family: 'Archivo Black'; font-size: 32px; font-weight: 300; text-align: center;">Understanding comes through trial and error, adaptation at the edge, testing</p>
-            </div>
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 120px; top: 490px;">
-                <p style="width: 800px; font-family: 'Archivo Black'; font-size: 32px; font-weight: 300; text-align: center;">This is the fundamental mindset of good SREs</p>
-            </div>
-            <div class="substep" data-substep-order="3" style="position: absolute; left: 120px; top: 590px;">
-                <p style="width: 800px; font-family: 'Archivo Black'; font-size: 32px; font-weight: 300; text-align: center;">This is the capability we hire for and must cultivate on the job</p>
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- AI TOOL OR OPERATOR -->
-        <!-- =============================================== -->
-
-        <div id="ai-tool-or-operator" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <p style="position: absolute; left: 40px; top: 30px; font-family: 'Archivo Black'; font-size: 50px; font-weight: 300; text-align: left; width: 1000px;">When does AI stop being a tool?</p>
-            <img src="images/emoji-female-welder.png" style="position: absolute; left: 80px; top: 160px; width: 130px;" />
-            <img src="images/ai-toolbox.png" style="position: absolute; left: 220px; top: 280px; width: 150px;" />
-            <img src="images/emoji-male-construction-worker.png" style="position: absolute; left: 80px; top: 340px; width: 130px;" />
-            <img src="images/ai-operator-welder.png" style="position: absolute; left: 430px; top: 430px; width: 195px;" />
-            <img src="images/ai-operator-construction.png" style="position: absolute; left: 650px; top: 420px; width: 195px;" />
-            <p style="position: absolute; right: 40px; bottom: 40px; font-family: 'Archivo Black'; font-size: 50px; font-weight: 300; text-align: right; width: 800px;">And becomes the Operator</p>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- THE AI OPERATOR NIGHTMARE -->
-        <!-- =============================================== -->
-
-        <div id="the-ai-operator-nightmare" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <img src="images/complex_sign_transparent.png" style="position: absolute; left: 412px; top: 284px; width: 200px; z-index: 50;" />
-            
-            <!-- Rings (lower z-index, sent to back) -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 0px; top: 0px; z-index: 10;">
-                <img src="images/image-ai-ring.png" class="spin-clockwise" style="position: absolute; left: 262px; top: 134px; width: 500px;" />
-            </div>
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 0px; top: 0px; z-index: 8;">
-                <img src="images/image-ai-ring.png" class="spin-anticlockwise" style="position: absolute; left: 162px; top: 34px; width: 700px;" />
-            </div>
-            <div class="substep" data-substep-order="3" style="position: absolute; left: 0px; top: 0px; z-index: 6;">
-                <img src="images/image-ai-ring.png" class="spin-clockwise" style="position: absolute; left: 62px; top: -66px; width: 900px;" />
-            </div>
-            <div class="substep" data-substep-order="4" style="position: absolute; left: 0px; top: 0px; z-index: 4;">
-                <img src="images/image-ai-ring.png" class="spin-anticlockwise" style="position: absolute; left: -38px; top: -166px; width: 1100px;" />
-            </div>
-
-            <!-- Operators (higher z-index, always on top) -->
-            <div class="substep" data-substep-order="1" style="position: absolute; left: 0px; top: 0px; z-index: 50;">
-                <img src="images/ai-operator-welder.png" style="position: absolute; left: 300px; top: 300px; width: 100px;" />
-            </div>
-            <div class="substep" data-substep-order="2" style="position: absolute; left: 0px; top: 0px; z-index: 50;">
-                <img src="images/ai-operator-construction.png" style="position: absolute; left: 724px; top: 300px; width: 100px;" />
-            </div>
-            <div class="substep" data-substep-order="3" style="position: absolute; left: 0px; top: 0px; z-index: 50;">
-                <img src="images/ai-operator-welder.png" style="position: absolute; left: 462px; top: 40px; width: 100px;" />
-                <img src="images/ai-operator-construction.png" style="position: absolute; left: 462px; top: 620px; width: 100px;" />
-            </div>
-            <div class="substep" data-substep-order="4" style="position: absolute; left: 0px; top: 0px; z-index: 50;">
-                <img src="images/ai-operator-welder.png" style="position: absolute; left: 884px; top: 334px; width: 100px;" />
-                <img src="images/ai-operator-construction.png" style="position: absolute; left: 40px; top: 334px; width: 100px;" />
-            </div>
-        </div>
-
-        <!-- =============================================== -->
-        <!-- WHO IS ACCOUNTABLE -->
-        <!-- =============================================== -->
-
-        <div id="who-is-accountable" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <h1>Who is accountable?</h1>
-            <div class="substep" data-substep-order="1">
-                <img src="images/emoji-fire.png" class="pulse-glow-fire" style="position: absolute; left: 245px; top: 390px; width: 110px;" />
-            </div>
-            <div class="substep" data-substep-order="2">
-                <img src="images/emoji-male-construction-worker.png" style="position: absolute; left: 600px; top: 20px; width: 100px;" />
-                <img src="images/emoji-female-welder.png" style="position: absolute; left: 720px; top: 25px; width: 110px;" />
-                <p style="position: absolute; left: 830px; top: 60px; font-size: 40px; font-weight: bold; text-align: left;">SREs?</p>
-            </div>
-            <div class="substep" data-substep-order="1">
-                <img src="images/ai-slop-bucket-repo.png" style="position: absolute; left: 700px; top: 200px; width: 180px;" />
-            </div>
-            <div class="substep" data-substep-order="3">
-                <p style="position: absolute; left: 620px; top: 430px; font-size: 40px; font-weight: bold; text-align: left;">or....</p>
-                <img src="images/ai-operator-welder.png" style="position: absolute; left: 720px; top: 410px; width: 105px;" />
-                <img src="images/ai-operator-construction.png" style="position: absolute; left: 840px; top: 410px; width: 100px;" />
-            </div>
-            <p class="substep" data-substep-order="4" style="position: absolute; left: 0px; top: 680px; width: 1024px; font-family: 'Archivo Black'; font-size: 36px; font-weight: 300; text-align: center;">And who has the expertise to fix it now?</p>
-        </div>
-
-        <!-- More Automation is a Problem -->
-        <div id="more-automation-is-a-problem" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <img src="images/quote-accelertaed-expertise-more-automation.png" style="position: absolute; left: 212px; top: 200px; width: 600px;" />
-        </div>
-
-        <!-- Final Thoughts -->
-        <div id="final-thoughts" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <h1>Final thoughts</h1>
-            <img src="images/grandpa-simpson-point-idea.png" style="position: absolute; left: 312px; top: 184px; width: 400px;" />
-        </div>
-
-        <!-- Core SRE Skills -->
-        <div id="core-sre-skills" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <h1>Complex System SRE skills</h1>
-            <div class="substep" data-substep-order="1">
-                <img src="images/emoji-light-bulb.png" style="position: absolute; left: 80px; top: 50px; width: 80px;" />
-                <p style="position: absolute; left: 200px; top: 50px; width: 700px; font-size: 32px; font-weight: bold; text-align: left;">Understand interactions between components, build awareness of unintended consequences</p>
-            </div>
-            <div class="substep" data-substep-order="2">
-                <img src="images/sign-right-turn.png" style="position: absolute; left: 80px; top: 220px; width: 80px;" />
-                <p style="position: absolute; left: 200px; top: 220px; width: 700px; font-size: 32px; font-weight: bold; text-align: left;">Adapt to dynamic conditions, rebuild mental models</p>
-            </div>
-            <div class="substep" data-substep-order="3">
-                <img src="images/emoji-thinking-face.png" style="position: absolute; left: 80px; top: 360px; width: 80px;" />
-                <p style="position: absolute; left: 200px; top: 360px; width: 700px; font-size: 32px; font-weight: bold; text-align: left;">Think critically, make trade-offs under pressure</p>
-            </div>
-        </div>
-
-        <!-- Tool vs Operator -->
-        <div id="tool-vs-operator" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            
-                <img src="images/ai-toolbox.png" style="position: absolute; left: -10px; top: 180px; width: 150px;" />
-                <p style="position: absolute; left: 170px; top: 200px; width: 500px; font-size: 32px; font-weight: bold; text-align: left;">As a tool it vastly improves productivity and reduces mundane, repetitive tasks</p>
-            <div class="substep" data-substep-order="2">
-                <img src="images/old-man-yells-at-github-grandpa.png" style="position: absolute; left: 700px; top: 140px; width: 230px;" />
-            </div>
-            <div class="substep" data-substep-order="3">
-                <img src="images/ai-operator-welder.png" style="position: absolute; left: -10px; top: 440px; width: 120px;" />
-                <img src="images/ai-operator-construction.png" style="position: absolute; left: 110px; top: 440px; width: 115px;" />
-                <p style="position: absolute; left: 250px; top: 460px; width: 400px; font-size: 32px; font-weight: bold; text-align: left;">But as an Operator it threatens to enshittify your systems</p>
-                <img src="images/complex_sign_transparent.png" style="position: absolute; left: 700px; top: 360px; width: 250px;" />
-                <img src="images/emoji-poo.png"  style="position: absolute; left: 720px; top: 410px; width: 170px;" />
-            </div>
-            
-        </div>
-
-        <!-- Takeaways Summary -->
-        <div id="takeaways-summary" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <h1>We have to adapt</h1>
-            <table style="width: 100%; border-collapse: collapse; margin-top: 100px;">
-                <tr class="substep" data-substep-order="1">
-                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center;">
-                        <img src="images/emoji-handshake.png" style="width: 70px;" />
-                    </td>
-                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">Understand the impacts on hiring and recruiting - the old signals are changing</td>
-                </tr>
-                <tr class="substep" data-substep-order="2">
-                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center; position: relative;">
-                        <img src="images/emoji-stick.png" style="width: 70px; position: absolute; left: 30px; top: 15px; transform: rotate(-45deg);" />
-                        <img src="images/emoji-carrot.png" style="width: 70px; position: absolute; left: 30px; top: 20px;" />
-                    </td>
-                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">Be clear on what we are cultivating and incentivizing with AI - and the impacts</td>
-                </tr>
-                <tr class="substep" data-substep-order="3">
-                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center;">
-                        <img src="images/emoji-rocket.png" style="width: 70px;" />
-                    </td>
-                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">Know distinctly on what the value of AI is, to your role, to your teams, to your business</td>
-                </tr>
-                <tr class="substep" data-substep-order="4">
-                    <td style="width: 100px; padding: 20px 10px; vertical-align: middle; text-align: center;">
-                        <img src="images/emoji-spring-coil.png" style="width: 50px;" />
-                    </td>
-                    <td style="padding: 20px 10px; font-size: 30px; font-weight: bold; text-align: left;">What really matters is how we adapt to it, not how we fight it</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Humans Are Adaptable -->
-        <div id="humans-are-adaptable" class="step" data-rel-x="-15000" data-rel-y="0" data-rel-z="50000" data-scale="25" data-rotate-y="-90">
-            <p style="position: absolute; left: 40px; top: 150px; width: 600px; font-size: 36px; font-weight: bold; text-align: left;">Humans are, and always have been, the most adaptable components of any complex socio-technical system</p>
-            <img src="images/the-hill-i-die-on.png" style="position: absolute; left: 600px; top: 20px; width: 500px;" />
-            <div class="substep" data-substep-order="1">
-                <p style="position: absolute; left: 80px; top: 350px; width: 700px; font-size: 36px; font-weight: bold; text-align: left;">The ability to learn and build expertise in these system is critical to their success and safety</p>
-            </div>
-            <div class="substep" data-substep-order="2">
-                <p style="position: absolute; left: 120px; top: 510px; width: 800px; font-family: 'Archivo Black'; font-size: 40px; font-weight: 300; text-align: center;">AI must be our partner, not a replacement</p>
-            </div>
-        </div>
-
-
-    </div>
-
-    <!-- impress.js initialization -->
-    <script src="js/impress.js"></script>
-    <script>impress().init();</script>
-
-</body>
+        <!-- impress.js initialization -->
+        <script src="js/impress.js"></script>
+        <script>
+            impress().init();
+        </script>
+    </body>
 </html>
