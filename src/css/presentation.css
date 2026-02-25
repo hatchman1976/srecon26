@@ -86,50 +86,71 @@ body {
  * Each major section of the presentation has its own color scheme
  */
 
-/* Management & Leadership Theory Section */
-.impress-on-leadership-and-management,
-.impress-on-the-difference-why-it-matters,
-.impress-on-management-books,
-.impress-on-more-management-books,
-.impress-on-more-management-books-warning,
-.impress-on-sre-books,
-.impress-on-lfi-books,
-.impress-on-meta-books-strategy,
-.impress-on-so-how-does-this-translate {
-    background-color: rgb(255, 243, 224); /* Warm cream */
+/* Slide background colors — three-phase arc */
+
+/* Phase A: Opening / context setting */
+.impress-on-introduction,
+.impress-on-whoami,
+.impress-on-takeaways,
+.impress-on-before-we-continue {
+    background-color: rgb(245, 248, 255);
 }
 
-/* Work Management Section */
-.impress-on-engineering-manager,
-.impress-on-sre-manager,
-.impress-on-the-art-of-work-planning,
-.impress-on-top-down-to-bottom-up,
-.impress-on-work-you-need-to-stop,
-.impress-on-unplanned-work,
-.impress-on-work-takeaways {
-    background-color: rgb(207, 216, 220); /* Cool gray-blue */
+/* Phase B: The hiring story */
+.impress-on-hiring-back-in-the-day,
+.impress-on-hiring-today,
+.impress-on-covid-19,
+.impress-on-fast-forward-2025 {
+    background-color: rgb(255, 249, 240);
 }
 
-/* Team Building Section */
-.impress-on-building-teams,
-.impress-on-building-diverse-teams,
-.impress-on-diversity-of-thought {
-    background-color: rgb(220, 237, 200); /* Light green */
+/* Phase C: The WTF moment / reckoning */
+.impress-on-wtf,
+.impress-on-made-some-changes,
+.impress-on-needs-more-thought,
+.impress-on-the-irony,
+.impress-on-llm-prompt-jockey-apocalypse,
+.impress-on-what-about-expertise {
+    background-color: rgb(255, 242, 235);
 }
 
-/* Performance Management Section */
-.impress-on-mid-fiscal-end-fiscal,
-.impress-on-performance-reviews,
-.impress-on-advice-for-ic,
-.impress-on-relationships-are-core,
-.impress-on-people-takeaways {
-    background-color: rgb(250, 250, 250); /* Near white */
+/* Phase 1: Cool blue — expertise and complexity */
+.impress-on-the-war-on-expertise,
+.impress-on-tool-commoditization,
+.impress-on-distributed-complex-characteristics,
+.impress-on-complex-sociotechnical-systems,
+.impress-on-we-love-to-simplify,
+.impress-on-but-we-love-simplification,
+.impress-on-tolerate-because,
+.impress-on-the-expertise-silver-bullet,
+.impress-on-the-taylor-prophecy,
+.impress-on-separate-thinking {
+    background-color: rgb(230, 242, 255);
 }
 
-/* Anti-patterns Section */
-.impress-on-management-anti-patterns,
-.impress-on-kotter-management {
-    background-color: rgb(237, 231, 246); /* Light purple */
+/* Phase 2: Warm rose — danger and consequences */
+.impress-on-linear-processes,
+.impress-on-modern-software-systems,
+.impress-on-jit-knowledge,
+.impress-on-repo-slop-bucket,
+.impress-on-next-gen-armchair-experts,
+.impress-on-generative-AI-student-learning,
+.impress-on-ackoff-wisdom,
+.impress-on-ai-tool-or-operator,
+.impress-on-the-ai-operator-nightmare,
+.impress-on-who-is-accountable,
+.impress-on-more-automation-is-a-problem {
+    background-color: rgb(255, 240, 238);
+}
+
+/* Phase 3: Soft green — resolution and call to action */
+.impress-on-final-thoughts,
+.impress-on-core-sre-skills,
+.impress-on-tool-vs-operator,
+.impress-on-takeaways-summary,
+.impress-on-humans-are-adaptable,
+.impress-on-thank-you {
+    background-color: rgb(232, 248, 238);
 }
 
 /* Alternative background colors */
