@@ -813,6 +813,75 @@ body.impress-mouse-timeout {
     animation: poo-splat 2s ease-in forwards;
 }
 
+/* Jockey shuffle-in from right with bobbing */
+@keyframes jockey-shuffle {
+    0% {
+        transform: translateX(1200px) translateY(0) rotate(5deg);
+        opacity: 0;
+    }
+    8% {
+        transform: translateX(1000px) translateY(-10px) rotate(3deg);
+        opacity: 1;
+    }
+    18% {
+        transform: translateX(800px) translateY(-40px) rotate(-3deg);
+    }
+    28% {
+        transform: translateX(620px) translateY(15px) rotate(4deg);
+    }
+    38% {
+        transform: translateX(460px) translateY(-35px) rotate(-3deg);
+    }
+    48% {
+        transform: translateX(320px) translateY(12px) rotate(3deg);
+    }
+    58% {
+        transform: translateX(200px) translateY(-30px) rotate(-2deg);
+    }
+    68% {
+        transform: translateX(110px) translateY(10px) rotate(2deg);
+    }
+    78% {
+        transform: translateX(50px) translateY(-20px) rotate(-1deg);
+    }
+    88% {
+        transform: translateX(10px) translateY(8px) rotate(1deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.worker-fade {
+    opacity: 1;
+    transition: opacity 0.8s ease-out;
+}
+
+#llm-prompt-jockey-apocalypse:has(.substep-visible) .worker-fade {
+    opacity: 0;
+}
+
+.jockey-shuffle {
+    opacity: 0;
+}
+
+.substep-visible .jockey-shuffle {
+    animation: jockey-shuffle 2.5s ease-out forwards;
+}
+
+.substep-visible .jockey-shuffle.jockey-1 {
+    animation-delay: 1.0s;
+}
+
+.substep-visible .jockey-shuffle.jockey-2 {
+    animation-delay: 1.5s;
+}
+
+.substep-visible .jockey-shuffle.jockey-3 {
+    animation-delay: 2.0s;
+}
+
 /* Staggered sequential fade-in on step entry */
 .seq-fade {
     opacity: 0;
