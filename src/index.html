@@ -506,38 +506,47 @@
             <div id="llm-prompt-jockey-apocalypse" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
                 <h1 style="margin: 0; text-align: center; white-space: nowrap">Is this what we want?</h1>
                 <!-- Workers to the left of complex sign -->
-                <div class="worker-fade" style="position: absolute; left: 60px; top: 250px">
+                <div style="position: absolute; left: 160px; top: 250px">
                     <img src="images/emoji-female-welder.png" style="width: 130px; height: auto" />
                 </div>
-                <div class="worker-fade" style="position: absolute; left: 60px; top: 430px">
+                <div style="position: absolute; left: 160px; top: 430px">
                     <img src="images/emoji-male-construction-worker.png" style="width: 130px; height: auto" />
                 </div>
                 <!-- Bottom-left: Complex sign with network -->
-                <div style="position: absolute; left: 180px; top: 250px">
-                    <img src="images/complex_sign_transparent.png" style="width: 350px; height: auto" />
+                <div style="position: absolute; left: 320px; top: 250px">
+                    <img src="images/complex_sign_transparent.png" style="width: 300px; height: auto" />
+                </div>
+                <!-- Expertise slider (vertical) -->
+                <div class="expertise-slider" style="position: absolute; left: 20px; top: 150px">
+                    <img src="images/emoji-brain-graduation-cap-expertise.png" style="width: 100px; height: auto; display: block; margin: 0 0 4px 0">
+                    <div style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 8px">High</div>
+                    <div class="slider-track" style="width: 20px; height: 300px; background: #ddd; border-radius: 10px; margin-left: 40px; position: relative; overflow: hidden">
+                        <div class="slider-fill" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 95%; background: linear-gradient(to top, #e74c3c, #f39c12, #2ecc71); border-radius: 10px"></div>
+                    </div>
+                    <div class="slider-thumb" style="position: absolute; top: 140px; left: 32px; width: 28px; height: 28px; background: #333; border: 3px solid #fff; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.3)"></div>
+                    <div style="text-align: center; font-size: 24px; font-weight: bold; margin-top: 8px">Low</div>
                 </div>
                 <div class="substep" data-substep-order="1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
-                    <div class="jockey-shuffle jockey-1" style="position: absolute; left: 550px; top: 150px">
+                    <div class="jockey-shuffle jockey-1" style="position: absolute; left: 570px; top: 150px">
                         <img src="images/emoji-llm-prompt-jockey.png" style="width: 250px; height: auto" />
                     </div>
-                    <div class="jockey-shuffle jockey-2" style="position: absolute; left: 630px; top: 370px">
+                    <div class="jockey-shuffle jockey-2" style="position: absolute; left: 650px; top: 370px">
                         <img src="images/emoji-llm-prompt-jockey.png" style="width: 260px; height: auto" />
                     </div>
-                    <div class="jockey-shuffle jockey-3" style="position: absolute; right: 50px; top: 250px">
+                    <div class="jockey-shuffle jockey-3" style="position: absolute; right: 30px; top: 250px">
                         <img src="images/emoji-llm-prompt-jockey.png" style="width: 220px; height: auto" />
                     </div>
+                </div>
+                <div class="substep slider-trigger" data-substep-order="2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%">
+                    <p style="position: absolute; bottom: 80px; left: 0; right: 0; text-align: center; font-size: 32px; margin: 0">Drain SRE expertise in the systems we hired them to be responsible for?</p>
                 </div>
             </div>
 
             <!-- What About Expertise Slide -->
             <div id="what-about-expertise" class="step" data-rel-x="50000" data-rel-y="0" data-scale="30" style="position: relative">
-                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">But then...</h1>
+                <h1 style="margin: 0; position: absolute; left: 50%; top: 20px; transform: translateX(-50%); white-space: nowrap">And another thing...</h1>
                 <!-- Left: Emoji + text table -->
-                <table style="position: absolute; left: 20px; top: 120px; border-collapse: collapse">
-                    <tr>
-                        <td style="padding: 10px 16px 10px 0; vertical-align: middle"><img src="images/emoji-brain-graduation-cap-expertise.png" style="width: 100px; height: auto" /></td>
-                        <td style="padding: 10px 0; vertical-align: middle; font-size: 44px">What happens to Expertise?</td>
-                    </tr>
+                <table style="position: absolute; left: 20px; top: 270px; border-collapse: collapse">
                     <tr class="substep" data-substep-order="1">
                         <td style="padding: 10px 16px 10px 0; vertical-align: middle"><img src="images/emoji-artist-palette.png" style="width: 60px; height: auto" /></td>
                         <td style="padding: 10px 0; vertical-align: middle; font-size: 40px">Creativity?</td>

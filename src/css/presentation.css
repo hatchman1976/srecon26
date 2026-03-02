@@ -862,12 +862,28 @@ body.impress-mouse-timeout {
     opacity: 0;
 }
 
+.expertise-slider .slider-fill {
+    transition: height 5s ease-in-out;
+}
+
+.expertise-slider .slider-thumb {
+    transition: top 5s ease-in-out;
+}
+
+#llm-prompt-jockey-apocalypse:has(.slider-trigger.substep-visible) .slider-fill {
+    height: 30% !important;
+}
+
+#llm-prompt-jockey-apocalypse:has(.slider-trigger.substep-visible) .slider-thumb {
+    top: 340px !important;
+}
+
 .jockey-shuffle {
     opacity: 0;
 }
 
 .substep-visible .jockey-shuffle {
-    animation: jockey-shuffle 2.5s ease-out forwards;
+    animation: jockey-shuffle 1.5s ease-out forwards;
 }
 
 .substep-visible .jockey-shuffle.jockey-1 {
