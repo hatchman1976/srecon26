@@ -28,22 +28,22 @@
  * This message is hidden when impress.js detects full browser support
  */
 .fallback-message {
-    font-family: sans-serif;
-    line-height: 1.3;
-    width: 780px;
-    padding: 10px 10px 0;
-    margin: 20px auto;
-    border: 1px solid #e4c652;
-    border-radius: 10px;
-    background: #eedc94;
+  font-family: sans-serif;
+  line-height: 1.3;
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+  border: 1px solid #e4c652;
+  border-radius: 10px;
+  background: #eedc94;
 }
 
 .fallback-message p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .impress-supported .fallback-message {
-    display: none;
+  display: none;
 }
 
 /* ========================================
@@ -55,10 +55,10 @@
  * Default background is light blue with proper font family
  */
 body {
-    font-family: "PT Sans", sans-serif;
-    min-height: 740px;
-    background: rgb(255, 255, 234);
-    color: #000000;
+  font-family: "PT Sans", sans-serif;
+  min-height: 740px;
+  background: rgb(255, 255, 234);
+  color: #000000;
 }
 
 /**
@@ -66,15 +66,15 @@ body {
  * Each slide is positioned within this container
  */
 .step {
-    position: relative;
-    display: block;
-    width: 900px;
-    height: 700px;
-    margin: 20px auto;
-    padding: 40px 60px;
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 30px;
-    letter-spacing: -1px;
+  position: relative;
+  display: block;
+  width: 900px;
+  height: 700px;
+  margin: 20px auto;
+  padding: 40px 60px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 30px;
+  letter-spacing: -1px;
 }
 
 /* ========================================
@@ -93,7 +93,7 @@ body {
 .impress-on-whoami,
 .impress-on-takeaways,
 .impress-on-before-we-continue {
-    background-color: rgb(245, 248, 255);
+  background-color: rgb(245, 248, 255);
 }
 
 /* Phase B: The hiring story */
@@ -101,7 +101,7 @@ body {
 .impress-on-hiring-today,
 .impress-on-covid-19,
 .impress-on-fast-forward-2025 {
-    background-color: rgb(255, 249, 240);
+  background-color: rgb(255, 249, 240);
 }
 
 /* Phase C: The WTF moment / reckoning */
@@ -111,7 +111,7 @@ body {
 .impress-on-the-irony,
 .impress-on-llm-prompt-jockey-apocalypse,
 .impress-on-what-about-expertise {
-    background-color: rgb(255, 242, 235);
+  background-color: rgb(255, 242, 235);
 }
 
 /* Phase 1: Cool blue — expertise and complexity */
@@ -125,7 +125,7 @@ body {
 .impress-on-the-expertise-silver-bullet,
 .impress-on-the-taylor-prophecy,
 .impress-on-separate-thinking {
-    background-color: rgb(230, 242, 255);
+  background-color: rgb(230, 242, 255);
 }
 
 /* Phase 2: Warm rose — danger and consequences */
@@ -140,7 +140,7 @@ body {
 .impress-on-the-ai-operator-nightmare,
 .impress-on-who-is-accountable,
 .impress-on-more-automation-is-a-problem {
-    background-color: rgb(255, 240, 238);
+  background-color: rgb(255, 240, 238);
 }
 
 /* Phase 3: Soft green — resolution and call to action */
@@ -151,16 +151,16 @@ body {
 .impress-on-humans-are-adaptable,
 .impress-on-thank-you,
 .impress-on-references {
-    background-color: rgb(232, 248, 238);
+  background-color: rgb(232, 248, 238);
 }
 
 /* Alternative background colors */
 .red-bg {
-    background-color: rgb(255, 68, 68);
+  background-color: rgb(255, 68, 68);
 }
 
 .blue-bg {
-    background-color: rgb(51, 181, 229);
+  background-color: rgb(51, 181, 229);
 }
 
 /* ========================================
@@ -172,13 +172,13 @@ body {
  * Active steps are fully opaque with smooth transitions
  */
 .impress-enabled .step {
-    margin: 0;
-    opacity: 1;
-    transition: none;
+  margin: 0;
+  opacity: 1;
+  transition: none;
 }
 
 .impress-enabled .step.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /**
@@ -186,19 +186,19 @@ body {
  * Only the main impress container and toolbar should receive events
  */
 .impress-enabled {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .impress-enabled #impress {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 .impress-enabled #impress-toolbar {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 .impress-enabled #impress-console-button {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 /* ========================================
@@ -208,59 +208,63 @@ body {
 /**
  * Heading styles with consistent spacing and alignment
  */
-h1, h2, h3 {
-    margin-bottom: 8px;
-    margin-top: 8px;
-    text-align: center;
+h1,
+h2,
+h3 {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  text-align: center;
 }
 
 /**
  * Main heading style - Maven Pro font for impact
  */
 h1 {
-    font-family: "Archivo Black";
-    font-size: 70px;
-    font-weight: 300;
+  font-family: "Archivo Black";
+  font-size: 70px;
+  font-weight: 300;
 }
 
 /**
  * Alternative heading style for left-aligned headers
  */
 .header-one {
-    position: absolute;
-    text-align: left;
-    font-family: "Maven Pro";
-    font-size: 70px;
-    font-weight: 300;
+  position: absolute;
+  text-align: left;
+  font-family: "Maven Pro";
+  font-size: 70px;
+  font-weight: 300;
 }
 
 /**
  * Paragraph and list styles
  */
 p {
-    text-align: center;
-    margin: 11px;
-    font-family: "Comic Neue";
-    font-size: 36px;
-    font-weight: bold;
+  text-align: center;
+  margin: 11px;
+  font-family: "Comic Neue";
+  font-size: 36px;
+  font-weight: bold;
 }
 
-table, td, th {
-    font-family: "Comic Neue";
-    font-size: 36px;
-    font-weight: bold;
+table,
+td,
+th {
+  font-family: "Comic Neue";
+  font-size: 36px;
+  font-weight: bold;
 }
 
 #references table,
 #references td {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 1.3;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.3;
 }
 
 li {
-    margin: 3px;
+  margin: 3px;
 }
 
 /**
@@ -275,20 +279,32 @@ li {
 .regular-text-40-red,
 .regular-text-50,
 .regular-text-70 {
-    position: absolute;
-    font-family: "Comic Neue";
+  position: absolute;
+  font-family: "Comic Neue";
 }
 
-.regular-text-25 { font-size: 25px; }
-.regular-text-30 { font-size: 30px; }
-.regular-text-35 { font-size: 35px; }
-.regular-text-40 { font-size: 40px; }
-.regular-text-50 { font-size: 50px; }
-.regular-text-70 { font-size: 70px; }
+.regular-text-25 {
+  font-size: 25px;
+}
+.regular-text-30 {
+  font-size: 30px;
+}
+.regular-text-35 {
+  font-size: 35px;
+}
+.regular-text-40 {
+  font-size: 40px;
+}
+.regular-text-50 {
+  font-size: 50px;
+}
+.regular-text-70 {
+  font-size: 70px;
+}
 
 .regular-text-40-red {
-    font-size: 40px;
-    color: red;
+  font-size: 40px;
+  color: red;
 }
 
 /**
@@ -298,16 +314,22 @@ li {
 .important-message-30,
 .important-message-55,
 .important-message-80 {
-    position: absolute;
-    text-align: left;
-    font-family: "Comic Neue";
-    font-weight: bold;
-    color: red;
+  position: absolute;
+  text-align: left;
+  font-family: "Comic Neue";
+  font-weight: bold;
+  color: red;
 }
 
-.important-message-30 { font-size: 30px; }
-.important-message-55 { font-size: 55px; }
-.important-message-80 { font-size: 80px; }
+.important-message-30 {
+  font-size: 30px;
+}
+.important-message-55 {
+  font-size: 55px;
+}
+.important-message-80 {
+  font-size: 80px;
+}
 
 /* ========================================
    CODE & TECHNICAL CONTENT
@@ -317,15 +339,15 @@ li {
  * Code block styles using Highlight.js
  */
 pre > code {
-    font-size: 14px;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  font-size: 14px;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 /**
  * Inline code styles
  */
 code {
-    font-family: "Cutive mono", "Courier New", monospace;
+  font-family: "Cutive mono", "Courier New", monospace;
 }
 
 /* ========================================
@@ -336,21 +358,21 @@ code {
  * Link styles with subtle background and smooth transitions
  */
 a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 2px;
-    background: rgba(200, 200, 200, 0.3);
-    text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.9);
-    border-radius: 3px;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.4);
-    border-left: 1px solid rgba(100, 100, 100, 0.4);
-    transition: 0.5s;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 2px;
+  background: rgba(200, 200, 200, 0.3);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+  border-left: 1px solid rgba(100, 100, 100, 0.4);
+  transition: 0.5s;
 }
 
 a:hover,
 a:focus {
-    background: rgba(200, 200, 200, 1);
-    text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
+  background: rgba(200, 200, 200, 1);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
 }
 
 /* ========================================
@@ -361,32 +383,32 @@ a:focus {
  * Quote and emphasis styles
  */
 blockquote {
-    font-family: "PT Serif";
-    font-style: italic;
-    font-weight: 400;
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
 }
 
 q {
-    font-family: "PT Serif";
-    font-style: italic;
-    font-weight: 400;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 em {
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 strong {
-    text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
 }
 
 strike {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 small {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 /* ========================================
@@ -397,62 +419,62 @@ small {
  * Default image sizing
  */
 img {
-    width: 300px;
+  width: 300px;
 }
 
 /**
  * Image rotation utilities
  */
 .rotateimg45 {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .rotateimg180 {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .rotateimg315 {
-    -webkit-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
-    -ms-transform: rotate(315deg);
-    -o-transform: rotate(315deg);
-    transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
 }
 
 /**
  * Background images with fixed positioning and transitions
  */
 img.bg {
-    position: fixed;
-    z-index: -100;
-    opacity: 0;
-    height: 50%;
-    width: auto;
-    transition: opacity 2s;
+  position: fixed;
+  z-index: -100;
+  opacity: 0;
+  height: 50%;
+  width: auto;
+  transition: opacity 2s;
 }
 
 /* Specific background image positioning */
 #applepie-image {
-    left: 0px;
-    bottom: 0px;
+  left: 0px;
+  bottom: 0px;
 }
 
 #icecream-image {
-    right: 0px;
-    top: 0px;
+  right: 0px;
+  top: 0px;
 }
 
 #crisps-image {
-    right: 0px;
-    bottom: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
 /* Background image visibility controls */
@@ -461,8 +483,8 @@ body.impress-on-applepie-pro #applepie-image,
 body.impress-on-applepie-con #applepie-image,
 body.impress-on-conclusion #applepie-image,
 body.impress-on-overview #applepie-image {
-    opacity: 0.7;
-    transition: opacity 2s;
+  opacity: 0.7;
+  transition: opacity 2s;
 }
 
 body.impress-on-icecream #icecream-image,
@@ -470,8 +492,8 @@ body.impress-on-icecream-pro #icecream-image,
 body.impress-on-icecream-con #icecream-image,
 body.impress-on-conclusion #icecream-image,
 body.impress-on-overview #icecream-image {
-    opacity: 0.7;
-    transition: opacity 2s;
+  opacity: 0.7;
+  transition: opacity 2s;
 }
 
 body.impress-on-crisps #crisps-image,
@@ -479,8 +501,8 @@ body.impress-on-crisps-pro #crisps-image,
 body.impress-on-crisps-con #crisps-image,
 body.impress-on-conclusion #crisps-image,
 body.impress-on-overview #crisps-image {
-    opacity: 0.7;
-    transition: opacity 2s;
+  opacity: 0.7;
+  transition: opacity 2s;
 }
 
 /* ========================================
@@ -491,14 +513,14 @@ body.impress-on-overview #crisps-image {
  * Speaker notes (hidden from presentation view)
  */
 .notes {
-    display: none;
+  display: none;
 }
 
 /**
  * Special slide styling
  */
 #image-credits {
-    color: #779988;
+  color: #779988;
 }
 
 /* ========================================
@@ -509,15 +531,15 @@ body.impress-on-overview #crisps-image {
  * Toolbar Plugin Styles
  */
 .impress-enabled div#impress-toolbar {
-    position: fixed;
-    right: 1px;
-    bottom: 1px;
-    opacity: 0.6;
-    z-index: 10;
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0.6;
+  z-index: 10;
 }
 
 .impress-enabled div#impress-toolbar > span {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /**
@@ -525,63 +547,63 @@ body.impress-on-overview #crisps-image {
  * Hide toolbar and cursor when mouse is inactive
  */
 body.impress-mouse-timeout div#impress-toolbar {
-    display: none;
+  display: none;
 }
 
 body.impress-mouse-timeout {
-    cursor: none;
+  cursor: none;
 }
 
 /**
  * Progress Bar Plugin Styles
  */
 .impress-progressbar {
-    position: absolute;
-    right: 118px;
-    bottom: 1px;
-    left: 118px;
-    border-radius: 7px;
-    border: 2px solid rgba(100, 100, 100, 0.2);
+  position: absolute;
+  right: 118px;
+  bottom: 1px;
+  left: 118px;
+  border-radius: 7px;
+  border: 2px solid rgba(100, 100, 100, 0.2);
 }
 
 .impress-progressbar DIV {
-    width: 0;
-    height: 2px;
-    border-radius: 5px;
-    background: rgba(75, 75, 75, 0.4);
-    transition: width 1s linear;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(75, 75, 75, 0.4);
+  transition: width 1s linear;
 }
 
 .impress-progress {
-    position: absolute;
-    left: 59px;
-    bottom: 1px;
-    text-align: left;
-    font-size: 10pt;
-    opacity: 0.6;
+  position: absolute;
+  left: 59px;
+  bottom: 1px;
+  text-align: left;
+  font-size: 10pt;
+  opacity: 0.6;
 }
 
 /**
  * Help Plugin Styles
  */
 .impress-enabled #impress-help {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-    color: #eeeeee;
-    font-size: 13px;
-    position: fixed;
-    left: 32px;
-    bottom: 32px;
-    width: 384px;
-    border-radius: 16px;
-    padding: 16px;
-    text-align: center;
-    z-index: 100;
-    font-family: Verdana, Arial, Sans;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  color: #eeeeee;
+  font-size: 13px;
+  position: fixed;
+  left: 32px;
+  bottom: 32px;
+  width: 384px;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  z-index: 100;
+  font-family: Verdana, Arial, Sans;
 }
 
 .impress-enabled #impress-help td {
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /**
@@ -593,322 +615,349 @@ body.impress-mouse-timeout {
  * Substeps start slightly smaller and fade in, then scale to full size when revealed.
  */
 #impress .step .substep {
-    opacity: 0;
-    transform: scale(0.92);
+  opacity: 0;
+  transform: scale(0.92);
 }
 
 #impress .step .substep.substep-visible {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.3s ease-out, transform 0.4s ease-out;
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.4s ease-out;
 }
 
 @keyframes slide-down-fade {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    70% {
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 }
 
 .substep.substep-visible .slide-down-fade {
-    animation: slide-down-fade 1.5s ease-in infinite;
-    animation-delay: 0.2s;
+  animation: slide-down-fade 1.5s ease-in infinite;
+  animation-delay: 0.2s;
 }
 
 @keyframes slide-right-fade {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    70% {
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
 }
 
 .substep.substep-visible .slide-right-fade {
-    animation: slide-right-fade 1.5s ease-in infinite;
-    animation-delay: 0.2s;
+  animation: slide-right-fade 1.5s ease-in infinite;
+  animation-delay: 0.2s;
 }
 
 @keyframes slide-left-fade {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    70% {
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
 }
 
 .substep.substep-visible .slide-left-fade {
-    animation: slide-left-fade 1.5s ease-in infinite;
-    animation-delay: 0.2s;
+  animation: slide-left-fade 1.5s ease-in infinite;
+  animation-delay: 0.2s;
 }
 
 .substep.substep-visible .slide-down-fade-staggered {
-    animation: slide-down-fade 1.5s ease-in infinite;
-    animation-delay: 1s;
+  animation: slide-down-fade 1.5s ease-in infinite;
+  animation-delay: 1s;
 }
 
 @keyframes pulse-glow {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.12); opacity: 0.85; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.85;
+  }
 }
 
 .substep.substep-visible .pulse-glow {
-    animation: pulse-glow 1.2s ease-in-out infinite;
+  animation: pulse-glow 1.2s ease-in-out infinite;
 }
 
 .book-fade-in {
-    opacity: 0;
-    transition: opacity 1.5s ease-in;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
 }
 
 .impress-on-separate-thinking .book-fade-in.book-1 {
-    opacity: 1;
-    transition-delay: 0.5s;
+  opacity: 1;
+  transition-delay: 0.5s;
 }
 
 .impress-on-separate-thinking .book-fade-in.book-2 {
-    opacity: 1;
-    transition-delay: 1.2s;
+  opacity: 1;
+  transition-delay: 1.2s;
 }
 
 .impress-on-separate-thinking .book-fade-in.book-3 {
-    opacity: 1;
-    transition-delay: 1.9s;
+  opacity: 1;
+  transition-delay: 1.9s;
 }
 
 /* Fly-down animation for repo-slop-bucket */
 @keyframes fly-down {
-    0% {
-        transform: translateY(-600px);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .fly-down {
-    opacity: 0;
+  opacity: 0;
 }
 
 .fly-down.substep-visible {
-    animation: fly-down 0.8s ease-out forwards;
+  animation: fly-down 0.8s ease-out forwards;
 }
 
 /* Delayed fade-in */
 .delayed-fade {
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-    transition-delay: 3s;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 3s;
 }
 
 .delayed-fade.substep-visible {
-    opacity: 1;
+  opacity: 1;
 }
 
 .delayed-fade-2s {
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-    transition-delay: 2s;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 2s;
 }
 
 .delayed-fade-2s.substep-visible {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Slow clockwise spin */
 @keyframes spin-clockwise {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .impress-on-who-is-accountable .spin-clockwise {
-    animation: spin-clockwise 20s linear infinite;
+  animation: spin-clockwise 20s linear infinite;
 }
 
 @keyframes spin-anticlockwise {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(-360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 .impress-on-who-is-accountable .spin-anticlockwise {
-    animation: spin-anticlockwise 25s linear infinite;
+  animation: spin-anticlockwise 25s linear infinite;
 }
 
 /* Pulse and glow fire */
 @keyframes pulse-glow-fire {
-    0%, 100% {
-        transform: scale(1);
-        filter: drop-shadow(0 0 10px rgba(255, 100, 0, 0.6));
-    }
-    50% {
-        transform: scale(1.3);
-        filter: drop-shadow(0 0 30px rgba(255, 60, 0, 0.9)) drop-shadow(0 0 60px rgba(255, 160, 0, 0.5));
-    }
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 10px rgba(255, 100, 0, 0.6));
+  }
+  50% {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 30px rgba(255, 60, 0, 0.9))
+      drop-shadow(0 0 60px rgba(255, 160, 0, 0.5));
+  }
 }
 
 .impress-on-who-is-accountable .pulse-glow-fire,
 .impress-on-fast-forward-2025 .pulse-glow-fire,
 .impress-on-complex-sociotechnical-systems .pulse-glow-fire {
-    animation: pulse-glow-fire 1.5s ease-in-out infinite;
+  animation: pulse-glow-fire 1.5s ease-in-out infinite;
 }
 
 /* Poo splat drop animation */
 @keyframes poo-splat {
-    0% {
-        top: -200px;
-        transform: scale(1);
-        opacity: 1;
-    }
-    60% {
-        top: 410px;
-        transform: scale(1);
-    }
-    70% {
-        top: 410px;
-        transform: scale(1.6, 0.5);
-    }
-    80% {
-        top: 410px;
-        transform: scale(0.9, 1.1);
-    }
-    90% {
-        top: 410px;
-        transform: scale(1.05, 0.95);
-    }
-    100% {
-        top: 410px;
-        transform: scale(1);
-    }
+  0% {
+    top: -200px;
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    top: 410px;
+    transform: scale(1);
+  }
+  70% {
+    top: 410px;
+    transform: scale(1.6, 0.5);
+  }
+  80% {
+    top: 410px;
+    transform: scale(0.9, 1.1);
+  }
+  90% {
+    top: 410px;
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    top: 410px;
+    transform: scale(1);
+  }
 }
 
 .poo-splat {
-    opacity: 0;
+  opacity: 0;
 }
 
 .poo-splat.substep-visible {
-    opacity: 1;
-    animation: poo-splat 2s ease-in forwards;
+  opacity: 1;
+  animation: poo-splat 2s ease-in forwards;
 }
 
 /* Jockey shuffle-in from right with bobbing */
 @keyframes jockey-shuffle {
-    0% {
-        transform: translateX(1200px) translateY(0) rotate(5deg);
-        opacity: 0;
-    }
-    8% {
-        transform: translateX(1000px) translateY(-10px) rotate(3deg);
-        opacity: 1;
-    }
-    18% {
-        transform: translateX(800px) translateY(-40px) rotate(-3deg);
-    }
-    28% {
-        transform: translateX(620px) translateY(15px) rotate(4deg);
-    }
-    38% {
-        transform: translateX(460px) translateY(-35px) rotate(-3deg);
-    }
-    48% {
-        transform: translateX(320px) translateY(12px) rotate(3deg);
-    }
-    58% {
-        transform: translateX(200px) translateY(-30px) rotate(-2deg);
-    }
-    68% {
-        transform: translateX(110px) translateY(10px) rotate(2deg);
-    }
-    78% {
-        transform: translateX(50px) translateY(-20px) rotate(-1deg);
-    }
-    88% {
-        transform: translateX(10px) translateY(8px) rotate(1deg);
-    }
-    100% {
-        transform: translateX(0) translateY(0) rotate(0deg);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(1200px) translateY(0) rotate(5deg);
+    opacity: 0;
+  }
+  8% {
+    transform: translateX(1000px) translateY(-10px) rotate(3deg);
+    opacity: 1;
+  }
+  18% {
+    transform: translateX(800px) translateY(-40px) rotate(-3deg);
+  }
+  28% {
+    transform: translateX(620px) translateY(15px) rotate(4deg);
+  }
+  38% {
+    transform: translateX(460px) translateY(-35px) rotate(-3deg);
+  }
+  48% {
+    transform: translateX(320px) translateY(12px) rotate(3deg);
+  }
+  58% {
+    transform: translateX(200px) translateY(-30px) rotate(-2deg);
+  }
+  68% {
+    transform: translateX(110px) translateY(10px) rotate(2deg);
+  }
+  78% {
+    transform: translateX(50px) translateY(-20px) rotate(-1deg);
+  }
+  88% {
+    transform: translateX(10px) translateY(8px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
 }
 
 .worker-fade {
-    opacity: 1;
-    transition: opacity 0.8s ease-out;
+  opacity: 1;
+  transition: opacity 0.8s ease-out;
 }
 
 #llm-prompt-jockey-apocalypse:has(.substep-visible) .worker-fade {
-    opacity: 0;
+  opacity: 0;
 }
 
 .expertise-slider .slider-fill {
-    transition: height 5s ease-in-out;
+  transition: height 5s ease-in-out;
 }
 
 .expertise-slider .slider-thumb {
-    transition: top 5s ease-in-out;
+  transition: top 5s ease-in-out;
 }
 
-#llm-prompt-jockey-apocalypse:has(.slider-trigger.substep-visible) .slider-fill {
-    height: 30% !important;
+#llm-prompt-jockey-apocalypse:has(.slider-trigger.substep-visible)
+  .slider-fill {
+  height: 30% !important;
 }
 
-#llm-prompt-jockey-apocalypse:has(.slider-trigger.substep-visible) .slider-thumb {
-    top: 340px !important;
+#llm-prompt-jockey-apocalypse:has(.slider-trigger.substep-visible)
+  .slider-thumb {
+  top: 340px !important;
 }
 
 .jockey-shuffle {
-    opacity: 0;
+  opacity: 0;
 }
 
 .substep-visible .jockey-shuffle {
-    animation: jockey-shuffle 1.5s ease-out forwards;
+  animation: jockey-shuffle 1.5s ease-out forwards;
 }
 
 .substep-visible .jockey-shuffle.jockey-1 {
-    animation-delay: 1.0s;
+  animation-delay: 1s;
 }
 
 .substep-visible .jockey-shuffle.jockey-2 {
-    animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .substep-visible .jockey-shuffle.jockey-3 {
-    animation-delay: 2.0s;
+  animation-delay: 2s;
 }
 
 /* Staggered sequential fade-in on step entry */
 .seq-fade {
-    opacity: 0;
+  opacity: 0;
 }
 
 .active .seq-fade,
 .substep-visible .seq-fade {
-    animation: seq-fade-in 0.7s ease-out forwards;
+  animation: seq-fade-in 0.7s ease-out forwards;
 }
 
 @keyframes seq-fade-in {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
