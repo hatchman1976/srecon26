@@ -92,7 +92,8 @@ body {
 .impress-on-introduction,
 .impress-on-whoami,
 .impress-on-takeaways,
-.impress-on-before-we-continue {
+.impress-on-before-we-continue,
+.impress-on-ghosts-in-the-interview-loop {
   background-color: rgb(245, 248, 255);
 }
 
@@ -110,7 +111,6 @@ body {
 .impress-on-needs-more-thought,
 .impress-on-the-irony,
 .impress-on-llm-prompt-jockey-apocalypse,
-.impress-on-loss-of-rigor,
 .impress-on-what-about-expertise {
   background-color: rgb(255, 242, 235);
 }
@@ -134,6 +134,7 @@ body {
 .impress-on-modern-software-systems,
 .impress-on-jit-knowledge,
 .impress-on-repo-slop-bucket,
+.impress-on-erosion-of-rigor,
 .impress-on-next-gen-armchair-experts,
 .impress-on-generative-AI-student-learning,
 .impress-on-ackoff-wisdom,
