@@ -1,6 +1,6 @@
 # SREcon26 Presentation
 
-An interactive [impress.js](https://impress.js.org/) presentation for SREcon26.
+An interactive [impress.js](https://impress.js.org/) presentation for SREcon26, exploring the impact of AI on SRE expertise — how tool commoditization, prompt-driven workflows, and the erosion of rigorous practice threaten the deep system knowledge that makes site reliability engineering effective.
 
 **Live site:** [https://srecon26.hatchman76.com](https://srecon26.hatchman76.com)
 
@@ -28,6 +28,7 @@ For the best experience, use Chrome or Firefox in fullscreen mode (press `F11`).
 srecon26/
 ├── src/
 │   ├── index.html          # Main presentation file
+│   ├── favicon.ico          # Site favicon
 │   ├── css/                 # Stylesheets
 │   │   ├── presentation.css # Primary presentation styles and animations
 │   │   ├── shrug.css
