@@ -46,6 +46,57 @@
     </head>
 
     <body>
+        <!-- Mobile fallback: shown only on touch/small-screen devices -->
+        <div id="mobile-fallback">
+            <img src="images/image-old-man-yells-at-ai.png" alt="Old man yells at AI" />
+            <h1>This presentation requires a desktop browser</h1>
+            <p>The infinite canvas used by this presentation doesn't play nicely with mobile devices.</p>
+            <p>Please revisit on a laptop or desktop for the full experience.</p>
+        </div>
+
+        <style>
+            #mobile-fallback {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 40px 24px;
+                text-align: center;
+                font-family: "Open Sans", "PT Sans", Arial, sans-serif;
+                background: rgb(255, 255, 234);
+                box-sizing: border-box;
+            }
+            #mobile-fallback img {
+                max-width: 280px;
+                height: auto;
+                margin-bottom: 32px;
+                border-radius: 12px;
+            }
+            #mobile-fallback h1 {
+                font-size: 28px;
+                margin: 0 0 16px;
+                color: #222;
+            }
+            #mobile-fallback p {
+                font-size: 18px;
+                line-height: 1.5;
+                color: #555;
+                margin: 0 0 8px;
+                max-width: 480px;
+            }
+            body.is-mobile #mobile-fallback { display: flex; }
+            body.is-mobile #impress { display: none !important; }
+        </style>
+
+        <script>
+            (function () {
+                var mobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+                    || (navigator.maxTouchPoints > 1 && window.innerWidth < 1024);
+                if (mobile) document.body.classList.add("is-mobile");
+            })();
+        </script>
+
         <!-- Main Presentation Container -->
         <div id="impress" data-width="1024" data-height="768" data-max-scale="10" data-min-scale="0" data-perspective="900">
             <!-- =============================================== -->
