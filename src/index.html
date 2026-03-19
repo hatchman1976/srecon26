@@ -116,50 +116,45 @@
             <!-- WHOAMI Slide -->
             <div id="whoami" class="step" data-rel-x="40000" data-rel-y="0" data-scale="25" style="position: relative">
                 <h1>WHOAMI</h1>
-
-                <!-- Top row: Australia, ThousandEyes, USA -->
-                <div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0">
-                    <!-- Australia with pin -->
-                    <div class="substep" data-substep-order="1" style="position: relative; width: 300px">
-                        <img src="images/Australia.png" style="width: 280px; height: auto" />
-                        <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; bottom: 50px; left: 185px" />
-                    </div>
-
-                    <!-- USA with pin -->
-                    <div class="substep" data-substep-order="2" style="position: relative; width: 300px">
-                        <img src="images/usa.png" style="width: 280px; height: auto" />
-                        <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; top: 40px; left: -10px" />
-                    </div>
-
-                    <!-- ThousandEyes logo -->
-                    <div class="substep" data-substep-order="3" style="text-align: center; margin-left: 240px; margin-right: 10px; margin-top: -50px">
-                        <img src="images/thousand-eyes.png" style="width: 200px; height: auto" />
-                    </div>
+                <!-- Australia with pin -->
+                <div class="substep" data-substep-order="1" style="position: absolute; left: 60px; top: 220px">
+                    <img src="images/Australia.png" style="width: 280px; height: auto" />
+                    <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; bottom: 50px; left: 185px" />
                 </div>
-
+                <!-- ThousandEyes logo -->
+                <div class="substep" data-substep-order="2" style="position: absolute; left: 520px; top: 200px">
+                    <img src="images/thousand-eyes.png" style="width: 200px; height: auto" />
+                </div>
+                <!-- USA with pin -->
+                <div class="substep" data-substep-order="3" style="position: absolute; right: 20px; top: 220px">
+                    <img src="images/usa.png" style="width: 280px; height: auto" />
+                    <img src="images/map-pin-red-hi.png" style="width: 30px; height: auto; position: absolute; top: 40px; left: -10px" />
+                </div>
                 <!-- Middle text -->
-                <div class="substep" data-substep-order="4" style="margin-top: -30px">
-                    <p style="text-align: center; font-size: 30px; font-weight: bold; margin: 30px 0">SWE/SRE Engineering Manager 15 years</p>
+                <div class="substep" data-substep-order="4" style="position: absolute; left: 0; top: 470px; width: 100%; text-align: center">
+                    <p style="font-size: 30px; font-weight: bold; margin: 0">SWE/SRE Engineering Manager 15 years</p>
                 </div>
-
-                <!-- Bottom row: Logos -->
-                <div style="display: flex; justify-content: flex-start; align-items: center; gap: 40px; margin-top: 60px">
-                    <div class="substep" data-substep-order="5">
-                        <img src="images/aws.png" style="width: 170px; height: auto" />
-                    </div>
-                    <div class="substep" data-substep-order="6" style="position: relative">
-                        <img src="images/new-data-centre.png" style="width: 150px; height: auto" />
-                    </div>
-                    <div class="substep" data-substep-order="7" style="position: relative; margin-top: -30px; margin-left: -30px">
-                        <img src="images/Linkedin-Logo.png" style="width: 80px; height: auto" />
-                    </div>
+                <!-- AWS logo -->
+                <div class="substep" data-substep-order="5" style="position: absolute; left: 60px; top: 560px">
+                    <img src="images/aws.png" style="width: 170px; height: auto" />
                 </div>
-                <div class="substep" data-substep-order="8" style="position: absolute; bottom: 80px; right: 20px; display: flex; align-items: flex-start; gap: 20px">
-                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
-                        <img src="images/medium-blog-icon.png" style="width: 90px; height: auto" />
-                        <img src="images/logo-bluesky.png" style="width: 90px; height: auto" />
+                <!-- Data centre -->
+                <div class="substep" data-substep-order="6" style="position: absolute; left: 270px; top: 560px">
+                    <img src="images/new-data-centre.png" style="width: 150px; height: auto" />
+                </div>
+                <!-- LinkedIn -->
+                <div class="substep" data-substep-order="7" style="position: absolute; left: 430px; top: 570px">
+                    <img src="images/Linkedin-Logo.png" style="width: 80px; height: auto" />
+                </div>
+                <!-- Social handles -->
+                <div class="substep" data-substep-order="8" style="position: absolute; right: 20px; bottom: 80px">
+                    <div style="display: flex; align-items: flex-start; gap: 20px">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+                            <img src="images/medium-blog-icon.png" style="width: 90px; height: auto" />
+                            <img src="images/logo-bluesky.png" style="width: 90px; height: auto" />
+                        </div>
+                        <p style="font-size: 40px; font-weight: bold; margin-top: 50px">@hatchman76</p>
                     </div>
-                    <p style="font-size: 40px; font-weight: bold; margin-top: 50px">@hatchman76</p>
                 </div>
             </div>
 
@@ -252,6 +247,8 @@
                 </div>
                 <div class="substep" data-substep-order="7">
                     <p style="position: absolute; right: 40px; top: 410px; font-size: 40px; text-align: right">Almost always in person</p>
+                </div>
+                <div class="substep" data-substep-order="8">
                     <p style="position: absolute; right: 40px; top: 480px; font-size: 80px; text-align: right">~100</p>
                 </div>
             </div>
