@@ -963,3 +963,20 @@ body.impress-mouse-timeout {
     transform: scale(1);
   }
 }
+
+/* Rocking razor animation */
+.razor-rock {
+  opacity: 0;
+  transform-origin: 50% 10%;
+}
+
+.substep-visible .razor-rock {
+  animation: razor-rock 2s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes razor-rock {
+  0%   { transform: rotate(-20deg); }
+  50%  { transform: rotate(20deg); }
+  100% { transform: rotate(-20deg); }
+}
